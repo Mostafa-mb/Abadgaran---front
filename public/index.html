@@ -6,29 +6,88 @@
     <title>Abadgaran</title>
     <link rel="stylesheet" href="styles/app.css" />
   </head>
-  <body class="relative">
-    <header>
+  <body class="relative font-textRegular">
+    <header class="w-full">
       <!-- yellow section on desktop header -->
-      <div
-        class="flex items-center relative bg-AbaPrimary h-22 w-full absolute top-0"
-      >
+      <div class="bg-AbaPrimary h-22">
         <div class="w-[90%] mx-auto grid grid-cols-3 h-full gap-x-2">
+          <!-- logo -->
           <div class="flex items-center">
             <a href="#">
-              <img src="images/Logo-03.webp" alt="" class="h-16 max-w-7xl" />
+              <img src="images/Logo-03.webp" alt="" class="h-16 max-w-7xl" loading="lazy" />
             </a>
           </div>
+
+          <!-- search section -->
           <div class="flex items-center">
-            <input type="text" class="w-full bg-amber-50 h-10 rounded-md focus:outline-0 px-2 text-neutral-700 font-textMedium text-sm md:text-base" />
+            <!-- search Input -->
+            <div class="relative w-full" id="searchInput">
+              <input
+                type="text"
+                class="w-full bg-amber-50 h-10 rounded-md focus:outline-0 px-2 text-neutral-700 text-sm lg:text-base"
+                placeholder="جستجو ..."
+              />
+              <span
+                class="absolute left-3 top-0 bottom-0 flex items-center cursor-pointer ltr:right-3 ltr:left-auto"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
           </div>
-          <div class="size-5"></div>
+
+          <!-- language and userProfiles / signup && Login -->
+          <div class="flex items-center justify-end gap-x-6">
+            <!-- language setting -->
+            <div class="flex items-center gap-x-4">
+              <span>
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+              <span class="text-sm">فارسی</span>
+            </div>
+
+            <!-- login/signUp/userProfile -->
+            <div>
+              <!-- login/signUp button -->
+              <div
+                class="text-sm font-semibold text-AbaSecondary px-4 py-2 rounded-lg border-2 border-AbaSecondary hidden"
+              >
+                ورود | ثبت نام
+              </div>
+
+              <!-- shopcart && user Profile -->
+              <div class="flex items-center gap-x-2">
+                <!-- shopcart button -->
+                <div
+                  class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative cursor-pointer"
+                >
+                  <span class="size-6 flex items-center justify-center">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                  </span>
+                  <span
+                    class="absolute bg-emerald-600 size-2 shadow-emerald-800 shadow-lg rounded-full -top-1 -right-1"
+                  ></span>
+                </div>
+                <div
+                  class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative"
+                >
+                  <span class="size-6"><i class="fa-solid fa-user "></i></span>
+                  <span class="text-sm font-semibold">پنل کاربری</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- gray section on desktop header -->
-      <div
-        class="flex items-center justify-between relative bg-AbaSecondary h-14 w-full"
-      ></div>
+      <div class="flex items-center justify-between bg-AbaSecondary h-14"></div>
     </header>
+
+    <div
+      class="bg-black/40 fixed size-full inset-0 transition-all hidden"
+      id="overlay"
+    ></div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/fontAwesome.js"></script>
   </body>
 </html>
