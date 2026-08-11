@@ -9,17 +9,38 @@
   <body class="relative font-textRegular">
     <header class="w-full">
       <!-- yellow section on desktop header -->
-      <div class="bg-AbaPrimary h-22">
+      <div class="bg-AbaPrimary h-14 md:h-22">
         <div class="w-[90%] mx-auto grid grid-cols-3 h-full gap-x-2">
+          <!-- hamburger menu button -->
+          <div class="flex items-center rtl:justify-start md:hidden">
+            <span class="size-6 flex items-center justify-center">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </div>
+
           <!-- logo -->
-          <div class="flex items-center">
+          <div class="flex items-center justify-center">
             <a href="#">
-              <img src="images/Logo-03.webp" alt="" class="h-16 max-w-7xl" loading="lazy" />
+              <img
+                src="images/Logo-03.webp"
+                alt=""
+                class="h-14 md:h-16 max-w-7xl"
+                loading="lazy"
+              />
             </a>
           </div>
 
+          <!-- hamburger menu button -->
+          <div class="flex items-center justify-end md:hidden">
+            <span class="size-6 flex items-center justify-center md:hidden">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </div>
+
+          
+
           <!-- search section -->
-          <div class="flex items-center">
+          <div class="hidden md:flex items-center">
             <!-- search Input -->
             <div class="relative w-full" id="searchInput">
               <input
@@ -28,17 +49,18 @@
                 placeholder="جستجو ..."
               />
               <span
-                class="absolute left-3 top-0 bottom-0 flex items-center cursor-pointer ltr:right-3 ltr:left-auto"
+                class="absolute top-0 bottom-0 flex items-center cursor-pointer ltr:right-3 rtl:left-3"
               >
                 <i class="fa-solid fa-magnifying-glass"></i>
               </span>
             </div>
+            <div></div>
           </div>
 
           <!-- language and userProfiles / signup && Login -->
-          <div class="flex items-center justify-end gap-x-6">
+          <div class="items-center justify-end gap-x-6 hidden md:flex">
             <!-- language setting -->
-            <div class="flex items-center gap-x-4">
+            <div class="flex items-center gap-x-0.5">
               <span>
                 <i class="fa-solid fa-angle-down"></i>
               </span>
@@ -61,16 +83,16 @@
                   class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative cursor-pointer"
                 >
                   <span class="size-6 flex items-center justify-center">
-                    <i class="fa-solid fa-cart-shopping "></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
                   </span>
                   <span
                     class="absolute bg-emerald-600 size-2 shadow-emerald-800 shadow-lg rounded-full -top-1 -right-1"
                   ></span>
                 </div>
                 <div
-                  class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative"
+                  class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative cursor-pointer"
                 >
-                  <span class="size-6"><i class="fa-solid fa-user "></i></span>
+                  <span class="size-6"><i class="fa-solid fa-user"></i></span>
                   <span class="text-sm font-semibold">پنل کاربری</span>
                 </div>
               </div>
@@ -80,7 +102,60 @@
       </div>
 
       <!-- gray section on desktop header -->
-      <div class="flex items-center justify-between bg-AbaSecondary h-14"></div>
+      <div class="bg-AbaSecondary h-14 hidden md:block">
+        <div class="w-[90%] mx-auto grid grid-cols-4 h-full gap-x-2 text-white">
+          <!-- online products button and products categories with their products -->
+          <div class="flex items-center justify-start">
+            <!-- online products button -->
+            <div
+              class="flex items-center gap-x-4 p-2 bg-white/12 hover:bg-white/20 transition-all cursor-pointer rounded-lg"
+              id="onlineProductsBtn"
+            >
+              <div class="flex items-center gap-x-2">
+                <span class="size-4 flex items-center">
+                  <i class="fa-classic fa-solid fa-table-cells-large"></i>
+                </span>
+                <span class="text-sm lg:text-base">محصولات آنلاین</span>
+              </div>
+              <span class="size-4"><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+          </div>
+          <div class="col-span-2 flex items-center justify-around">
+            <div>
+              <a href="#">محصولات</a>
+            </div>
+            <div>
+              <a href="#">مقالات فنی</a>
+            </div>
+            <div>
+              <a href="#">اخبار</a>
+            </div>
+            <div>
+              <a href="#">نمایندگان فروش</a>
+            </div>
+            <!-- <div>
+              <a href="#">جذب نخبگان</a>
+            </div>
+                        <div>
+              <a href="#">درباره ما</a>
+            </div>
+                        <div>
+              <a href="#">همکاری</a>
+            </div>
+                        <div>
+              <a href="#">تماس با ما</a>
+            </div> -->
+          </div>
+          <div
+            class="flex items-center ltr:flex-row-reverse ltr:justify-start rtl:justify-end gap-x-2 text-white/60"
+          >
+            <span>021-87754</span>
+            <span class="size-5">
+              <i class="fa-solid fa-phone-volume"></i>
+            </span>
+          </div>
+        </div>
+      </div>
     </header>
 
     <div
