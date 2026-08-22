@@ -10,7 +10,7 @@
     <header class="w-full relative">
       <!-- yellow section on desktop header -->
       <div class="bg-AbaPrimary h-14 md:h-22">
-        <div class="w-[90%] mx-auto grid grid-cols-3 h-full gap-x-2">
+        <div class="w-[90%] mx-auto flex justify-between  h-full ">
           <!-- hamburger menu button (mobile) -->
           <div
             class="flex items-center rtl:justify-start md:hidden"
@@ -21,41 +21,41 @@
             </span>
           </div>
 
-          <!-- logo -->
-          <div class="flex items-center justify-center md:justify-start">
+          <!-- logo and search bar -->
+          <div class="flex grow items-center justify-center md:justify-start gap-x-9">
             <a href="#">
               <img
                 src="images/Logo-03.webp"
                 alt=""
-                class="h-14 md:h-16 max-w-7xl"
+                class="h-14 md:h-22 max-w-7xl"
                 loading="lazy"
               />
             </a>
-          </div>
 
-          <!-- search button (mobile) -->
-          <div class="flex items-center justify-end md:hidden">
-            <span class="size-6 flex items-center justify-center md:hidden">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-          </div>
-
-          <!-- search section -->
-          <div class="hidden md:flex items-center">
-            <!-- search Input -->
-            <div class="relative w-full" id="searchInput">
-              <input
-                type="text"
-                class="w-full bg-amber-50 h-10 rounded-md focus:outline-0 px-2 text-neutral-700 text-sm lg:text-base"
-                placeholder="جستجو ..."
-              />
-              <span
-                class="absolute top-0 bottom-0 flex items-center cursor-pointer ltr:right-3 rtl:left-3"
-              >
+            <!-- search button (mobile) -->
+            <!-- <div class="flex items-center justify-end md:hidden">
+              <span class="size-6 flex items-center justify-center md:hidden">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </span>
+            </div> -->
+
+            <!-- search section -->
+            <div class="hidden md:flex items-center w-2/4 ">
+              <!-- search Input -->
+              <div class="relative w-full" id="searchInput">
+                <input
+                  type="text"
+                  class="w-full bg-amber-50 h-10 rounded-md focus:outline-0 px-2 text-neutral-700 text-sm lg:text-base"
+                  placeholder="جستجو ..."
+                />
+                <span
+                  class="absolute top-0 bottom-0 flex items-center cursor-pointer ltr:right-3 rtl:left-3"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div>
+              <div></div>
             </div>
-            <div></div>
           </div>
 
           <!-- language and userProfiles / signup && Login -->
@@ -104,55 +104,49 @@
 
       <!-- gray section on desktop header -->
       <div class="bg-AbaSecondary h-14 hidden md:block">
-        <div class="w-[90%] mx-auto grid grid-cols-4 h-full gap-x-2 text-white">
+        <div class="w-[90%] mx-auto flex justify-between h-full text-white">
           <!-- online products button and products categories with their products -->
           <div class="flex items-center justify-start">
             <!-- online products button -->
             <div
-              class="flex items-center gap-x-4 p-2 bg-white/12 hover:bg-white/20 transition-all cursor-pointer rounded-lg"
-              id="onlineProductsBtn"
+              class="flex items-center gap-x-7 lg:gap-x-9 justify-around *:hover:text-AbaPrimary *:hover:transition-colors text-xs xl:text-sm font-textBold"
             >
-              <div class="flex items-center gap-x-2">
-                <span class="size-4 flex items-center">
-                  <i
-                    class="fa-classic fa-solid fa-table-cells-large size-full"
-                  ></i>
-                </span>
-                <span class="text-sm lg:text-base">محصولات آنلاین</span>
+              <div>
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <a href="#">محصولات</a>
               </div>
-              <span class="size-4"><i class="fa-solid fa-angle-down"></i></span>
+              <div>
+                <i class="fa-regular fa-newspaper"></i>
+                <a href="#">مقالات فنی</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-desktop"></i>
+                <a href="#">اخبار</a>
+              </div>
+              <div>
+                <i class="fa-brands fa-hubspot"></i>
+                <a href="#">نمایندگان فروش</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <a href="#">جذب نخبگان</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-flask"></i>
+                <a href="#">درباره ما</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-handshake-angle"></i>
+                <a href="#">همکاری</a>
+              </div>
+              <div>
+                <i class="fa-regular fa-address-book"></i>
+                <a href="#">تماس با ما</a>
+              </div>
             </div>
           </div>
           <div
-            class="col-span-2 flex items-center justify-around *:hover:text-AbaPrimary *:hover:transition-colors"
-          >
-            <div>
-              <a href="#">محصولات</a>
-            </div>
-            <div>
-              <a href="#">مقالات فنی</a>
-            </div>
-            <div>
-              <a href="#">اخبار</a>
-            </div>
-            <div>
-              <a href="#">نمایندگان فروش</a>
-            </div>
-            <!-- <div>
-              <a href="#">جذب نخبگان</a>
-            </div>
-                        <div>
-              <a href="#">درباره ما</a>
-            </div>
-                        <div>
-              <a href="#">همکاری</a>
-            </div>
-                        <div>
-              <a href="#">تماس با ما</a>
-            </div> -->
-          </div>
-          <div
-            class="flex items-center ltr:flex-row-reverse ltr:justify-start rtl:justify-end gap-x-2 text-white/60"
+            class="flex items-center ltr:flex-row-reverse ltr:justify-start rtl:justify-end gap-x-2 text-white/60 text-xs lg:text-base"
           >
             <span>021-87754</span>
             <span class="size-5">
