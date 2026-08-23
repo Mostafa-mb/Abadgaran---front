@@ -10,10 +10,10 @@
     <header class="w-full relative">
       <!-- yellow section on desktop header -->
       <div class="bg-AbaPrimary h-14 md:h-22">
-        <div class="w-[90%] mx-auto flex justify-between  h-full ">
+        <div class="w-[90%] mx-auto grid grid-cols-3 h-full">
           <!-- hamburger menu button (mobile) -->
           <div
-            class="flex items-center rtl:justify-start md:hidden"
+            class="flex items-center rtl:justify-start md:hidden cursor-pointer"
             id="mobileMenu_btn"
           >
             <span class="size-6 flex items-center justify-center">
@@ -21,8 +21,10 @@
             </span>
           </div>
 
-          <!-- logo and search bar -->
-          <div class="flex grow items-center justify-center md:justify-start gap-x-9">
+          <!-- logo -->
+          <div
+            class="flex items-center justify-center md:justify-start gap-x-9"
+          >
             <a href="#">
               <img
                 src="images/Logo-03.webp"
@@ -31,31 +33,32 @@
                 loading="lazy"
               />
             </a>
+          </div>
 
-            <!-- search button (mobile) -->
-            <!-- <div class="flex items-center justify-end md:hidden">
-              <span class="size-6 flex items-center justify-center md:hidden">
+          <!-- search button (mobile) -->
+          <div class="flex items-center justify-end md:hidden cursor-pointer">
+            <span class="size-6 flex items-center justify-center">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </div>
+
+          <!-- search bar in desktop -->
+          <div class="hidden md:flex items-center w-full justify-self-center relative">
+            <!-- search Input -->
+            <div class="relative w-full" id="searchInput">
+              <input
+                type="text"
+                class="w-full bg-amber-50 h-10 rounded-md focus:outline-0 px-2 text-neutral-700 text-sm lg:text-base"
+                placeholder="جستجو ..."
+              />
+              <span
+                class="absolute top-0 bottom-0 flex items-center cursor-pointer ltr:right-3 rtl:left-3"
+              >
                 <i class="fa-solid fa-magnifying-glass"></i>
               </span>
-            </div> -->
-
-            <!-- search section -->
-            <div class="hidden md:flex items-center w-2/4 ">
-              <!-- search Input -->
-              <div class="relative w-full" id="searchInput">
-                <input
-                  type="text"
-                  class="w-full bg-amber-50 h-10 rounded-md focus:outline-0 px-2 text-neutral-700 text-sm lg:text-base"
-                  placeholder="جستجو ..."
-                />
-                <span
-                  class="absolute top-0 bottom-0 flex items-center cursor-pointer ltr:right-3 rtl:left-3"
-                >
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
-              </div>
-              <div></div>
             </div>
+
+            <div class="w-full h-50 bg-red-800 absolute top-22"></div>
           </div>
 
           <!-- language and userProfiles / signup && Login -->
@@ -72,13 +75,13 @@
             <div>
               <!-- login/signUp button -->
               <div
-                class="text-sm font-semibold text-AbaSecondary px-4 py-2 rounded-lg border-2 border-AbaSecondary hidden"
+                class="text-sm font-semibold text-AbaSecondary px-4 py-2 rounded-lg border-2 border-AbaSecondary cursor-pointer"
               >
                 ورود | ثبت نام
               </div>
 
               <!-- shopcart && user Profile -->
-              <div class="flex items-center gap-x-2">
+              <div class="flex items-center gap-x-2 hidden">
                 <!-- shopcart button -->
                 <div
                   class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative cursor-pointer"
