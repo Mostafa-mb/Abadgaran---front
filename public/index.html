@@ -43,12 +43,14 @@
           </div>
 
           <!-- search bar in desktop -->
-          <div class="hidden md:flex items-center w-full justify-self-center relative">
+          <div
+            class="hidden md:flex items-center w-full justify-self-center relative"
+          >
             <!-- search Input -->
             <div class="relative w-full" id="searchInput">
               <input
                 type="text"
-                class="w-full bg-amber-50 h-10 rounded-md focus:outline-0 px-2 text-neutral-700 text-sm lg:text-base"
+                class="w-full bg-amber-50 h-10 rounded-md focus:outline-0 px-2 text-neutral-700 text-sm lg:text-base transition-all"
                 placeholder="جستجو ..."
               />
               <span
@@ -58,7 +60,116 @@
               </span>
             </div>
 
-            <div class="w-full h-50 bg-red-800 absolute top-22"></div>
+            <!-- search Result Box -->
+            <div class="w-full h-78 bg-white absolute top-18 rounded-xl z-20 hidden transition-all" id="desktop-searchResult">
+              <div
+                class="py-2 w-[95%] mx-auto h-full overflow-y-auto scrollbar-thin"
+              >
+                <!-- search results have Items -->
+                <div
+                  class="**:hover:bg-gray-200 **:hover:transition-all **:hover:cursor-pointer hidden"
+                >
+                  <div class="flex items-center gap-x-1 py-2">
+                    <span class="text-gray-500 text-sm"
+                      ><i class="fa-regular fa-newspaper"></i
+                    ></span>
+                    <span>|</span>
+                    <span class="text-xs lg:text-sm">
+                      متن این مقاله برای سرچ به صورت تستی وارد شده است متن این
+                      مقاله برای سرچ به صورت تستی وارد شده است متن این مقاله
+                      برای سرچ به صورت تستی وارد شده است</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-1 py-2">
+                    <span class="text-gray-500 text-sm"
+                      ><i class="fa-solid fa-boxes-stacked"></i
+                    ></span>
+                    <span>|</span>
+                    <span class="text-xs lg:text-sm"
+                      >روان کننده بتن P.A.PLAST-201</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-1 py-2">
+                    <span class="text-gray-500 text-sm"
+                      ><i class="fa-regular fa-newspaper"></i
+                    ></span>
+                    <span>|</span>
+                    <span class="text-xs lg:text-sm"
+                      >متن این مقاله برای سرچ به صورت تستی وارد شده است</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-1 py-2">
+                    <span class="text-gray-500 text-sm"
+                      ><i class="fa-regular fa-newspaper"></i
+                    ></span>
+                    <span>|</span>
+                    <span class="text-xs lg:text-sm"
+                      >متن این مقاله برای سرچ به صورت تستی وارد شده است</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-1 py-2">
+                    <span class="text-gray-500 text-sm"
+                      ><i class="fa-regular fa-newspaper"></i
+                    ></span>
+                    <span>|</span>
+                    <span class="text-xs lg:text-sm"
+                      >متن این مقاله برای سرچ به صورت تستی وارد شده است</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-1 py-2">
+                    <span class="text-gray-500 text-sm"
+                      ><i class="fa-regular fa-newspaper"></i
+                    ></span>
+                    <span>|</span>
+                    <span class="text-xs lg:text-sm"
+                      >متن این مقاله برای سرچ به صورت تستی وارد شده است</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-1 py-2">
+                    <span class="text-gray-500 text-sm"
+                      ><i class="fa-regular fa-newspaper"></i
+                    ></span>
+                    <span>|</span>
+                    <span class="text-xs lg:text-sm"
+                      >متن این مقاله برای سرچ به صورت تستی وارد شده است</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-1 py-2">
+                    <span class="text-gray-500 text-sm"
+                      ><i class="fa-regular fa-newspaper"></i
+                    ></span>
+                    <span>|</span>
+                    <span class="text-xs lg:text-sm"
+                      >متن این مقاله برای سرچ به صورت تستی وارد شده است</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-1 py-2">
+                    <span class="text-gray-500 text-sm"
+                      ><i class="fa-regular fa-newspaper"></i
+                    ></span>
+                    <span>|</span>
+                    <span class="text-xs lg:text-sm"
+                      >متن این مقاله برای سرچ به صورت تستی وارد شده است</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-1 py-2">
+                    <span class="text-gray-500 text-sm"
+                      ><i class="fa-regular fa-newspaper"></i
+                    ></span>
+                    <span>|</span>
+                    <span class="text-xs lg:text-sm"
+                      >متن این مقاله برای سرچ به صورت تستی وارد شده است</span
+                    >
+                  </div>
+                </div>
+
+                <!-- search result with no Item -->
+                <div class="flex items-center justify-center flex-col ">
+                  <img src="images/search-empty.webp" alt="" class="w-55 lg:w-60">
+                  <span class="font-titleBold text-base lg:text-lg">موردی یافت نشد</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- language and userProfiles / signup && Login -->

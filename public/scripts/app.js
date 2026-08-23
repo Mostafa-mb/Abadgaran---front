@@ -8,38 +8,54 @@ const firstTierSubMenuItems = document.querySelectorAll(
 const secondTierSubMenuItems = document.querySelectorAll(
   ".hasSecondTier_submenu",
 );
+const searchInput = document.querySelector("#searchInput");
+const desktopSearchResult = document.querySelector("#desktop-searchResult");
 
-mobileMenuCloseBtn.addEventListener("click", closeMobileMenu);
-mobileMenuBtn.addEventListener("click", showMobileMenu);
-overlay.addEventListener("click", clickOverlay);
-
-function closeMobileMenu() {
+const closeMobileMenu = () => {
   mobileMenu.classList.remove("rtl:right-0", "ltr:left-0");
   mobileMenu.classList.add("rtl:-right-77", "ltr:-left-77");
   HideOverlay();
-}
+};
 
-function showMobileMenu() {
+const showMobileMenu = () => {
   mobileMenu.classList.remove("rtl:-right-77", "ltr:-left-77");
   mobileMenu.classList.add("rtl:right-0", "ltr:left-0");
   showOverlay();
-}
+};
 
-function HideOverlay() {
+const HideOverlay = () => {
   overlay.classList.add("hidden");
-}
+};
 
-function showOverlay() {
+const showOverlay = () => {
   overlay.classList.remove("hidden");
-}
+};
 
-function clickOverlay() {
+const clickOverlay = () => {
   closeMobileMenu();
-}
+  clearSearchResult();
+};
+
+const searchResultHandler = () => {
+  let userInput = searchInput.querySelector("input").value;
+  if (userInput) {
+    desktopSearchResult.classList.remove("hidden");
+    searchInput.classList.add("z-20");
+    showOverlay();
+  } else {
+    desktopSearchResult.classList.add("hidden");
+    searchInput.classList.remove("z-20");
+    HideOverlay();
+  }
+};
+
+const clearSearchResult = () => {
+  searchInput.querySelector("input").value = "";
+  desktopSearchResult.classList.add("hidden")
+};
 
 firstTierSubMenuItems.forEach((item) => {
-  item.addEventListener("click", (event) => {
-
+  item.addEventListener("click", () => {
     item.querySelector(".toggleIcon").classList.toggle("rotate-180");
     item.nextElementSibling.classList.contains("firstTierSubmenu")
       ? item.nextElementSibling.classList.toggle("hidden")
@@ -48,7 +64,7 @@ firstTierSubMenuItems.forEach((item) => {
 });
 
 secondTierSubMenuItems.forEach((item) => {
-  item.addEventListener("click", (event) => {
+  item.addEventListener("click", () => {
     console.log(item);
     item.querySelector(".toggleIcon").classList.toggle("rotate-180");
     item.nextElementSibling.classList.contains("SecondTier_submenu")
@@ -57,3 +73,7 @@ secondTierSubMenuItems.forEach((item) => {
   });
 });
 
+mobileMenuCloseBtn.addEventListener("click", closeMobileMenu);
+mobileMenuBtn.addEventListener("click", showMobileMenu);
+overlay.addEventListener("click", clickOverlay);
+searchInput.addEventListener("keyup", searchResultHandler);
