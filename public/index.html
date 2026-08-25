@@ -206,18 +206,20 @@
                 <div class="relative">
                   <!-- shopping Icon -->
                   <div
-                    class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative cursor-pointer" id="shopcart_btn"
+                    class="flex items-center justify-center bg-AbaPrimary text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative cursor-pointer"
+                    id="shopcart_btn"
                   >
                     <span class="size-6 flex items-center justify-center">
                       <i class="fa-solid fa-cart-shopping"></i>
                     </span>
                     <span
-                      class="absolute bg-emerald-600 size-2 shadow-emerald-800 shadow-lg rounded-full -top-1 -right-1"
+                      class="absolute bg-emerald-600 size-2 shadow-emerald-800 shadow-lg rounded-full -top-1 -right-1 animate-ping"
                     ></span>
                   </div>
                   <!-- shopcart List -->
                   <div
-                    class="bg-white absolute left-0 top-12.5 w-80 rounded-xl p-4 z-20 hidden" id="shopcartCard"
+                    class="bg-white absolute left-0 top-12.5 w-80 rounded-xl p-4 z-20 transition-all hidden"
+                    id="shopcartCard"
                   >
                     <!-- shopcart list header -->
                     <div
@@ -293,7 +295,9 @@
                     </div>
 
                     <!-- shopcart footer -->
-                    <div class="flex justify-between items-center border-t border-AbaSecondary/20 mt-6 pt-6">
+                    <div
+                      class="flex justify-between items-center border-t border-AbaSecondary/20 mt-6 pt-6"
+                    >
                       <div>
                         <span class="text-xs font-textBold text-gray-400"
                           >مبلغ قابل پرداخت</span
@@ -304,16 +308,26 @@
                         </div>
                       </div>
                       <div>
-                        <a class="font-textMedium px-7 py-3 bg-AbaPrimary hover:bg-yellow-500 transition-all rounded-xl cursor-pointer">پرداخت</a>
+                        <a
+                          class="font-textMedium px-7 py-3 bg-AbaPrimary hover:bg-yellow-500 transition-all rounded-xl cursor-pointer"
+                          >پرداخت</a
+                        >
                       </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative cursor-pointer"
-                >
-                  <span class="size-6"><i class="fa-solid fa-user"></i></span>
-                  <span class="text-sm font-semibold">پنل کاربری</span>
+                <div class="relative cursor-pointer bg-AbaPrimary">
+                  <!-- User Panel Button  -->
+                  <div
+                    class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary"
+                  >
+                    <span class="size-6"><i class="fa-solid fa-user"></i></span>
+                    <span class="text-sm font-semibold">پنل کاربری</span>
+                  </div>
+                  <!-- user panel -->
+                  <div class="absolute size-50 bg-emerald-600 left-0 top-12.5">
+
+                  </div>
                 </div>
               </div>
             </div>

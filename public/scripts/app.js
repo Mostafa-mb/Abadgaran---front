@@ -10,6 +10,8 @@ const secondTierSubMenuItems = document.querySelectorAll(
 );
 const searchInput = document.querySelector("#searchInput");
 const desktopSearchResult = document.querySelector("#desktop-searchResult");
+const shopcartBtn = document.querySelector("#shopcart_btn");
+const shopcartCard = document.querySelector("#shopcartCard");
 
 const closeMobileMenu = () => {
   mobileMenu.classList.remove("rtl:right-0", "ltr:left-0");
@@ -32,8 +34,10 @@ const showOverlay = () => {
 };
 
 const clickOverlay = () => {
+  HideOverlay();
   closeMobileMenu();
   clearSearchResult();
+  closeShopCartCard();
 };
 
 const searchResultHandler = () => {
@@ -51,7 +55,7 @@ const searchResultHandler = () => {
 
 const clearSearchResult = () => {
   searchInput.querySelector("input").value = "";
-  desktopSearchResult.classList.add("hidden")
+  desktopSearchResult.classList.add("hidden");
 };
 
 firstTierSubMenuItems.forEach((item) => {
@@ -73,7 +77,19 @@ secondTierSubMenuItems.forEach((item) => {
   });
 });
 
+const shopcartBtnHandler = () => {
+  shopcartCard.classList.toggle("hidden");
+  overlay.classList.toggle("hidden");
+  shopcartBtn.classList.toggle("z-20");
+};
+
+const closeShopCartCard = () => {
+  shopcartBtn.classList.remove("z-20");
+  shopcartCard.classList.add("hidden");
+};
+
 mobileMenuCloseBtn.addEventListener("click", closeMobileMenu);
 mobileMenuBtn.addEventListener("click", showMobileMenu);
 overlay.addEventListener("click", clickOverlay);
 searchInput.addEventListener("keyup", searchResultHandler);
+shopcartBtn.addEventListener("click", shopcartBtnHandler);
