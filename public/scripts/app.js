@@ -12,6 +12,8 @@ const searchInput = document.querySelector("#searchInput");
 const desktopSearchResult = document.querySelector("#desktop-searchResult");
 const shopcartBtn = document.querySelector("#shopcart_btn");
 const shopcartCard = document.querySelector("#shopcartCard");
+const userPanelBtn = document.querySelector("#userPanelBtn");
+const userPanel = document.querySelector("#userPanel");
 
 const closeMobileMenu = () => {
   mobileMenu.classList.remove("rtl:right-0", "ltr:left-0");
@@ -38,6 +40,7 @@ const clickOverlay = () => {
   closeMobileMenu();
   clearSearchResult();
   closeShopCartCard();
+  closeUserPanel();
 };
 
 const searchResultHandler = () => {
@@ -88,8 +91,20 @@ const closeShopCartCard = () => {
   shopcartCard.classList.add("hidden");
 };
 
+const userPanelHandler = () => {
+  userPanel.classList.toggle("hidden");
+  overlay.classList.toggle("hidden");
+  userPanelBtn.classList.toggle("z-20");
+};
+
+const closeUserPanel = () => {
+  userPanelBtn.classList.remove("z-20");
+  userPanel.classList.add("hidden");
+};
+
 mobileMenuCloseBtn.addEventListener("click", closeMobileMenu);
 mobileMenuBtn.addEventListener("click", showMobileMenu);
 overlay.addEventListener("click", clickOverlay);
 searchInput.addEventListener("keyup", searchResultHandler);
 shopcartBtn.addEventListener("click", shopcartBtnHandler);
+userPanelBtn.addEventListener("click", userPanelHandler);
