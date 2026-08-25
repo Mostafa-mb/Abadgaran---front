@@ -61,13 +61,16 @@
             </div>
 
             <!-- search Result Box -->
-            <div class="w-full h-78 bg-white absolute top-18 rounded-xl z-20 hidden transition-all" id="desktop-searchResult">
+            <div
+              class="w-full h-78 bg-white absolute top-18 rounded-xl z-20 hidden transition-all"
+              id="desktop-searchResult"
+            >
               <div
                 class="py-2 w-[95%] mx-auto h-full overflow-y-auto scrollbar-thin"
               >
                 <!-- search results have Items -->
                 <div
-                  class="**:hover:bg-gray-200 **:hover:transition-all **:hover:cursor-pointer hidden"
+                  class="**:hover:bg-gray-200 **:hover:transition-all **:hover:cursor-pointer"
                 >
                   <div class="flex items-center gap-x-1 py-2">
                     <span class="text-gray-500 text-sm"
@@ -164,9 +167,15 @@
                 </div>
 
                 <!-- search result with no Item -->
-                <div class="flex items-center justify-center flex-col ">
-                  <img src="images/search-empty.webp" alt="" class="w-55 lg:w-60">
-                  <span class="font-titleBold text-base lg:text-lg">موردی یافت نشد</span>
+                <div class="flex items-center justify-center flex-col hidden">
+                  <img
+                    src="images/search-empty.webp"
+                    alt=""
+                    class="w-55 lg:w-60"
+                  />
+                  <span class="font-titleBold text-base lg:text-lg"
+                    >موردی یافت نشد</span
+                  >
                 </div>
               </div>
             </div>
@@ -186,23 +195,119 @@
             <div>
               <!-- login/signUp button -->
               <div
-                class="text-sm font-semibold text-AbaSecondary px-4 py-2 rounded-lg border-2 border-AbaSecondary cursor-pointer"
+                class="text-sm font-semibold text-AbaSecondary px-4 py-2 rounded-lg border-2 border-AbaSecondary cursor-pointer hidden"
               >
                 ورود | ثبت نام
               </div>
 
               <!-- shopcart && user Profile -->
-              <div class="flex items-center gap-x-2 hidden">
-                <!-- shopcart button -->
-                <div
-                  class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative cursor-pointer"
-                >
-                  <span class="size-6 flex items-center justify-center">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </span>
-                  <span
-                    class="absolute bg-emerald-600 size-2 shadow-emerald-800 shadow-lg rounded-full -top-1 -right-1"
-                  ></span>
+              <div class="flex items-center gap-x-2">
+                <!-- shopcart button and shopcart List -->
+                <div class="relative">
+                  <!-- shopping Icon -->
+                  <div
+                    class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative cursor-pointer" id="shopcart_btn"
+                  >
+                    <span class="size-6 flex items-center justify-center">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    <span
+                      class="absolute bg-emerald-600 size-2 shadow-emerald-800 shadow-lg rounded-full -top-1 -right-1"
+                    ></span>
+                  </div>
+                  <!-- shopcart List -->
+                  <div
+                    class="bg-white absolute left-0 top-12.5 w-80 rounded-xl p-4 z-20 hidden" id="shopcartCard"
+                  >
+                    <!-- shopcart list header -->
+                    <div
+                      class="flex items-center justify-between text-xs text-slate-500 font-textBold"
+                    >
+                      <span>2 مورد</span>
+                      <a class="cursor-pointer hover:text-slate-800">
+                        <span>مشاهده سبد خرید</span>
+                        <span><i class="fa-solid fa-chevron-left"></i></span>
+                      </a>
+                    </div>
+
+                    <!-- shopcart Items -->
+                    <div class="mt-4 flex flex-col gap-y-2">
+                      <div
+                        class="flex items-center gap-x-3 p-1 bg-gray-100 rounded-sm text-slate-800"
+                      >
+                        <div>
+                          <img src="images/product1.webp" alt="" class="w-19" />
+                        </div>
+                        <div
+                          class="flex flex-col justify-between min-h-20 grow"
+                        >
+                          <div>
+                            <span class="font-sans text-sm lg:text-base"
+                              >E.M.GROUT-C</span
+                            >
+                            <div
+                              class="flex flex-wrap gap-x-2 text-xs lg:text-sm"
+                            >
+                              <span class="font-textBold">3,850,000</span>
+                              <span class="font-title">تومان</span>
+                            </div>
+                          </div>
+                          <div class="flex justify-between items-center">
+                            <span class="text-sm">تعداد :</span>
+                            <span
+                              class="size-6 bg-AbaPrimary/24 flex items-center justify-center rounded-sm text-sm"
+                              >2</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex items-center gap-x-3 p-1 bg-gray-100 rounded-sm text-slate-800"
+                      >
+                        <div>
+                          <img src="images/product1.webp" alt="" class="w-19" />
+                        </div>
+                        <div
+                          class="flex flex-col justify-between min-h-20 grow"
+                        >
+                          <div>
+                            <span class="font-sans text-sm lg:text-base"
+                              >E.M.GROUT-C</span
+                            >
+                            <div
+                              class="flex flex-wrap gap-x-2 text-xs lg:text-sm"
+                            >
+                              <span class="font-textBold">3,850,000</span>
+                              <span class="font-title">تومان</span>
+                            </div>
+                          </div>
+                          <div class="flex justify-between items-center">
+                            <span class="text-sm">تعداد :</span>
+                            <span
+                              class="size-6 bg-AbaPrimary/24 flex items-center justify-center rounded-md text-sm"
+                              >2</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- shopcart footer -->
+                    <div class="flex justify-between items-center border-t border-AbaSecondary/20 mt-6 pt-6">
+                      <div>
+                        <span class="text-xs font-textBold text-gray-400"
+                          >مبلغ قابل پرداخت</span
+                        >
+                        <div class="flex flex-wrap gap-x-1">
+                          <span class="font-textBold">3,850,000</span>
+                          <span class="font-title">تومان</span>
+                        </div>
+                      </div>
+                      <div>
+                        <a class="font-textMedium px-7 py-3 bg-AbaPrimary hover:bg-yellow-500 transition-all rounded-xl cursor-pointer">پرداخت</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary relative cursor-pointer"
