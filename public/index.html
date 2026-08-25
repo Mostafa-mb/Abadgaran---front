@@ -320,13 +320,59 @@
                   <!-- User Panel Button  -->
                   <div
                     class="flex items-center justify-center text-AbaSecondary p-2 rounded-lg border-2 border-AbaSecondary"
+                    id="userPanelBtn"
                   >
                     <span class="size-6"><i class="fa-solid fa-user"></i></span>
                     <span class="text-sm font-semibold">پنل کاربری</span>
                   </div>
                   <!-- user panel -->
-                  <div class="absolute size-50 bg-emerald-600 left-0 top-12.5">
-
+                  <div
+                    class="absolute w-60 bg-white left-0 top-12.5 rounded-xl p-4 z-20 transition-all cursor-auto select-none hidden"
+                    id="userPanel"
+                  >
+                    <div class="flex flex-col">
+                      <div
+                        class="flex items-center gap-x-2.5 mb-2 py-2 border-b border-AbaSecondary/20 font-textBold text-AbaSecondary "
+                      >
+                        <span><i class="fa-regular fa-user fa-xl"></i></span>
+                        <span>حساب تستی</span>
+                      </div>
+                      <div
+                        class="flex flex-col gap-y-1 my-2 *:hover:bg-AbaPrimary **:hover:transition-all *:flex *:items-center *:gap-x-2.5 *:p-2 *:font-textMedium *:text-AbaSecondary *:rounded-sm *:min-h-12"
+                      >
+                        <a href="">
+                          <span
+                            ><i class="fa-solid fa-cart-shopping fa-xl"></i
+                          ></span>
+                          <span>سبد خرید</span>
+                        </a>
+                        <a href="">
+                          <span><i class="fa-solid fa-list fa-xl"></i></span>
+                          <span>سوابق خرید</span>
+                        </a>
+                        <a href="">
+                          <span
+                            ><i class="fa-solid fa-box-open fa-xl"></i
+                          ></span>
+                          <span>محصولات آنلاین</span>
+                        </a>
+                        <a href="">
+                          <span
+                            ><i class="fa-solid fa-address-card fa-xl"></i
+                          ></span>
+                          <span>مشخصات کاربر</span>
+                        </a>
+                      </div>
+                      <div
+                        class="gap-y-1 my-2 border-t border-AbaSecondary/20 pt-3 *:hover:bg-rose-500 *:hover:text-white **:hover:transition-all *:flex *:items-center *:gap-x-2.5 *:p-2 *:font-textMedium *:text-AbaSecondary *:rounded-sm *:min-h-12"
+                      >
+                        <a href="">
+                          <span
+                            ><i class="fa-solid fa-right-from-bracket fa-xl"></i></span>
+                          <span>خروج از حساب کاربری</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

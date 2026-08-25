@@ -15,6 +15,7 @@
     --color-yellow-700: oklch(55.4% 0.135 66.442);
     --color-emerald-600: oklch(59.6% 0.145 163.225);
     --color-emerald-800: oklch(43.2% 0.095 166.913);
+    --color-rose-500: oklch(64.5% 0.246 16.439);
     --color-slate-500: oklch(55.4% 0.046 257.417);
     --color-slate-700: oklch(37.2% 0.044 257.287);
     --color-slate-800: oklch(27.9% 0.041 260.031);
@@ -262,11 +263,20 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
   }
   .flex {
     display: flex;
@@ -292,6 +302,10 @@
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
   }
+  .size-8 {
+    width: calc(var(--spacing) * 8);
+    height: calc(var(--spacing) * 8);
+  }
   .size-50 {
     width: calc(var(--spacing) * 50);
     height: calc(var(--spacing) * 50);
@@ -312,14 +326,23 @@
   .h-full {
     height: 100%;
   }
+  .min-h-12 {
+    min-height: calc(var(--spacing) * 12);
+  }
   .min-h-20 {
     min-height: calc(var(--spacing) * 20);
   }
   .w-19 {
     width: calc(var(--spacing) * 19);
   }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
   .w-55 {
     width: calc(var(--spacing) * 55);
+  }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
   }
   .w-77 {
     width: calc(var(--spacing) * 77);
@@ -365,6 +388,12 @@
   }
   .animate-pulse {
     animation: var(--animate-pulse);
+  }
+  .cursor-auto {
+    cursor: auto;
+  }
+  .cursor-none {
+    cursor: none;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -413,6 +442,9 @@
   }
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
+  }
+  .gap-x-2\.5 {
+    column-gap: calc(var(--spacing) * 2.5);
   }
   .gap-x-3 {
     column-gap: calc(var(--spacing) * 3);
@@ -473,6 +505,10 @@
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
   }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
@@ -549,6 +585,15 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
@@ -659,7 +704,70 @@
   .delay-100000 {
     transition-delay: 100000ms;
   }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  :is(.\*\:flex > *) {
+    display: flex;
+  }
+  :is(.\*\:min-h-12 > *) {
+    min-height: calc(var(--spacing) * 12);
+  }
+  :is(.\*\:items-center > *) {
+    align-items: center;
+  }
+  :is(.\*\:gap-x-2\.5 > *) {
+    column-gap: calc(var(--spacing) * 2.5);
+  }
+  :is(.\*\:rounded-sm > *) {
+    border-radius: var(--radius-sm);
+  }
+  :is(.\*\:bg-rose-500 > *) {
+    background-color: var(--color-rose-500);
+  }
+  :is(.\*\:p-2 > *) {
+    padding: calc(var(--spacing) * 2);
+  }
+  :is(.\*\:font-textMedium > *) {
+    font-family: var(--font-textMedium);
+  }
+  :is(.\*\:text-AbaSecondary > *) {
+    color: var(--color-AbaSecondary);
+  }
+  :is(.\*\:transition-all > *) {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  :is(.\*\*\:flex *) {
+    display: flex;
+  }
+  :is(.\*\*\:min-h-12 *) {
+    min-height: calc(var(--spacing) * 12);
+  }
+  :is(.\*\*\:items-center *) {
+    align-items: center;
+  }
+  :is(.\*\*\:gap-x-2\.5 *) {
+    column-gap: calc(var(--spacing) * 2.5);
+  }
+  :is(.\*\*\:rounded-sm *) {
+    border-radius: var(--radius-sm);
+  }
+  :is(.\*\*\:p-2 *) {
+    padding: calc(var(--spacing) * 2);
+  }
+  :is(.\*\*\:font-textMedium *) {
+    font-family: var(--font-textMedium);
+  }
+  :is(.\*\*\:text-AbaSecondary *) {
+    color: var(--color-AbaSecondary);
+  }
   @media (hover: hover) {
+    .hover\:bg-rose-500:hover {
+      background-color: var(--color-rose-500);
+    }
     .hover\:bg-yellow-500:hover {
       background-color: var(--color-yellow-500);
     }
@@ -669,8 +777,17 @@
     .hover\:text-slate-800:hover {
       color: var(--color-slate-800);
     }
+    :is(.\*\:hover\:bg-AbaPrimary > *):hover {
+      background-color: var(--color-AbaPrimary);
+    }
+    :is(.\*\:hover\:bg-rose-500 > *):hover {
+      background-color: var(--color-rose-500);
+    }
     :is(.\*\:hover\:text-AbaPrimary > *):hover {
       color: var(--color-AbaPrimary);
+    }
+    :is(.\*\:hover\:text-white > *):hover {
+      color: var(--color-white);
     }
     :is(.\*\:hover\:transition-colors > *):hover {
       transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -680,6 +797,9 @@
     :is(.\*\*\:hover\:cursor-pointer *):hover {
       cursor: pointer;
     }
+    :is(.\*\*\:hover\:bg-AbaPrimary *):hover {
+      background-color: var(--color-AbaPrimary);
+    }
     :is(.\*\*\:hover\:bg-gray-200 *):hover {
       background-color: var(--color-gray-200);
     }
@@ -687,6 +807,18 @@
       transition-property: all;
       transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
       transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+    :is(.\*\:last\:hover\:bg-rose-500 > *):last-child:hover {
+      background-color: var(--color-rose-500);
+    }
+    :is(.\*\:last\:hover\:bg-none > *):last-child:hover {
+      background-image: none;
+    }
+    :is(.\*\:last\:hover\:text-white > *):last-child:hover {
+      color: var(--color-white);
+    }
+    :is(:is(.\*\:last\:\*\*\:hover\:bg-rose-500 > *):last-child *):hover {
+      background-color: var(--color-rose-500);
     }
   }
   .focus\:outline-0:focus {
