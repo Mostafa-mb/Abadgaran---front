@@ -221,97 +221,119 @@
                     class="bg-white absolute left-0 top-12.5 w-80 rounded-xl p-4 z-20 transition-all hidden"
                     id="shopcartCard"
                   >
-                    <!-- shopcart list header -->
-                    <div
-                      class="flex items-center justify-between text-xs text-slate-500 font-textBold"
-                    >
-                      <span>2 مورد</span>
-                      <a class="cursor-pointer hover:text-slate-800">
-                        <span>مشاهده سبد خرید</span>
-                        <span><i class="fa-solid fa-chevron-left"></i></span>
-                      </a>
-                    </div>
-
-                    <!-- shopcart Items -->
-                    <div class="mt-4 flex flex-col gap-y-2">
+                    <!-- shopcart with Items -->
+                    <div class="hidden">
+                      <!-- shopcart list header -->
                       <div
-                        class="flex items-center gap-x-3 p-1 bg-gray-100 rounded-sm text-slate-800"
+                        class="flex items-center justify-between text-xs text-slate-500 font-textBold"
                       >
-                        <div>
-                          <img src="images/product1.webp" alt="" class="w-19" />
-                        </div>
+                        <span>2 مورد</span>
+                        <a class="cursor-pointer hover:text-slate-800">
+                          <span>مشاهده سبد خرید</span>
+                          <span><i class="fa-solid fa-chevron-left"></i></span>
+                        </a>
+                      </div>
+
+                      <!-- shopcart Items -->
+                      <div class="mt-4 flex flex-col gap-y-2">
                         <div
-                          class="flex flex-col justify-between min-h-20 grow"
+                          class="flex items-center gap-x-3 p-1 bg-gray-100 rounded-sm text-slate-800"
                         >
                           <div>
-                            <span class="font-sans text-sm lg:text-base"
-                              >E.M.GROUT-C</span
-                            >
-                            <div
-                              class="flex flex-wrap gap-x-2 text-xs lg:text-sm"
-                            >
-                              <span class="font-textBold">3,850,000</span>
-                              <span class="font-title">تومان</span>
+                            <img
+                              src="images/product1.webp"
+                              alt=""
+                              class="w-19"
+                            />
+                          </div>
+                          <div
+                            class="flex flex-col justify-between min-h-20 grow"
+                          >
+                            <div>
+                              <span class="font-sans text-sm lg:text-base"
+                                >E.M.GROUT-C</span
+                              >
+                              <div
+                                class="flex flex-wrap gap-x-2 text-xs lg:text-sm"
+                              >
+                                <span class="font-textBold">3,850,000</span>
+                                <span class="font-title">تومان</span>
+                              </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                              <span class="text-sm">تعداد :</span>
+                              <span
+                                class="size-6 bg-AbaPrimary/24 flex items-center justify-center rounded-sm text-sm"
+                                >2</span
+                              >
                             </div>
                           </div>
-                          <div class="flex justify-between items-center">
-                            <span class="text-sm">تعداد :</span>
-                            <span
-                              class="size-6 bg-AbaPrimary/24 flex items-center justify-center rounded-sm text-sm"
-                              >2</span
-                            >
+                        </div>
+                        <div
+                          class="flex items-center gap-x-3 p-1 bg-gray-100 rounded-sm text-slate-800"
+                        >
+                          <div>
+                            <img
+                              src="images/product1.webp"
+                              alt=""
+                              class="w-19"
+                            />
+                          </div>
+                          <div
+                            class="flex flex-col justify-between min-h-20 grow"
+                          >
+                            <div>
+                              <span class="font-sans text-sm lg:text-base"
+                                >E.M.GROUT-C</span
+                              >
+                              <div
+                                class="flex flex-wrap gap-x-2 text-xs lg:text-sm"
+                              >
+                                <span class="font-textBold">3,850,000</span>
+                                <span class="font-title">تومان</span>
+                              </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                              <span class="text-sm">تعداد :</span>
+                              <span
+                                class="size-6 bg-AbaPrimary/24 flex items-center justify-center rounded-md text-sm"
+                                >2</span
+                              >
+                            </div>
                           </div>
                         </div>
                       </div>
+
+                      <!-- shopcart footer -->
                       <div
-                        class="flex items-center gap-x-3 p-1 bg-gray-100 rounded-sm text-slate-800"
+                        class="flex justify-between items-center border-t border-AbaSecondary/20 mt-6 pt-6"
                       >
                         <div>
-                          <img src="images/product1.webp" alt="" class="w-19" />
+                          <span class="text-xs font-textBold text-gray-400"
+                            >مبلغ قابل پرداخت</span
+                          >
+                          <div class="flex flex-wrap gap-x-1">
+                            <span class="font-textBold">3,850,000</span>
+                            <span class="font-title">تومان</span>
+                          </div>
                         </div>
-                        <div
-                          class="flex flex-col justify-between min-h-20 grow"
-                        >
-                          <div>
-                            <span class="font-sans text-sm lg:text-base"
-                              >E.M.GROUT-C</span
-                            >
-                            <div
-                              class="flex flex-wrap gap-x-2 text-xs lg:text-sm"
-                            >
-                              <span class="font-textBold">3,850,000</span>
-                              <span class="font-title">تومان</span>
-                            </div>
-                          </div>
-                          <div class="flex justify-between items-center">
-                            <span class="text-sm">تعداد :</span>
-                            <span
-                              class="size-6 bg-AbaPrimary/24 flex items-center justify-center rounded-md text-sm"
-                              >2</span
-                            >
-                          </div>
+                        <div>
+                          <a
+                            class="font-textMedium px-7 py-3 bg-AbaPrimary hover:bg-yellow-500 transition-all rounded-xl cursor-pointer"
+                            >پرداخت</a
+                          >
                         </div>
                       </div>
                     </div>
 
-                    <!-- shopcart footer -->
-                    <div
-                      class="flex justify-between items-center border-t border-AbaSecondary/20 mt-6 pt-6"
-                    >
+                    <!-- shopcart without Items -->
+                    <div>
                       <div>
-                        <span class="text-xs font-textBold text-gray-400"
-                          >مبلغ قابل پرداخت</span
-                        >
-                        <div class="flex flex-wrap gap-x-1">
-                          <span class="font-textBold">3,850,000</span>
-                          <span class="font-title">تومان</span>
-                        </div>
+                        <img src="images/empty cart.webp" alt="">
                       </div>
-                      <div>
-                        <a
-                          class="font-textMedium px-7 py-3 bg-AbaPrimary hover:bg-yellow-500 transition-all rounded-xl cursor-pointer"
-                          >پرداخت</a
-                        >
+                      <div class="flex flex-col mt-3 gap-y-3">
+                        <span class="font-titleBold text-center">سبد خرید خالی میباشد</span>
+                        <a href="#" class="text-center px-3 py-2 bg-AbaPrimary hover:bg-yellow-500 transition-all rounded-md cursor-pointer">محصولات آنلاین</a>
                       </div>
                     </div>
                   </div>
@@ -332,7 +354,7 @@
                   >
                     <div class="flex flex-col">
                       <div
-                        class="flex items-center gap-x-2.5 mb-2 py-2 border-b border-AbaSecondary/20 font-textBold text-AbaSecondary "
+                        class="flex items-center gap-x-2.5 mb-2 py-2 border-b border-AbaSecondary/20 font-textBold text-AbaSecondary"
                       >
                         <span><i class="fa-regular fa-user fa-xl"></i></span>
                         <span>حساب تستی</span>
@@ -368,7 +390,8 @@
                       >
                         <a href="">
                           <span
-                            ><i class="fa-solid fa-right-from-bracket fa-xl"></i></span>
+                            ><i class="fa-solid fa-right-from-bracket fa-xl"></i
+                          ></span>
                           <span>خروج از حساب کاربری</span>
                         </a>
                       </div>
