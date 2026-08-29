@@ -1873,6 +1873,354 @@
       </div>
     </div>
 
+    <!-- search section in mobile -->
+    <div
+      class="w-full bg-white p-5 flex flex-col md:hidden fixed top-0 bottom-0 transition-all z-20"
+    >
+      <!-- mobile search header -->
+      <div class="flex justify-between items-center gap-x-2 min-h-10">
+        <span class="cursor-pointer flex items-center justify-center">
+          <i class="fa-solid fa-arrow-right-long ltr:rotate-180"></i>
+        </span>
+        <div
+          class="bg-AbaSecondary/20 grow h-full rounded-2xl flex items-center justify-between"
+        >
+          <div class="grow px-3 font-textRegular text-base text-AbaSecondary">
+            <input
+              type="text"
+              class="w-full outline-0"
+              placeholder="جستجو..."
+            />
+          </div>
+          <span
+            class="flex items-center justify-center px-3 text-AbaSecondary/60"
+            id="mobileSearch-magnifier"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <span
+            class="flex items-center justify-center px-3 text-AbaSecondary/90 hidden"
+            id="mobileSearch-cross"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- devider -->
+      <div class="w-full bg-AbaSecondary/60 h-0.5 my-4"></div>
+
+      <!-- mobile search body -->
+      <div class="overflow-y-auto">
+        <!-- mobile search - popular Items -->
+        <div
+          class="flex flex-col gap-y-3 hidden"
+          id="mobileSearch-populerItems"
+        >
+          <div>
+            <span class="font-titleBold">بیشترین جستجو</span>
+          </div>
+          <div class="text-sm flex flex-wrap gap-x-1 gap-y-1">
+            <a
+              href=""
+              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+              >چسب کاشت میلگرد RA-500</a
+            >
+            <a
+              href=""
+              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+              >پاورژل هوشمند</a
+            >
+            <a
+              href=""
+              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+              >ضد حریق</a
+            >
+            <a
+              href=""
+              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+              >آقای رضایی</a
+            >
+            <a
+              href=""
+              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+              >اصلاح طلب</a
+            >
+            <a
+              href=""
+              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+              >حزب توده</a
+            >
+          </div>
+        </div>
+
+        <!-- mobile search - loading Items -->
+        <div class="flex flex-col gap-y-2 text-sm *:animate-pulse">
+          <!-- search Item -->
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="size-5 rounded-md bg-gray-200"> </span>
+            <div class="flex items-center w-full">
+              <span class="h-2 w-full rounded bg-gray-200"></span>
+            </div>
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="size-5 rounded-md bg-gray-200"> </span>
+            <div class="flex items-center w-full">
+              <span class="h-2 w-full rounded bg-gray-200"></span>
+            </div>
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="size-5 rounded-md bg-gray-200"> </span>
+            <div class="flex items-center w-full">
+              <span class="h-2 w-full rounded bg-gray-200"></span>
+            </div>
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="size-5 rounded-md bg-gray-200"> </span>
+            <div class="flex items-center w-full">
+              <span class="h-2 w-full rounded bg-gray-200"></span>
+            </div>
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="size-5 rounded-md bg-gray-200"> </span>
+            <div class="flex items-center w-full">
+              <span class="h-2 w-full rounded bg-gray-200"></span>
+            </div>
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="size-5 rounded-md bg-gray-200"> </span>
+            <div class="flex items-center w-full">
+              <span class="h-2 w-full rounded bg-gray-200"></span>
+            </div>
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="size-5 rounded-md bg-gray-200"> </span>
+            <div class="flex items-center w-full">
+              <span class="h-2 w-full rounded bg-gray-200"></span>
+            </div>
+          </a>
+        </div>
+
+        <!-- mobile search - search result -->
+        <div
+          class="flex flex-col gap-y-2 text-sm *:border-b *:border-b-AbaSecondary *:last:border-b-0 hidden"
+          id="mobileSearch-searchResults"
+        >
+          <!-- search Item -->
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-regular fa-newspaper"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >ملات اپوکسی چند منظوره</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >چسب کاشت میلگرد</span
+            ></a
+          >
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >چسب بتن اپوکسی</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-regular fa-newspaper"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-regular fa-newspaper"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >ملات اپوکسی چند منظوره</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >چسب کاشت میلگرد</span
+            ></a
+          >
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >چسب بتن اپوکسی</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-regular fa-newspaper"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-regular fa-newspaper"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >ملات اپوکسی چند منظوره</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >چسب کاشت میلگرد</span
+            ></a
+          >
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >چسب بتن اپوکسی</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-regular fa-newspaper"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-regular fa-newspaper"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >ملات اپوکسی چند منظوره</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >چسب کاشت میلگرد</span
+            ></a
+          >
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >چسب بتن اپوکسی</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-regular fa-newspaper"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-regular fa-newspaper"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >ملات اپوکسی چند منظوره</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >چسب کاشت میلگرد</span
+            ></a
+          >
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >چسب بتن اپوکسی</span
+            >
+          </a>
+          <a href="" class="flex gap-x-3 min-h-8 py-3">
+            <span class="text-AbaSecondary/80 flex items-center justify-center">
+              <i class="fa-regular fa-newspaper"></i>
+            </span>
+            <span class="text-xs flex items-center font-textMedium"
+              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+            >
+          </a>
+        </div>
+
+        <!-- mobile search - no result -->
+        <div class="flex flex-col items-center justify-center grow hidden">
+          <div class="flex items-center justify-center">
+            <img src="images/search-empty.webp" alt="" class="w-55 lg:w-60" />
+          </div>
+          <div>
+            <span class="font-titleBold text-lg">موردی یافت نشد</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div
       class="bg-black/40 fixed size-full inset-0 transition-all z-10 hidden"
       id="overlay"
