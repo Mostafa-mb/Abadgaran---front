@@ -36,7 +36,7 @@
           </div>
 
           <!-- search button (mobile) -->
-          <div class="flex items-center justify-end md:hidden cursor-pointer">
+          <div class="flex items-center justify-end md:hidden cursor-pointer" id="mobileSearch_btn">
             <span class="size-6 flex items-center justify-center">
               <i class="fa-solid fa-magnifying-glass"></i>
             </span>
@@ -1875,11 +1875,11 @@
 
     <!-- search section in mobile -->
     <div
-      class="w-full bg-white p-5 flex flex-col md:hidden fixed top-0 bottom-0 transition-all z-20"
+      class="w-full bg-white p-5 flex flex-col md:hidden fixed top-0 bottom-0 transition-all z-20 hidden" id="mobileSearch"
     >
       <!-- mobile search header -->
       <div class="flex justify-between items-center gap-x-2 min-h-10">
-        <span class="cursor-pointer flex items-center justify-center">
+        <span class="cursor-pointer flex items-center justify-center" id="closeMobileSearch">
           <i class="fa-solid fa-arrow-right-long ltr:rotate-180"></i>
         </span>
         <div
@@ -1890,6 +1890,7 @@
               type="text"
               class="w-full outline-0"
               placeholder="جستجو..."
+              id="searchTextMobile"
             />
           </div>
           <span
@@ -1914,7 +1915,7 @@
       <div class="overflow-y-auto">
         <!-- mobile search - popular Items -->
         <div
-          class="flex flex-col gap-y-3 hidden"
+          class="flex flex-col gap-y-3"
           id="mobileSearch-populerItems"
         >
           <div>
@@ -1955,7 +1956,7 @@
         </div>
 
         <!-- mobile search - loading Items -->
-        <div class="flex flex-col gap-y-2 text-sm *:animate-pulse">
+        <div class="flex flex-col gap-y-2 text-sm *:animate-pulse hidden" id="searchResult__loading">
           <!-- search Item -->
           <a href="" class="flex gap-x-3 min-h-8 py-3">
             <span class="size-5 rounded-md bg-gray-200"> </span>

@@ -14,6 +14,19 @@ const shopcartBtn = document.querySelector("#shopcart_btn");
 const shopcartCard = document.querySelector("#shopcartCard");
 const userPanelBtn = document.querySelector("#userPanelBtn");
 const userPanel = document.querySelector("#userPanel");
+const mobileSearchBtn = document.querySelector("#mobileSearch_btn");
+const mobileSearch = document.querySelector("#mobileSearch");
+const searchTextMobile = document.querySelector("#searchTextMobile");
+const closeMobileSearchBtn = document.querySelector("#closeMobileSearch");
+const mobileSearchMagnifier = document.querySelector("#mobileSearch-magnifier");
+const mobileSearchCross = document.querySelector("#mobileSearch-cross");
+const mobileSearchPopulerItems = document.querySelector(
+  "#mobileSearch-populerItems",
+);
+const mobileSearchSearchResults = document.querySelector(
+  "#mobileSearch-searchResults",
+);
+const searchResultLoading = document.querySelector("#searchResult__loading");
 
 const closeMobileMenu = () => {
   mobileMenu.classList.remove("rtl:right-0", "ltr:left-0");
@@ -102,9 +115,56 @@ const closeUserPanel = () => {
   userPanel.classList.add("hidden");
 };
 
+const showMobileSearch = () => {
+  mobileSearch.classList.remove("hidden");
+};
+
+const closeMobileSearch = () => {
+  resetMobileSearch();
+  mobileSearch.classList.add("hidden");
+};
+
+const clearSearchMobileInput = () => {
+  searchTextMobile.value = "";
+  mobileSearchMagnifier.classList.remove("hidden");
+  mobileSearchCross.classList.add("hidden");
+  mobileSearchPopulerItems.classList.remove("hidden")
+  mobileSearchSearchResults.classList.add("hidden")
+};
+
+const searchResultMobileHandler = () => {
+  const valueInserted = searchTextMobile.value.trim();
+  console.log(valueInserted);
+  if (valueInserted) {
+    mobileSearchSearchResults.classList.add("hidden");
+    mobileSearchMagnifier.classList.add("hidden");
+    mobileSearchCross.classList.remove("hidden");
+    mobileSearchPopulerItems.classList.add("hidden");
+    searchResultLoading.classList.remove("hidden");
+    setTimeout(() => {
+      mobileSearchSearchResults.classList.remove("hidden");
+      searchResultLoading.classList.add("hidden");
+    }, 1000);
+  } else {
+    mobileSearchMagnifier.classList.remove("hidden");
+    mobileSearchCross.classList.add("hidden");
+    mobileSearchPopulerItems.classList.remove("hidden");
+    mobileSearchSearchResults.classList.add("hidden");
+  }
+};
+
+const resetMobileSearch = () => {
+  mobileSearchPopulerItems.classList.remove("hidden");
+  clearSearchMobileInput();
+};
+
 mobileMenuCloseBtn.addEventListener("click", closeMobileMenu);
 mobileMenuBtn.addEventListener("click", showMobileMenu);
 overlay.addEventListener("click", clickOverlay);
 searchInput.addEventListener("keyup", searchResultHandler);
 shopcartBtn.addEventListener("click", shopcartBtnHandler);
 userPanelBtn.addEventListener("click", userPanelHandler);
+mobileSearchBtn.addEventListener("click", showMobileSearch);
+searchTextMobile.addEventListener("keyup", searchResultMobileHandler);
+mobileSearchCross.addEventListener("click", clearSearchMobileInput);
+closeMobileSearchBtn.addEventListener("click", closeMobileSearch);
