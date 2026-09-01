@@ -36,7 +36,10 @@
           </div>
 
           <!-- search button (mobile) -->
-          <div class="flex items-center justify-end md:hidden cursor-pointer" id="mobileSearch_btn">
+          <div
+            class="flex items-center justify-end md:hidden cursor-pointer"
+            id="mobileSearch_btn"
+          >
             <span class="size-6 flex items-center justify-center">
               <i class="fa-solid fa-magnifying-glass"></i>
             </span>
@@ -418,42 +421,70 @@
           <!-- header menu in desktop -->
           <div class="flex items-center justify-start select-none">
             <div
-              class="flex items-center gap-x-7 lg:gap-x-9 justify-around *:hover:text-AbaPrimary *:hover:transition-colors text-xs xl:text-sm font-textBold"
+              class="flex items-center gap-x-7 lg:gap-x-9 justify-around *:hover:text-AbaPrimary *:hover:transition-colors *:min-h-5 text-xs xl:text-sm font-textBold"
             >
-              <div>
-                <i class="fa-solid fa-boxes-stacked"></i>
-                <a href="#">محصولات</a>
+              <div class="relative menuItem__hasSubMenu" >
+                <div class="">
+                  <i class="fa-solid fa-boxes-stacked"></i>
+                  <a href="#">محصولات</a>
+                </div>
+                <div class="h-42 w-5 bg-AbaPrimary absolute top-5 right-0 min-w-220 invisible opacity-0  transition-all">
+                  <div class="w-full h-12 bg-emerald-600 mt-4.5"></div>
+                </div>
               </div>
               <div>
-                <i class="fa-regular fa-newspaper"></i>
-                <a href="#">مقالات فنی</a>
+                <div>
+                  <i class="fa-regular fa-newspaper"></i>
+                  <a href="#">مقالات فنی</a>
+                </div>
+                <div></div>
               </div>
               <div>
-                <i class="fa-solid fa-desktop"></i>
-                <a href="#">اخبار</a>
+                <div>
+                  <i class="fa-solid fa-desktop"></i>
+                  <a href="#">اخبار</a>
+                </div>
+                <div></div>
               </div>
               <div>
-                <i class="fa-brands fa-hubspot"></i>
-                <a href="#">نمایندگان فروش</a>
+                <div>
+                  <i class="fa-brands fa-hubspot"></i>
+                  <a href="#">نمایندگان فروش</a>
+                </div>
+                <div></div>
               </div>
               <div>
-                <i class="fa-solid fa-graduation-cap"></i>
-                <a href="#">جذب نخبگان</a>
+                <div>
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <a href="#">جذب نخبگان</a>
+                </div>
+                <div></div>
               </div>
               <div>
-                <i class="fa-solid fa-flask"></i>
-                <a href="#">درباره ما</a>
+                <div>
+                  <i class="fa-solid fa-flask"></i>
+                  <a href="#">درباره ما</a>
+                </div>
+                <div></div>
               </div>
               <div>
-                <i class="fa-solid fa-handshake-angle"></i>
-                <a href="#">همکاری</a>
+                <div>
+                  <i class="fa-solid fa-handshake-angle"></i>
+                  <a href="#">همکاری</a>
+                </div>
+                <div></div>
               </div>
               <div>
-                <i class="fa-regular fa-address-book"></i>
-                <a href="#">تماس با ما</a>
+                <div>
+                  <i class="fa-regular fa-address-book"></i>
+                  <a href="#">تماس با ما</a>
+                </div>
+                <div></div>
               </div>
             </div>
           </div>
+
+          <!-- phone Number in header -->
           <div
             class="flex items-center ltr:flex-row-reverse ltr:justify-start rtl:justify-end gap-x-2 text-white/60 text-xs lg:text-base"
           >
@@ -1875,11 +1906,15 @@
 
     <!-- search section in mobile -->
     <div
-      class="w-full bg-white p-5 flex flex-col md:hidden fixed top-0 bottom-0 transition-all z-20 hidden" id="mobileSearch"
+      class="w-full bg-white p-5 flex flex-col md:hidden fixed top-0 bottom-0 transition-all z-20 hidden"
+      id="mobileSearch"
     >
       <!-- mobile search header -->
       <div class="flex justify-between items-center gap-x-2 min-h-10">
-        <span class="cursor-pointer flex items-center justify-center" id="closeMobileSearch">
+        <span
+          class="cursor-pointer flex items-center justify-center"
+          id="closeMobileSearch"
+        >
           <i class="fa-solid fa-arrow-right-long ltr:rotate-180"></i>
         </span>
         <div
@@ -1914,10 +1949,7 @@
       <!-- mobile search body -->
       <div class="overflow-y-auto">
         <!-- mobile search - popular Items -->
-        <div
-          class="flex flex-col gap-y-3"
-          id="mobileSearch-populerItems"
-        >
+        <div class="flex flex-col gap-y-3" id="mobileSearch-populerItems">
           <div>
             <span class="font-titleBold">بیشترین جستجو</span>
           </div>
@@ -1956,7 +1988,10 @@
         </div>
 
         <!-- mobile search - loading Items -->
-        <div class="flex flex-col gap-y-2 text-sm *:animate-pulse hidden" id="searchResult__loading">
+        <div
+          class="flex flex-col gap-y-2 text-sm *:animate-pulse hidden"
+          id="searchResult__loading"
+        >
           <!-- search Item -->
           <a href="" class="flex gap-x-3 min-h-8 py-3">
             <span class="size-5 rounded-md bg-gray-200"> </span>

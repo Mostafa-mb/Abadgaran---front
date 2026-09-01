@@ -207,3 +207,20 @@ closeMobileSearchBtn.addEventListener("click", closeMobileSearch);
 //#endregion
 
 //#endregion
+
+const menuItemHasSubMenu = document.querySelector(".menuItem__hasSubMenu");
+menuItemHasSubMenu.addEventListener("mouseenter", () => {
+  menuItemHasSubMenu.lastElementChild.classList.remove(
+    "invisible",
+    "opacity-0",
+  );
+  menuItemHasSubMenu.lastElementChild.classList.add("visible", "opacity-100");
+});
+
+menuItemHasSubMenu.addEventListener("mouseleave", () => {
+  menuItemHasSubMenu.lastElementChild.classList.remove(
+    "visible",
+    "opacity-100",
+  );
+  menuItemHasSubMenu.lastElementChild.classList.add("invisible", "opacity-0");
+});
