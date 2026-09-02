@@ -57,6 +57,9 @@
 
 @layer components {
 
+  i{
+    outline: none;
+  }
 /* custom Titles */
 
   .heading_1 {

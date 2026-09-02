@@ -421,15 +421,47 @@
           <!-- header menu in desktop -->
           <div class="flex items-center justify-start select-none">
             <div
-              class="flex items-center gap-x-7 lg:gap-x-9 justify-around *:hover:text-AbaPrimary *:hover:transition-colors *:min-h-5 text-xs xl:text-sm font-textBold"
+              class="flex items-center gap-x-7 lg:gap-x-9 justify-around *:hover:transition-colors *:min-h-5 text-xs xl:text-sm font-textBold"
             >
-              <div class="relative menuItem__hasSubMenu" >
-                <div class="">
+              <div class="relative menuItem__hasSubMenu">
+                <div>
                   <i class="fa-solid fa-boxes-stacked"></i>
                   <a href="#">محصولات</a>
                 </div>
-                <div class="h-42 w-5 bg-AbaPrimary absolute top-5 right-0 min-w-220 invisible opacity-0  transition-all">
-                  <div class="w-full h-12 bg-emerald-600 mt-4.5"></div>
+                <!-- <div class="h-42 w-5 absolute top-full right-0 min-w-220 invisible opacity-0 transition-all z-20"> -->
+                <div
+                  class="w-5 absolute top-full rtl:right-0 ltr:left-0 min-w-220 transition-all z-20"
+                >
+                  <!-- <div class="w-full h-12 bg-emerald-600 "></div> -->
+                  <div class="w-full mt-4.5 z-20 transition-all">
+                    <div class="overflow-hidden rounded-b-xl">
+                      <div class="col-span-1 bg-white p-4 h-full">
+                        <div
+                          class="text-AbaSecondary *:hover:bg-AbaSecondary/20 *:hover:transition-all *:cursor-pointer flex flex-col gap-y-3 *:py-2 *:px-1 *:text-sm"
+                        >
+                          <div class="flex items-center">
+                            <div>
+                              <a   href="#" class="w-[30%]">افزودنی های بتن</a>
+
+                            </div>
+                            <div class="h-full w-full bg-red-400"></div>
+                          </div>
+                          <div><a href="#">آب بند سازی</a></div>
+                          <div><a href="#">ثابت سازی</a></div>
+                          <div><a href="#">ترمیم بتن و مقاوم سازی</a></div>
+                          <div><a href="#">کفسازی</a></div>
+                          <div><a href="#">نگهداری بتن</a></div>
+                          <div><a href="#">رنگ ها و پوشش ها</a></div>
+                          <div><a href="#">کاشی کاری</a></div>
+                          <div><a href="#">درزگیری</a></div>
+                          <div>
+                            <a href="#">سیستم های حفاظتی مقاوم شیمیایی</a>
+                          </div>
+                          <div><a href="#">محصولات شیمیایی جدید</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div>
@@ -2258,7 +2290,7 @@
     </div>
 
     <div
-      class="bg-black/40 fixed size-full inset-0 transition-all z-10 hidden"
+      class="bg-black/40 fixed size-full inset-0 transition-all z-10"
       id="overlay"
     ></div>
     <script src="scripts/app.js"></script>
