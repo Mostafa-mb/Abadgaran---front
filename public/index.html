@@ -423,21 +423,21 @@
             <div
               class="flex items-center gap-x-7 lg:gap-x-9 justify-around *:hover:transition-colors *:min-h-5 text-xs xl:text-sm font-textBold"
             >
-              <div class="relative menuItem__hasSubMenu">
+              <div
+                class="relative menuItem__hasSubMenu first:hover:text-AbaPrimary transition-all"
+              >
                 <div>
                   <i class="fa-solid fa-boxes-stacked"></i>
                   <a href="#">محصولات</a>
                 </div>
+                <!-- product categories and category Details in product megamenu -->
                 <div
                   class="h-42 w-5 absolute top-full right-0 min-w-220 invisible opacity-0 transition-all z-20"
                 >
-                  <!-- <div
-                  class="w-5 absolute top-full rtl:right-0 ltr:left-0 min-w-220 transition-all z-20"
-                > -->
-                  <!-- <div class="w-full h-12 bg-emerald-600 "></div> -->
                   <div class="w-full mt-4.5 z-20 transition-all">
                     <div class="overflow-hidden rounded-b-xl">
                       <div class="flex">
+                        <!-- categories list in products megamenu -->
                         <div
                           class="text-AbaSecondary p-2 bg-white w-[40%] *:hover:bg-AbaSecondary/20 *:hover:transition-all *:cursor-pointer flex flex-col gap-y-1 *:py-1.5 *:px-1 *:text-sm *:rounded-lg max-h-102 overflow-y-auto scrollbar-thin scrollb"
                         >
@@ -477,16 +477,22 @@
                             <a href="#">محصولات شیمیایی جدید</a>
                           </div>
                         </div>
+
+                        <!-- category details in left side of products megamenu -->
                         <div
                           class="w-full bg-gray-900 h-102 overflow-y-auto scrollbar-thin scrollbar-thumb-AbaSecondary"
                         >
-                          <div class="p-4 flex flex-col h-full">
+                          <!-- category details content in left side of products megamenu -->
+                          <div
+                            class="p-4 flex flex-col h-full hidden"
+                            data-categoryDetailId="1"
+                          >
                             <div class="h-full flex flex-col gap-y-8">
                               <div class="flex items-center gap-x-3">
                                 <span
                                   class="flex items-center justify-center size-10 bg-AbaPrimary text-AbaSecondary rounded-xl"
                                 >
-                                  <i class="fa-solid fa-vial fa-lg"></i>
+                                  <i class="fa-solid fa-vial fa-xl"></i>
                                 </span>
                                 <span class="text-white font-textBold text-base"
                                   >افزودنی های بتن</span
@@ -499,7 +505,7 @@
                                   <span class="flex items-center justify-center"
                                     ><i class="fa-solid fa-box"></i
                                   ></span>
-                                  <div>
+                                  <div class="flex flex-col">
                                     <span
                                       >فوق کاهنده آب و فوق روان کننده و دیرگیر
                                       کننده
@@ -511,60 +517,232 @@
                                   <span class="flex items-center justify-center"
                                     ><i class="fa-solid fa-box"></i
                                   ></span>
-                                  <div>
-                                    <span
-                                      >فوق کاهنده آب و فوق روان کننده و دیرگیر
-                                      کننده
-                                    </span>
-                                    <span class="font-sans">ABAFLOW iSC-R</span>
+                                  <div class="flex flex-col">
+                                    <span>فوق کاهنده آب و فوق روان کننده</span>
+                                    <span class="font-sans"
+                                      >ABAFLOW iSC-305</span
+                                    >
                                   </div>
                                 </a>
                                 <a href="" class="flex gap-x-2">
                                   <span class="flex items-center justify-center"
                                     ><i class="fa-solid fa-box"></i
                                   ></span>
-                                  <div>
-                                    <span
-                                      >فوق کاهنده آب و فوق روان کننده و دیرگیر
-                                      کننده
-                                    </span>
-                                    <span class="font-sans">ABAFLOW iSC-R</span>
+                                  <div class="flex flex-col">
+                                    <span>پاورژل هوشمند</span>
+                                    <span class="font-sans">POWER GEL-iSC</span>
                                   </div>
                                 </a>
                                 <a href="" class="flex gap-x-2">
                                   <span class="flex items-center justify-center"
                                     ><i class="fa-solid fa-box"></i
                                   ></span>
-                                  <div>
-                                    <span
-                                      >فوق کاهنده آب و فوق روان کننده و دیرگیر
-                                      کننده
-                                    </span>
-                                    <span class="font-sans">ABAFLOW iSC-R</span>
+                                  <div class="flex flex-col">
+                                    <span>سوپرژل هوشمند</span>
+                                    <span class="font-sans">MS-5-iSC</span>
                                   </div>
                                 </a>
                                 <a href="" class="flex gap-x-2">
                                   <span class="flex items-center justify-center"
                                     ><i class="fa-solid fa-box"></i
                                   ></span>
-                                  <div>
-                                    <span
-                                      >فوق کاهنده آب و فوق روان کننده و دیرگیر
-                                      کننده
-                                    </span>
-                                    <span class="font-sans">ABAFLOW iSC-R</span>
+                                  <div class="flex flex-col">
+                                    <span>ضد یخ بتن</span>
+                                    <span class="font-sans"
+                                      >ABA ANTIFREEZE</span
+                                    >
                                   </div>
                                 </a>
                                 <a href="" class="flex gap-x-2">
                                   <span class="flex items-center justify-center"
                                     ><i class="fa-solid fa-box"></i
                                   ></span>
-                                  <div>
+                                  <div class="flex flex-col">
                                     <span
-                                      >فوق کاهنده آب و فوق روان کننده و دیرگیر
-                                      کننده
-                                    </span>
-                                    <span class="font-sans">ABAFLOW iSC-R</span>
+                                      >فوق کاهنده آب و فوق روان کننده بتن</span
+                                    >
+                                    <span class="font-sans">REONET-SB1</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="w-full h-12 flex justify-end items-end">
+                              <a
+                                href="#"
+                                class="hover:text-AbaPrimary transition-all"
+                              >
+                                <span>مشاهده همه محصولات این گروه</span>
+                                <span
+                                  ><i
+                                    class="fa-solid fa-angles-right fa-flip-horizontal"
+                                  ></i
+                                ></span>
+                              </a>
+                            </div>
+                          </div>
+                          <div
+                            class="p-4 flex flex-col h-full hidden"
+                            data-categoryDetailId="2"
+                          >
+                            <div class="h-full flex flex-col gap-y-8">
+                              <div class="flex items-center gap-x-3">
+                                <span
+                                  class="flex items-center justify-center size-10 bg-AbaPrimary text-AbaSecondary rounded-xl"
+                                >
+                                  <i class="fa-solid fa-droplet fa-xl"></i>
+                                </span>
+                                <span class="text-white font-textBold text-base"
+                                  >آب بند سازی</span
+                                >
+                              </div>
+                              <div
+                                class="grid grid-cols-3 gap-x-1 gap-y-2 font-textMedium text-sm text-white *:hover:text-AbaPrimary *:hover:transition-all"
+                              >
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>آب بند پلیمری</span>
+                                    <span class="font-sans">ABAFLEX-FCW</span>
+                                  </div>
+                                </a>
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>آب بند پلیمری</span>
+                                    <span class="font-sans">ABAFLEX-ECO</span>
+                                  </div>
+                                </a>
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>نفوذگر بلورسازی پودری</span>
+                                    <span class="font-sans">ABACRYSTALSEA</span>
+                                  </div>
+                                </a>
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>واتراستاپ پی وی سی</span>
+                                    <span class="font-sans">ABA WATERSTOP</span>
+                                  </div>
+                                </a>
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>واترپروف بتن</span>
+                                    <span class="font-sans"
+                                      >E.M.WATERPROOF</span
+                                    >
+                                  </div>
+                                </a>
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>آنی گیر</span>
+                                    <span class="font-sans">ABAPLUG</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="w-full h-12 flex justify-end items-end">
+                              <a
+                                href="#"
+                                class="hover:text-AbaPrimary transition-all"
+                              >
+                                <span>مشاهده همه محصولات این گروه</span>
+                                <span
+                                  ><i
+                                    class="fa-solid fa-angles-right fa-flip-horizontal"
+                                  ></i
+                                ></span>
+                              </a>
+                            </div>
+                          </div>
+                          <div
+                            class="p-4 flex flex-col h-full"
+                            
+                            data-categoryDetailId="2"
+                          >
+                            <div class="h-full flex flex-col gap-y-8">
+                              <div class="flex items-center gap-x-3">
+                                <span
+                                  class="flex items-center justify-center size-10 bg-AbaPrimary text-AbaSecondary rounded-xl"
+                                >
+                                  <i class="fa-solid fa-droplet fa-xl"></i>
+                                </span>
+                                <span class="text-white font-textBold text-base"
+                                  >آب بند سازی</span
+                                >
+                              </div>
+                              <div
+                                class="grid grid-cols-3 gap-x-1 gap-y-2 font-textMedium text-sm text-white *:hover:text-AbaPrimary *:hover:transition-all"
+                              >
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>آب بند پلیمری</span>
+                                    <span class="font-sans">ABAFLEX-FCW</span>
+                                  </div>
+                                </a>
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>آب بند پلیمری</span>
+                                    <span class="font-sans">ABAFLEX-ECO</span>
+                                  </div>
+                                </a>
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>نفوذگر بلورسازی پودری</span>
+                                    <span class="font-sans">ABACRYSTALSEA</span>
+                                  </div>
+                                </a>
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>واتراستاپ پی وی سی</span>
+                                    <span class="font-sans">ABA WATERSTOP</span>
+                                  </div>
+                                </a>
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>واترپروف بتن</span>
+                                    <span class="font-sans"
+                                      >E.M.WATERPROOF</span
+                                    >
+                                  </div>
+                                </a>
+                                <a href="" class="flex gap-x-2">
+                                  <span class="flex items-center justify-center"
+                                    ><i class="fa-solid fa-box"></i
+                                  ></span>
+                                  <div class="flex flex-col">
+                                    <span>آنی گیر</span>
+                                    <span class="font-sans">ABAPLUG</span>
                                   </div>
                                 </a>
                               </div>

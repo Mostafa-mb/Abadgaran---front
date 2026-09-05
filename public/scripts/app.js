@@ -215,11 +215,10 @@ menuItemHasSubMenu.addEventListener("mouseenter", () => {
   menuItemHasSubMenu.lastElementChild.classList.remove(
     "invisible",
     "opacity-0",
+    "hidden"
   );
   menuItemHasSubMenu.lastElementChild.classList.add("visible", "opacity-100");
-  setTimeout(() => {
-    showOverlay();
-  }, 100);
+  showOverlay();
 });
 
 menuItemHasSubMenu.addEventListener("mouseleave", () => {
@@ -228,6 +227,6 @@ menuItemHasSubMenu.addEventListener("mouseleave", () => {
     "visible",
     "opacity-100",
   );
-  menuItemHasSubMenu.lastElementChild.classList.add("invisible", "opacity-0");
+  menuItemHasSubMenu.lastElementChild.classList.add("invisible", "opacity-0","hidden");
   HideOverlay();
 });
