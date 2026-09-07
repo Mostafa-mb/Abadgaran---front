@@ -133,5 +133,10 @@
     font-weight: normal;
   }
 
+  /* megamenu */
+  .megamenu__productsCategory--selected{
+    background-color: rgba(67, 82, 90, 0.2);
+  }
+
   
 }

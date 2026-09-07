@@ -215,7 +215,7 @@ menuItemHasSubMenu.addEventListener("mouseenter", () => {
   menuItemHasSubMenu.lastElementChild.classList.remove(
     "invisible",
     "opacity-0",
-    "hidden"
+    "hidden",
   );
   menuItemHasSubMenu.lastElementChild.classList.add("visible", "opacity-100");
   showOverlay();
@@ -227,6 +227,45 @@ menuItemHasSubMenu.addEventListener("mouseleave", () => {
     "visible",
     "opacity-100",
   );
-  menuItemHasSubMenu.lastElementChild.classList.add("invisible", "opacity-0","hidden");
+  menuItemHasSubMenu.lastElementChild.classList.add(
+    "invisible",
+    "opacity-0",
+    "hidden",
+  );
   HideOverlay();
 });
+
+const megamenuProductCategories = document.querySelectorAll(
+  ".megaMenu__Category",
+);
+const megaMenuCategoryDetials = document.querySelectorAll(
+  ".megaMenu__categoryDetials",
+);
+
+const prdouctCategoryDetailContainer = document.querySelector(
+  "#prdouctCategoryDetailContainer",
+);
+
+megamenuProductCategories.forEach((categoryItem) => {
+  categoryItem.addEventListener("mouseover", (event) => {
+    megamenuProductCategories.forEach((categoryItem) => {
+      categoryItem.classList.remove("megamenu__productsCategory--selected");
+    });
+    categoryItem.classList.add("megamenu__productsCategory--selected");
+    prdouctCategoryDetailContainer.classList.remove("hidden");
+    const productCategoryId = event.target.dataset.categoryid;
+    categoryDetailHandler(productCategoryId);
+  });
+});
+
+const categoryDetailHandler = (selectedCategoryId) => {
+  megaMenuCategoryDetials.forEach((categoryDetailItem) => {
+    categoryDetailItem.classList.add("hidden");
+  });
+
+  megaMenuCategoryDetials.forEach((categoryDetailItem) => {
+    if (categoryDetailItem.dataset.categorydetailid === selectedCategoryId) {
+      categoryDetailItem.classList.remove("hidden");
+    }
+  });
+};
