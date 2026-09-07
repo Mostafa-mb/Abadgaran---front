@@ -208,64 +208,72 @@ closeMobileSearchBtn.addEventListener("click", closeMobileSearch);
 
 //#endregion
 
-const menuItemHasSubMenu = document.querySelector(".menuItem__hasSubMenu");
+// const menuItemHasSubMenu = document.querySelector(".menuItem__hasSubMenu");
 
-menuItemHasSubMenu.addEventListener("mouseenter", () => {
-  menuItemHasSubMenu.classList.add("z-30");
-  menuItemHasSubMenu.lastElementChild.classList.remove(
-    "invisible",
-    "opacity-0",
-    "hidden",
-  );
-  menuItemHasSubMenu.lastElementChild.classList.add("visible", "opacity-100");
-  showOverlay();
-});
+// menuItemHasSubMenu.addEventListener("mouseenter", () => {
+//   menuItemHasSubMenu.classList.add("z-30");
+//   menuItemHasSubMenu.lastElementChild.classList.remove(
+//     "invisible",
+//     "opacity-0",
+//     "hidden",
+//   );
+//   menuItemHasSubMenu.lastElementChild.classList.add("visible", "opacity-100");
+//   showOverlay();
+// });
 
-menuItemHasSubMenu.addEventListener("mouseleave", () => {
-  menuItemHasSubMenu.classList.remove("z-30");
-  menuItemHasSubMenu.lastElementChild.classList.remove(
-    "visible",
-    "opacity-100",
-  );
-  menuItemHasSubMenu.lastElementChild.classList.add(
-    "invisible",
-    "opacity-0",
-    "hidden",
-  );
-  HideOverlay();
-});
+// menuItemHasSubMenu.addEventListener("mouseleave", () => {
+//   menuItemHasSubMenu.classList.remove("z-30");
+//   menuItemHasSubMenu.lastElementChild.classList.remove(
+//     "visible",
+//     "opacity-100",
+//   );
+//   menuItemHasSubMenu.lastElementChild.classList.add(
+//     "invisible",
+//     "opacity-0",
+//     "hidden",
+//   );
+//   HideOverlay();
+// });
 
-const megamenuProductCategories = document.querySelectorAll(
-  ".megaMenu__Category",
-);
-const megaMenuCategoryDetials = document.querySelectorAll(
-  ".megaMenu__categoryDetials",
-);
+// const megamenuCategories = document.querySelectorAll(
+//   ".megaMenu__Category",
+// );
+// const megaMenuCategoryDetials = document.querySelectorAll(
+//   ".megaMenu__categoryDetials",
+// );
 
-const prdouctCategoryDetailContainer = document.querySelector(
-  "#prdouctCategoryDetailContainer",
-);
+// const CategoryDetailContainer = document.querySelector(
+//   "#CategoryDetailContainer",
+// );
 
-megamenuProductCategories.forEach((categoryItem) => {
-  categoryItem.addEventListener("mouseover", (event) => {
-    megamenuProductCategories.forEach((categoryItem) => {
-      categoryItem.classList.remove("megamenu__productsCategory--selected");
-    });
-    categoryItem.classList.add("megamenu__productsCategory--selected");
-    prdouctCategoryDetailContainer.classList.remove("hidden");
-    const productCategoryId = event.target.dataset.categoryid;
-    categoryDetailHandler(productCategoryId);
-  });
-});
+// megamenuCategories.forEach((categoryItem) => {
+//   categoryItem.addEventListener("mouseover", (event) => {
+//     megamenuCategories.forEach((categoryItem) => {
+//       categoryItem.classList.remove("megamenu__productsCategory--selected");
+//     });
+//     categoryItem.classList.add("megamenu__productsCategory--selected");
+//     CategoryDetailContainer.classList.remove("hidden");
+//     const productCategoryId = event.target.dataset.categoryid;
+//     categoryDetailHandler(productCategoryId);
+//   });
+// });
 
-const categoryDetailHandler = (selectedCategoryId) => {
-  megaMenuCategoryDetials.forEach((categoryDetailItem) => {
-    categoryDetailItem.classList.add("hidden");
-  });
+// const categoryDetailHandler = (selectedCategoryId) => {
+//   megaMenuCategoryDetials.forEach((categoryDetailItem) => {
+//     categoryDetailItem.classList.add("hidden");
+//   });
 
-  megaMenuCategoryDetials.forEach((categoryDetailItem) => {
-    if (categoryDetailItem.dataset.categorydetailid === selectedCategoryId) {
-      categoryDetailItem.classList.remove("hidden");
-    }
-  });
-};
+//   megaMenuCategoryDetials.forEach((categoryDetailItem) => {
+//     if (categoryDetailItem.dataset.categorydetailid === selectedCategoryId) {
+//       categoryDetailItem.classList.remove("hidden");
+//     }
+//   });
+// };
+
+
+const menuItemHasSubMenu = document.querySelectorAll(".menuItem__hasSubMenu");
+menuItemHasSubMenu.forEach((item) => {
+  item.addEventListener("mouseenter",(event) => {
+    console.log(item);
+  })
+})
