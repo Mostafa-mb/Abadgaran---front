@@ -239,6 +239,9 @@
   .top-0 {
     top: 0px;
   }
+  .top-12 {
+    top: calc(var(--spacing) * 12);
+  }
   .top-12\.5 {
     top: calc(var(--spacing) * 12.5);
   }
@@ -317,6 +320,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .size-2 {
     width: calc(var(--spacing) * 2);
     height: calc(var(--spacing) * 2);
@@ -336,6 +342,9 @@
   .size-full {
     width: 100%;
     height: 100%;
+  }
+  .h-0 {
+    height: 0px;
   }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
@@ -388,14 +397,20 @@
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
+  .w-65 {
+    width: calc(var(--spacing) * 65);
+  }
   .w-77 {
     width: calc(var(--spacing) * 77);
   }
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
-  .w-\[40\%\] {
-    width: 40%;
+  .w-150 {
+    width: calc(var(--spacing) * 150);
+  }
+  .w-\[30\%\] {
+    width: 30%;
   }
   .w-\[90\%\] {
     width: 90%;
@@ -412,8 +427,14 @@
   .min-w-220 {
     min-width: calc(var(--spacing) * 220);
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .rotate-90 {
     rotate: 90deg;
@@ -424,6 +445,9 @@
   .rotate-270 {
     rotate: 270deg;
   }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
   .animate-ping {
     animation: var(--animate-ping);
   }
@@ -432,6 +456,12 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .cursor-progress {
+    cursor: progress;
+  }
+  .resize {
+    resize: both;
   }
   .scrollbar-thin {
     scrollbar-width: thin;
@@ -469,6 +499,9 @@
   }
   .justify-start {
     justify-content: flex-start;
+  }
+  .gap-x-0 {
+    column-gap: 0px;
   }
   .gap-x-0\.5 {
     column-gap: calc(var(--spacing) * 0.5);
@@ -611,6 +644,9 @@
   .bg-amber-50 {
     background-color: var(--color-amber-50);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-black\/40 {
     background-color: color-mix(in srgb, #000 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -718,6 +754,9 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-AbaPrimary {
+    color: var(--color-AbaPrimary);
+  }
   .text-AbaSecondary {
     color: var(--color-AbaSecondary);
   }
@@ -766,6 +805,9 @@
       color: color-mix(in oklab, var(--color-white) 60%, transparent);
     }
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -781,6 +823,10 @@
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, var(--color-emerald-800) var(--tw-shadow-alpha), transparent);
     }
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .outline-0 {
     outline-style: var(--tw-outline-style);
@@ -1103,9 +1149,29 @@
     font-size: 12px;
     font-weight: normal;
   }
-  .megamenu__productsCategory--selected {
+  .megamenu__Category--selected {
     background-color: rgba(67, 82, 90, 0.2);
   }
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-scrollbar-thumb {
   syntax: "<color>";
@@ -1210,6 +1276,11 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-scrollbar-thumb: #0000;
       --tw-scrollbar-track: #0000;
       --tw-border-style: solid;

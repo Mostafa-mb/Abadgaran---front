@@ -134,7 +134,7 @@
   }
 
   /* megamenu */
-  .megamenu__productsCategory--selected{
+  .megamenu__Category--selected{
     background-color: rgba(67, 82, 90, 0.2);
   }
 

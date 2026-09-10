@@ -270,10 +270,66 @@ closeMobileSearchBtn.addEventListener("click", closeMobileSearch);
 //   });
 // };
 
-
 const menuItemHasSubMenu = document.querySelectorAll(".menuItem__hasSubMenu");
+const megaMenuCategory = document.querySelectorAll(".megaMenu__Category");
+
 menuItemHasSubMenu.forEach((item) => {
-  item.addEventListener("mouseenter",(event) => {
-    console.log(item);
-  })
-})
+  item.addEventListener("mouseenter", () => {
+    showMegeMenu(item.lastElementChild, item);
+  });
+  item.addEventListener("mouseleave", () => {
+    hideMegeMenu(item.lastElementChild, item);
+  });
+});
+
+
+megaMenuCategory.forEach((item) => {
+  item.addEventListener("mouseenter", (event) => {
+    resetCategoryDetail(item);
+    showCategoryDetails(item, event);
+  });
+  item.addEventListener("mouseleave", (event) => {
+    item.classList.remove("megamenu__Category--selected");
+  });
+});
+
+const showMegeMenu = (elem, parentElem) => {
+  showOverlay();
+  parentElem.classList.add("z-20", "text-AbaPrimary");
+  elem.classList.remove("Invisible", "opacity-0","hidden");
+  elem.classList.add("visible", "opacity-100");
+};
+
+const hideMegeMenu = (elem, parentElem) => {
+  HideOverlay();
+  parentElem.classList.remove("z-20", "text-AbaPrimary");
+  elem.classList.remove("visible", "opacity-100");
+  elem.classList.add("Invisible", "opacity-0","hidden");
+};
+
+const showCategoryDetails = (elem, event) => {
+  elem.classList.add("megamenu__Category--selected");
+  const categoryDetailElemContainer =
+    elem.parentElement.parentElement.lastElementChild;
+  const categoryId = +event.target.dataset.categoryid;
+  categoryDetailElemContainer.classList.remove("hidden");
+  const categoryDetailElems = categoryDetailElemContainer.querySelectorAll(
+    ".megaMenu__categoryDetials",
+  );
+  categoryDetailElems.forEach((item) => {
+    if (+item.dataset.categorydetailid === categoryId) {
+      item.classList.remove("hidden");
+    }
+  });
+};
+
+const resetCategoryDetail = (elem) => {
+  const categoryDetailElemContainer =
+    elem.parentElement.parentElement.lastElementChild;
+  const categoryDetailElems = categoryDetailElemContainer.querySelectorAll(
+    ".megaMenu__categoryDetials",
+  );
+  categoryDetailElems.forEach((item) => {
+    item.classList.add("hidden");
+  });
+};
