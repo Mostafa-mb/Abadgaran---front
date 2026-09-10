@@ -6,7 +6,7 @@
     <title>Abadgaran</title>
     <link rel="stylesheet" href="styles/app.css" />
   </head>
-  <body class="relative font-textRegular">
+  <body class="font-textRegular">
     <header class="w-full relative">
       <!-- yellow section on desktop header -->
       <div class="bg-AbaPrimary h-14 md:h-22">
@@ -2873,9 +2873,7 @@
                 </div>
               </div>
               <!-- Contact-Us -->
-              <div
-                class="hover:text-AbaPrimary transition-all cursor-pointer"
-              >
+              <div class="hover:text-AbaPrimary transition-all cursor-pointer">
                 <div>
                   <i class="fa-regular fa-address-book"></i>
                   <a href="#">تماس با ما</a>
@@ -2895,1767 +2893,1828 @@
           </div>
         </div>
       </div>
-    </header>
-    <!-- mobile menu section in header -->
-    <div
-      class="w-77 rtl:-right-77 ltr:-left-77 p-5 flex flex-col md:hidden fixed bg-white top-0 bottom-0 transition-all z-20 overflow-y-scroll"
-      id="mobileMenu"
-    >
+
+      <!-- mobile menu section in header -->
       <div
-        class="flex items-center justify-between px-2 pb-5 border-b-2 border-AbaSecondary"
+        class="w-77 rtl:-right-77 ltr:-left-77 p-5 flex flex-col md:hidden fixed bg-white top-0 bottom-0 transition-all z-20 overflow-y-scroll"
+        id="mobileMenu"
       >
-        <a href="#">
-          <img
-            src="images/Logo-03.webp"
-            alt=""
-            class="h-14 max-w-7xl"
-            loading="lazy"
-          />
-        </a>
-        <span
-          class="flex items-center justify-center size-6 cursor-pointer"
-          id="mobileMenu_closeBtn"
-          ><i class="fa-regular fa-circle-xmark size-full"></i
-        ></span>
-      </div>
-      <div class="px-2 pt-5 flex flex-col gap-y-4 text-AbaSecondary">
-        <div class="cursor-pointer">
-          <div class="flex items-center gap-x-3">
-            <span><i class="fa-regular fa-house"></i></span>
-            <span class="font-textBold">صفحه اصلی</span>
-          </div>
-        </div>
         <div
-          class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
+          class="flex items-center justify-between px-2 pb-5 border-b-2 border-AbaSecondary"
         >
-          <div class="flex items-center gap-x-3">
-            <span><i class="fa-solid fa-cube"></i></span>
-            <span class="font-textBold">محصولات</span>
-          </div>
-          <span class="transition-all toggleIcon"
-            ><i class="fa-solid fa-angle-down"></i
-          ></span>
-        </div>
-        <div
-          class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
-        >
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>افزودنی های بتن</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>فوق کاهنده آب و فوق روان کننده و دیرگیر کننده</span>
-              <span class="font-sans">Abaflow iSC-R</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>فوق کاهنده آب و فوق روان کننده</span>
-              <span class="font-sans">Abaflow iSC-305</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>پاورژل هوشمند</span>
-              <span class="font-sans">POWER GEL-iSC</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>سوپرژل هوشمند</span>
-              <span class="font-sans">ABA ANTIFREEZE</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>آب بند سازی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>آب بند پلیمری</span>
-              <span class="font-sans">ABAFLEX-FCW</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>آب بند پلیمری</span>
-              <span class="font-sans">ABAFLEX-ECO</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>نفوذگر بلورساز پودری</span>
-              <span class="font-sans">ABACRYSTASEAL</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>واتر استاپ پی وی سی</span>
-              <span class="font-sans">ABA WATERSTOP</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>ثابت سازی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>گروت اپوکسی حرارت زا</span>
-              <span class="font-sans">ABADUR-G3 LE</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>گروت اپوکسی</span>
-              <span class="font-sans">ABADUR-G30</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>گروت سیمانی آماده ویژه - منبسط شونده</span>
-              <span class="font-sans">E.M.GROUT-CE</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>گروت اپوکسی</span>
-              <span class="font-sans">ABADUR-G3</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>ترمیم بتن و مقاوم سازی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>چسب بتن لاتکس</span>
-              <span class="font-sans">E.M.BOND-PRO</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>بسته مقاوم سازی ویژه مناطق سرد (5-25 درجه سانتیگراد)</span>
-              <span class="font-sans">ABABOND FRP C5 PACKAGE ECO</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span
-                >بسته مقاوم سازی ویژه مناطق گرم (بالاتر از 25 درجه
-                سانتیگراد)</span
-              >
-              <span class="font-sans">ABABOND FRP H25 PACKAGE ECO</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>الیاف کربن ضد حریق</span>
-              <span class="font-sans">ABA WRAP-C305 FP</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>کف سازی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>کفپوش پلی یورتان میانی</span>
-              <span class="font-sans">ABAFLOOR PUR-30</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>کفپوش پلی یورتان میانی</span>
-              <span class="font-sans">ABAFLOOR PUR-20</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>کفپوش رویه اپوکسی</span>
-              <span class="font-sans">ABAFLOOR-31 OP (ANTIBACTERIAL)</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>کفپوش رویه اپوکسی</span>
-              <span class="font-sans">ABAFLOOR-31 SL (ANTIBACTERIAL)</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>نگهداری بتن</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>روغن قالب امولسیونی پایه آب</span>
-              <span class="font-sans">AQUAFORM-790</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>روغن قالب امولسیونی پایه آب</span>
-              <span class="font-sans">AQUAFORM-230</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>روغن قالب</span>
-              <span class="font-sans">MOULD OIL-O400</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>روغن قالب</span>
-              <span class="font-sans">MOULD OIL-N200</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>رنگها و پوشش ها</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>پوشش پلی یورتان</span>
-              <span class="font-sans">ABACOAT PUR-40</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>پرایمر اپوکسی سد رطوبت</span>
-              <span class="font-sans">ABAPRIME-MB</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>پوشش عایق حرارت سیمانی</span>
-              <span class="font-sans">ABATAIKA-TI</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>پوشش اپوکسی پلی آمید میانی</span>
-              <span class="font-sans">ABACOAT PM-22R</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>کاشی کاری</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>چسب کاشی ویژه سفید</span>
-              <span class="font-sans">ABA SUPERSET-W</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>چسب کاشی ویژه طوسی با قابلیت تغییر شکل متقاطع</span>
-              <span class="font-sans">ABA ULTRASET-G</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>چسب کاشی ویژه سفید با قابلیت تغییر شکل متقاطع</span>
-              <span class="font-sans">ABA ULTRASET-W</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>پودر بندکشی ویژه - سفید</span>
-              <span class="font-sans">ABA TILEGROUT-WHITE</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>درزگیری</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>درزگیر پلی یورتان یک جزئی</span>
-              <span class="font-sans">ABAFLEX-LM</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>پرایمر درزگیر پلی یورتان یک جزئی</span>
-              <span class="font-sans">ABAFLEX-LM PRIMER</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>سیستم های حفاظتی مقاوم شیمیایی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>ملات درزبند مقاوم شیمیایی</span>
-              <span class="font-sans">ABAGARD CI-7</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>ملات چندمنظوره مقاوم شیمیایی</span>
-              <span class="font-sans">ABAGARD CR-20</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>ملات چندمنظوره مقاوم شیمیایی</span>
-              <span class="font-sans">ABAGARD CR-40</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>ملات چندمنظوره مقاوم شیمیایی</span>
-              <span class="font-sans">ABAGARD CR-300</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>محصولات شیمیایی جدید</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>هاردنر فنالکامین با ویسکوزیته پایین</span>
-              <span class="font-sans">ABAHARD 2100L</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>هاردنر فنالکامین با گیرش سریع</span>
-              <span class="font-sans">ABAHARD 2100FC</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>هاردنر آروماتیک پلی آمین اصلاح شده</span>
-              <span class="font-sans">ABAHARD AP-100</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>شتاب دهنده سیستم پلیمری بدون آب</span>
-              <span class="font-sans">DASYNEP FC-20</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-        </div>
-        <div
-          class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
-        >
-          <div class="flex items-center gap-x-3">
-            <span><i class="fa-solid fa-newspaper"></i></span>
-            <span class="font-textBold">مقالات فنی</span>
-          </div>
-          <span class="transition-all toggleIcon"
-            ><i class="fa-solid fa-angle-down"></i
-          ></span>
-        </div>
-        <div
-          class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
-        >
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>افزودنی های بتن</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>اهمیت استفاده از ضدیخ در بتن در مناطق سردسیر</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>پدیده ASR در بتن و بررسی نقش ژل میکروسیلیس</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span
-                >تکنولوژی ژل افزودنی بتن با سامانه هوشمند عمل آوری داخلی</span
-              >
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>شاتکریت چیست و چه زمانی استفاده میشود؟</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>انواع بتن</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>الزامات کیفی بتن سبک</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>بررسی مقاومت شیمیایی بتن پلیمری در محیط های خورنده</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>روش های کنترل کیفیت بتن های HSC</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>بتن های توانمند HPC و فوق توانمند UHPC</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>آب بند سازی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>تفاوت پوشش آب بند کریستالی و پوشش سطحی بتن</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>آب بندی چاله آسانسور</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>بهینه سازی دوام سازه های زیرزمینی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>آب بندی درزهای انبساطی بزرگ در سازه های حجیم</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>آزمون های بتن</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>آزمون نفوذپذیری بتن</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>آزمون های مخرب و غیر مخرب بتن</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>اسلامپ بتن</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>تحلیل سازه های بتنی قبل از انجام عملیات مقاوم سازی</span>
-              <span class="font-sans">ABA WRAP-C305 FP</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>بتن ریزی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشکلات در بتن ریزی های حجیم</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>فرایند عمل آوری بتن و هیدراسیون سیمان براساس ACL 308R</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>
-                الزامات عمل آوری بتن بر اساس BS EN 13670 و استاندارد ملی INSO
-                23100
-              </span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span
-                >فناوری ژل هوشمند iSC و راهنمای عمل آوری بتن براساس استاندارد
-                ACI 308R-16</span
-              >
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>پوشش های اپوکسی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>پوشش امولسیونی قیری</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>کنترل خوردگی سازه های فراساحلی با پوشش اپوکسی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>افزایش چسبندگی رنگ به زیرکار فلزی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>روش های محافظت از لوله های فولادی با پوشش اپوکسی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>پوشش های ضد حریق</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مزایا و معایب پوشش ضد حریق سازه فولادی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مقاوم سازی سازه های فولادی در برابر حریق</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>چگونه پوشش ضدحریق UL را به درستی انتخاب کنیم؟</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>راهنمای کامل مقایسه انواع پوشش های ضد حریق</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>ترمیم بتن</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>ترمیم سازه های بتنی | بررسی خرابی بتن</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>چالش های تزریق اپوکسی در ترک های مویی بتن</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>راهنمای جامع مواد ترمیم سازه ای و غیر سازه ای</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>ترمیم کف های بتنی آسیب دیده</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>حفاظت بتن</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span
-                >استفاده از ملات های مقاوم شیمیایی در کارخانه های باتری
-                سازی</span
-              >
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>تثبیت مقدار رطوبت بتن برای کنترل واکنش های مخرب</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>دوام بتن</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>تکنولوژی بتن و اهمیت آن در مهندسی عمران</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>ارتقا دوام سازه های دریایی در محیط های خورنده</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>نفوذپذیری نمای سازه ها و نحوه رفع آن</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>عوامل موثر بر دوام بتن</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>سایر</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>انواع رزین و بررسی خواص آنها</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>کاربر ضد کف ها در صنایع مختلف</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>تاثیر فرایند پخت بر خواص فیزیکی و مکانیکی رزین اپوکسی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>معرفی انواع هاردنر اپوکسی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>کف سازی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>بررسی مشکلات رایج در عملیات کفسازی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span
-                >الزامات موردنیاز جهت اجرا و آماده سازی مواد اپوکسی پیش از شروع
-                فرایند کفسازی</span
-              >
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشکلات رایج در کفسازی جهت فضاهای حفاظت ثانویه</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>کفسازی واحدهای صنعتی و تولید مواد غذایی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>کفپوش اپوکسی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>کفپوش اپوکسی یا پلی یورتان؟ مقایسه فنی و اجرایی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>کفپوش اپوکسی روی سطوح فولادی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>اجرای کفپوش های سیمانی مقاوم سایشی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span
-                >نحوه ارزیابی مقاومت الکتریکی کفپوش آنتی الکترواستاتیک
-                (ESD)</span
-              >
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>گروت ریزی</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>گروت چگونه بار را منتقل میکند؟</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>گروت چیست؟</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>تفاوت گروت اپوکسی و سیمانی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>اختلاط و اجرای گروت به همراه کنترل کیفیت آن</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>مصالح بتن</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>آزمون های شرایط بهره برداری مختلف برای کاشت میلگرد</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>انواع الیاف مورد استفاده در بتن</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>عیار بتن چیست ؟</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>انواع سیمان، تفاوت ها و کاربرد</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>مقاوم سازی با FRP</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>کاربرد چسب کامپوزیت الیافی در مقاوم سازی سازه بتنی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>ارزیابی اثر عرض و ضخامت الیاف FRP برای ستون های بتنی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>روش نصب ورق های FRP برای ستون های بتنی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مقاوم سایز سازه های بتن آرمه با FRP</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>مقاوم سازی با چسب کاشت میلگرد</span>
-            </div>
-            <span class="transition-all toggleIcon"
-              ><i class="fa-solid fa-angle-down"></i
-            ></span>
-          </div>
-          <div
-            class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
-          >
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>الزامات کاشت میلگرد فولادی براساس استاندارد EN 1504-6</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>آزمون شرایط بهره برداری مختلف برای کاشت میلگرد</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>آزمون و نصب انکر بولت با چسب اپوکسی کاشت میلگرد</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>اتصال بتن و فولاد به بتن سخت شده با چسب اپوکسی</span>
-            </a>
-            <a
-              class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
-            >
-              <span>مشاهده بیشتر ...</span>
-            </a>
-          </div>
-        </div>
-        <div class="flex items-center justify-between cursor-pointer">
-          <div class="flex items-center gap-x-3">
-            <span><i class="fa-solid fa-desktop"></i></span>
-            <span class="font-textBold">اخبار</span>
-          </div>
-        </div>
-        <div class="flex items-center justify-between cursor-pointer">
-          <div class="flex items-center gap-x-3">
-            <span><i class="fa-brands fa-hubspot"></i></span>
-            <span class="font-textBold">نمایندگان فروش</span>
-          </div>
-        </div>
-        <div
-          class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
-        >
-          <div class="flex items-center gap-x-3">
-            <span><i class="fa-solid fa-graduation-cap"></i></span>
-            <span class="font-textBold">جذب نخبگان</span>
-          </div>
-          <span class="transition-all toggleIcon"
-            ><i class="fa-solid fa-angle-down"></i
-          ></span>
-        </div>
-        <div
-          class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
-        >
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>تحقیق و توسعه</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>انتشارات</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>برند آبادگران</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>رویکردهای حل مسئله</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>همکاری با آبادگران</span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
-        >
-          <div class="flex items-center gap-x-3">
-            <span><i class="fa-solid fa-flask"></i></span>
-            <span class="font-textBold">درباره ما</span>
-          </div>
-          <span class="transition-all toggleIcon"
-            ><i class="fa-solid fa-angle-down"></i
-          ></span>
-        </div>
-        <div
-          class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
-        >
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>درباره شرکت صنایع شیمی ساختمان آبادگران</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>واحد آزمایشگاه، تحقیق و توسعه</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>کارخانه و تجهیزات تولید</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>ساختار سازمانی</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>منشور اخلاقی</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>چشم انداز</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>دستاوردهای شرکت</span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
-        >
-          <div class="flex items-center gap-x-3">
-            <span><i class="fa-solid fa-handshake-angle"></i></span>
-            <span class="font-textBold">همکاری</span>
-          </div>
-          <span class="transition-all toggleIcon"
-            ><i class="fa-solid fa-angle-down"></i
-          ></span>
-        </div>
-        <div
-          class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
-        >
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>فرصت های شغلی</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>حمایت از شرکت های دانش بنیان</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>واگذاری نمایندگی فروش</span>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between cursor-pointer">
-          <div class="flex items-center gap-x-3">
-            <span><i class="fa-regular fa-address-book"></i></span>
-            <span class="font-textBold">تماس با ما</span>
-          </div>
-        </div>
-        <div
-          class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
-        >
-          <div class="flex items-center gap-x-3">
-            <span><i class="fa-solid fa-language"></i></span>
-            <span class="font-textBold text-slate-700">زبان کاربری</span>
-          </div>
-          <span class="transition-all toggleIcon"
-            ><i class="fa-solid fa-angle-down"></i
-          ></span>
-        </div>
-        <div
-          class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
-        >
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>فارسی</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>English</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>العربیه</span>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
-          >
-            <div class="flex items-center gap-x-3">
-              <span>Turkish</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- search section in mobile -->
-    <div
-      class="w-full bg-white p-5 flex flex-col md:hidden fixed top-0 bottom-0 transition-all z-20 hidden"
-      id="mobileSearch"
-    >
-      <!-- mobile search header -->
-      <div class="flex justify-between items-center gap-x-2 min-h-10">
-        <span
-          class="cursor-pointer flex items-center justify-center"
-          id="closeMobileSearch"
-        >
-          <i class="fa-solid fa-arrow-right-long ltr:rotate-180"></i>
-        </span>
-        <div
-          class="bg-AbaSecondary/20 grow h-full rounded-2xl flex items-center justify-between"
-        >
-          <div class="grow px-3 font-textRegular text-base text-AbaSecondary">
-            <input
-              type="text"
-              class="w-full outline-0"
-              placeholder="جستجو..."
-              id="searchTextMobile"
+          <a href="#">
+            <img
+              src="images/Logo-03.webp"
+              alt=""
+              class="h-14 max-w-7xl"
+              loading="lazy"
             />
+          </a>
+          <span
+            class="flex items-center justify-center size-6 cursor-pointer"
+            id="mobileMenu_closeBtn"
+            ><i class="fa-regular fa-circle-xmark size-full"></i
+          ></span>
+        </div>
+        <div class="px-2 pt-5 flex flex-col gap-y-4 text-AbaSecondary">
+          <div class="cursor-pointer">
+            <div class="flex items-center gap-x-3">
+              <span><i class="fa-regular fa-house"></i></span>
+              <span class="font-textBold">صفحه اصلی</span>
+            </div>
           </div>
-          <span
-            class="flex items-center justify-center px-3 text-AbaSecondary/60"
-            id="mobileSearch-magnifier"
+          <div
+            class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
           >
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </span>
-          <span
-            class="flex items-center justify-center px-3 text-AbaSecondary/90 hidden"
-            id="mobileSearch-cross"
+            <div class="flex items-center gap-x-3">
+              <span><i class="fa-solid fa-cube"></i></span>
+              <span class="font-textBold">محصولات</span>
+            </div>
+            <span class="transition-all toggleIcon"
+              ><i class="fa-solid fa-angle-down"></i
+            ></span>
+          </div>
+          <div
+            class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
           >
-            <i class="fa-solid fa-xmark"></i>
-          </span>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>افزودنی های بتن</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>فوق کاهنده آب و فوق روان کننده و دیرگیر کننده</span>
+                <span class="font-sans">Abaflow iSC-R</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>فوق کاهنده آب و فوق روان کننده</span>
+                <span class="font-sans">Abaflow iSC-305</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>پاورژل هوشمند</span>
+                <span class="font-sans">POWER GEL-iSC</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>سوپرژل هوشمند</span>
+                <span class="font-sans">ABA ANTIFREEZE</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>آب بند سازی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>آب بند پلیمری</span>
+                <span class="font-sans">ABAFLEX-FCW</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>آب بند پلیمری</span>
+                <span class="font-sans">ABAFLEX-ECO</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>نفوذگر بلورساز پودری</span>
+                <span class="font-sans">ABACRYSTASEAL</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>واتر استاپ پی وی سی</span>
+                <span class="font-sans">ABA WATERSTOP</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>ثابت سازی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>گروت اپوکسی حرارت زا</span>
+                <span class="font-sans">ABADUR-G3 LE</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>گروت اپوکسی</span>
+                <span class="font-sans">ABADUR-G30</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>گروت سیمانی آماده ویژه - منبسط شونده</span>
+                <span class="font-sans">E.M.GROUT-CE</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>گروت اپوکسی</span>
+                <span class="font-sans">ABADUR-G3</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>ترمیم بتن و مقاوم سازی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>چسب بتن لاتکس</span>
+                <span class="font-sans">E.M.BOND-PRO</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >بسته مقاوم سازی ویژه مناطق سرد (5-25 درجه سانتیگراد)</span
+                >
+                <span class="font-sans">ABABOND FRP C5 PACKAGE ECO</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >بسته مقاوم سازی ویژه مناطق گرم (بالاتر از 25 درجه
+                  سانتیگراد)</span
+                >
+                <span class="font-sans">ABABOND FRP H25 PACKAGE ECO</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>الیاف کربن ضد حریق</span>
+                <span class="font-sans">ABA WRAP-C305 FP</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>کف سازی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>کفپوش پلی یورتان میانی</span>
+                <span class="font-sans">ABAFLOOR PUR-30</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>کفپوش پلی یورتان میانی</span>
+                <span class="font-sans">ABAFLOOR PUR-20</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>کفپوش رویه اپوکسی</span>
+                <span class="font-sans">ABAFLOOR-31 OP (ANTIBACTERIAL)</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>کفپوش رویه اپوکسی</span>
+                <span class="font-sans">ABAFLOOR-31 SL (ANTIBACTERIAL)</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>نگهداری بتن</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>روغن قالب امولسیونی پایه آب</span>
+                <span class="font-sans">AQUAFORM-790</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>روغن قالب امولسیونی پایه آب</span>
+                <span class="font-sans">AQUAFORM-230</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>روغن قالب</span>
+                <span class="font-sans">MOULD OIL-O400</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>روغن قالب</span>
+                <span class="font-sans">MOULD OIL-N200</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>رنگها و پوشش ها</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>پوشش پلی یورتان</span>
+                <span class="font-sans">ABACOAT PUR-40</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>پرایمر اپوکسی سد رطوبت</span>
+                <span class="font-sans">ABAPRIME-MB</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>پوشش عایق حرارت سیمانی</span>
+                <span class="font-sans">ABATAIKA-TI</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>پوشش اپوکسی پلی آمید میانی</span>
+                <span class="font-sans">ABACOAT PM-22R</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>کاشی کاری</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>چسب کاشی ویژه سفید</span>
+                <span class="font-sans">ABA SUPERSET-W</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>چسب کاشی ویژه طوسی با قابلیت تغییر شکل متقاطع</span>
+                <span class="font-sans">ABA ULTRASET-G</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>چسب کاشی ویژه سفید با قابلیت تغییر شکل متقاطع</span>
+                <span class="font-sans">ABA ULTRASET-W</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>پودر بندکشی ویژه - سفید</span>
+                <span class="font-sans">ABA TILEGROUT-WHITE</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>درزگیری</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>درزگیر پلی یورتان یک جزئی</span>
+                <span class="font-sans">ABAFLEX-LM</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>پرایمر درزگیر پلی یورتان یک جزئی</span>
+                <span class="font-sans">ABAFLEX-LM PRIMER</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>سیستم های حفاظتی مقاوم شیمیایی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>ملات درزبند مقاوم شیمیایی</span>
+                <span class="font-sans">ABAGARD CI-7</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>ملات چندمنظوره مقاوم شیمیایی</span>
+                <span class="font-sans">ABAGARD CR-20</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>ملات چندمنظوره مقاوم شیمیایی</span>
+                <span class="font-sans">ABAGARD CR-40</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>ملات چندمنظوره مقاوم شیمیایی</span>
+                <span class="font-sans">ABAGARD CR-300</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>محصولات شیمیایی جدید</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>هاردنر فنالکامین با ویسکوزیته پایین</span>
+                <span class="font-sans">ABAHARD 2100L</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>هاردنر فنالکامین با گیرش سریع</span>
+                <span class="font-sans">ABAHARD 2100FC</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>هاردنر آروماتیک پلی آمین اصلاح شده</span>
+                <span class="font-sans">ABAHARD AP-100</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>شتاب دهنده سیستم پلیمری بدون آب</span>
+                <span class="font-sans">DASYNEP FC-20</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
+          >
+            <div class="flex items-center gap-x-3">
+              <span><i class="fa-solid fa-newspaper"></i></span>
+              <span class="font-textBold">مقالات فنی</span>
+            </div>
+            <span class="transition-all toggleIcon"
+              ><i class="fa-solid fa-angle-down"></i
+            ></span>
+          </div>
+          <div
+            class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
+          >
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>افزودنی های بتن</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>اهمیت استفاده از ضدیخ در بتن در مناطق سردسیر</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>پدیده ASR در بتن و بررسی نقش ژل میکروسیلیس</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >تکنولوژی ژل افزودنی بتن با سامانه هوشمند عمل آوری داخلی</span
+                >
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>شاتکریت چیست و چه زمانی استفاده میشود؟</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>انواع بتن</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>الزامات کیفی بتن سبک</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>بررسی مقاومت شیمیایی بتن پلیمری در محیط های خورنده</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>روش های کنترل کیفیت بتن های HSC</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>بتن های توانمند HPC و فوق توانمند UHPC</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>آب بند سازی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>تفاوت پوشش آب بند کریستالی و پوشش سطحی بتن</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>آب بندی چاله آسانسور</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>بهینه سازی دوام سازه های زیرزمینی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>آب بندی درزهای انبساطی بزرگ در سازه های حجیم</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>آزمون های بتن</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>آزمون نفوذپذیری بتن</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>آزمون های مخرب و غیر مخرب بتن</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>اسلامپ بتن</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>تحلیل سازه های بتنی قبل از انجام عملیات مقاوم سازی</span>
+                <span class="font-sans">ABA WRAP-C305 FP</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>بتن ریزی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشکلات در بتن ریزی های حجیم</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >فرایند عمل آوری بتن و هیدراسیون سیمان براساس ACL 308R</span
+                >
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>
+                  الزامات عمل آوری بتن بر اساس BS EN 13670 و استاندارد ملی INSO
+                  23100
+                </span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >فناوری ژل هوشمند iSC و راهنمای عمل آوری بتن براساس استاندارد
+                  ACI 308R-16</span
+                >
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>پوشش های اپوکسی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>پوشش امولسیونی قیری</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>کنترل خوردگی سازه های فراساحلی با پوشش اپوکسی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>افزایش چسبندگی رنگ به زیرکار فلزی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>روش های محافظت از لوله های فولادی با پوشش اپوکسی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>پوشش های ضد حریق</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مزایا و معایب پوشش ضد حریق سازه فولادی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مقاوم سازی سازه های فولادی در برابر حریق</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>چگونه پوشش ضدحریق UL را به درستی انتخاب کنیم؟</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>راهنمای کامل مقایسه انواع پوشش های ضد حریق</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>ترمیم بتن</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>ترمیم سازه های بتنی | بررسی خرابی بتن</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>چالش های تزریق اپوکسی در ترک های مویی بتن</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>راهنمای جامع مواد ترمیم سازه ای و غیر سازه ای</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>ترمیم کف های بتنی آسیب دیده</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>حفاظت بتن</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >استفاده از ملات های مقاوم شیمیایی در کارخانه های باتری
+                  سازی</span
+                >
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>تثبیت مقدار رطوبت بتن برای کنترل واکنش های مخرب</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>دوام بتن</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>تکنولوژی بتن و اهمیت آن در مهندسی عمران</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>ارتقا دوام سازه های دریایی در محیط های خورنده</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>نفوذپذیری نمای سازه ها و نحوه رفع آن</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>عوامل موثر بر دوام بتن</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>سایر</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>انواع رزین و بررسی خواص آنها</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>کاربر ضد کف ها در صنایع مختلف</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >تاثیر فرایند پخت بر خواص فیزیکی و مکانیکی رزین اپوکسی</span
+                >
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>معرفی انواع هاردنر اپوکسی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>کف سازی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>بررسی مشکلات رایج در عملیات کفسازی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >الزامات موردنیاز جهت اجرا و آماده سازی مواد اپوکسی پیش از
+                  شروع فرایند کفسازی</span
+                >
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشکلات رایج در کفسازی جهت فضاهای حفاظت ثانویه</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>کفسازی واحدهای صنعتی و تولید مواد غذایی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>کفپوش اپوکسی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>کفپوش اپوکسی یا پلی یورتان؟ مقایسه فنی و اجرایی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>کفپوش اپوکسی روی سطوح فولادی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>اجرای کفپوش های سیمانی مقاوم سایشی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >نحوه ارزیابی مقاومت الکتریکی کفپوش آنتی الکترواستاتیک
+                  (ESD)</span
+                >
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>گروت ریزی</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>گروت چگونه بار را منتقل میکند؟</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>گروت چیست؟</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>تفاوت گروت اپوکسی و سیمانی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>اختلاط و اجرای گروت به همراه کنترل کیفیت آن</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>مصالح بتن</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>آزمون های شرایط بهره برداری مختلف برای کاشت میلگرد</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>انواع الیاف مورد استفاده در بتن</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>عیار بتن چیست ؟</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>انواع سیمان، تفاوت ها و کاربرد</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>مقاوم سازی با FRP</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>کاربرد چسب کامپوزیت الیافی در مقاوم سازی سازه بتنی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >ارزیابی اثر عرض و ضخامت الیاف FRP برای ستون های بتنی</span
+                >
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>روش نصب ورق های FRP برای ستون های بتنی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مقاوم سایز سازه های بتن آرمه با FRP</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hasSecondTier_submenu"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>مقاوم سازی با چسب کاشت میلگرد</span>
+              </div>
+              <span class="transition-all toggleIcon"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </div>
+            <div
+              class="flex flex-col gap-y-3 justify-between rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaPrimary SecondTier_submenu hidden"
+            >
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span
+                  >الزامات کاشت میلگرد فولادی براساس استاندارد EN 1504-6</span
+                >
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>آزمون شرایط بهره برداری مختلف برای کاشت میلگرد</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>آزمون و نصب انکر بولت با چسب اپوکسی کاشت میلگرد</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>اتصال بتن و فولاد به بتن سخت شده با چسب اپوکسی</span>
+              </a>
+              <a
+                class="flex flex-col gap-y-1 cursor-pointer hover:text-AbaPrimary transition-all"
+              >
+                <span>مشاهده بیشتر ...</span>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center gap-x-3">
+              <span><i class="fa-solid fa-desktop"></i></span>
+              <span class="font-textBold">اخبار</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center gap-x-3">
+              <span><i class="fa-brands fa-hubspot"></i></span>
+              <span class="font-textBold">نمایندگان فروش</span>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
+          >
+            <div class="flex items-center gap-x-3">
+              <span><i class="fa-solid fa-graduation-cap"></i></span>
+              <span class="font-textBold">جذب نخبگان</span>
+            </div>
+            <span class="transition-all toggleIcon"
+              ><i class="fa-solid fa-angle-down"></i
+            ></span>
+          </div>
+          <div
+            class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
+          >
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>تحقیق و توسعه</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>انتشارات</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>برند آبادگران</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>رویکردهای حل مسئله</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>همکاری با آبادگران</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
+          >
+            <div class="flex items-center gap-x-3">
+              <span><i class="fa-solid fa-flask"></i></span>
+              <span class="font-textBold">درباره ما</span>
+            </div>
+            <span class="transition-all toggleIcon"
+              ><i class="fa-solid fa-angle-down"></i
+            ></span>
+          </div>
+          <div
+            class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
+          >
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>درباره شرکت صنایع شیمی ساختمان آبادگران</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>واحد آزمایشگاه، تحقیق و توسعه</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>کارخانه و تجهیزات تولید</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>ساختار سازمانی</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>منشور اخلاقی</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>چشم انداز</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>دستاوردهای شرکت</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
+          >
+            <div class="flex items-center gap-x-3">
+              <span><i class="fa-solid fa-handshake-angle"></i></span>
+              <span class="font-textBold">همکاری</span>
+            </div>
+            <span class="transition-all toggleIcon"
+              ><i class="fa-solid fa-angle-down"></i
+            ></span>
+          </div>
+          <div
+            class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
+          >
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>فرصت های شغلی</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>حمایت از شرکت های دانش بنیان</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>واگذاری نمایندگی فروش</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center gap-x-3">
+              <span><i class="fa-regular fa-address-book"></i></span>
+              <span class="font-textBold">تماس با ما</span>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between hasFirstTier_submenu cursor-pointer"
+          >
+            <div class="flex items-center gap-x-3">
+              <span><i class="fa-solid fa-language"></i></span>
+              <span class="font-textBold text-slate-700">زبان کاربری</span>
+            </div>
+            <span class="transition-all toggleIcon"
+              ><i class="fa-solid fa-angle-down"></i
+            ></span>
+          </div>
+          <div
+            class="flex flex-col gap-y-3 rtl:pr-3 rtl:mr-2 rtl:border-r-2 ltr:border-l-2 ltr:pl-3 ltr:ml-2 border-AbaSecondary text-sm transition-all hidden firstTierSubmenu"
+          >
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>فارسی</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>English</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>العربیه</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between cursor-pointer hover:text-AbaPrimary transition-all"
+            >
+              <div class="flex items-center gap-x-3">
+                <span>Turkish</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- devider -->
-      <div class="w-full bg-AbaSecondary/60 h-0.5 my-4"></div>
-
-      <!-- mobile search body -->
-      <div class="overflow-y-auto">
-        <!-- mobile search - popular Items -->
-        <div class="flex flex-col gap-y-3" id="mobileSearch-populerItems">
-          <div>
-            <span class="font-titleBold">بیشترین جستجو</span>
-          </div>
-          <div class="text-sm flex flex-wrap gap-x-1 gap-y-1">
-            <a
-              href=""
-              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
-              >چسب کاشت میلگرد RA-500</a
+      <!-- search section in mobile -->
+      <div
+        class="w-full bg-white p-5 flex flex-col md:hidden fixed top-0 bottom-0 transition-all z-20 hidden"
+        id="mobileSearch"
+      >
+        <!-- mobile search header -->
+        <div class="flex justify-between items-center gap-x-2 min-h-10">
+          <span
+            class="cursor-pointer flex items-center justify-center"
+            id="closeMobileSearch"
+          >
+            <i class="fa-solid fa-arrow-right-long ltr:rotate-180"></i>
+          </span>
+          <div
+            class="bg-AbaSecondary/20 grow h-full rounded-2xl flex items-center justify-between"
+          >
+            <div class="grow px-3 font-textRegular text-base text-AbaSecondary">
+              <input
+                type="text"
+                class="w-full outline-0"
+                placeholder="جستجو..."
+                id="searchTextMobile"
+              />
+            </div>
+            <span
+              class="flex items-center justify-center px-3 text-AbaSecondary/60"
+              id="mobileSearch-magnifier"
             >
-            <a
-              href=""
-              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
-              >پاورژل هوشمند</a
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <span
+              class="flex items-center justify-center px-3 text-AbaSecondary/90 hidden"
+              id="mobileSearch-cross"
             >
-            <a
-              href=""
-              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
-              >ضد حریق</a
-            >
-            <a
-              href=""
-              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
-              >آقای رضایی</a
-            >
-            <a
-              href=""
-              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
-              >اصلاح طلب</a
-            >
-            <a
-              href=""
-              class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
-              >حزب توده</a
-            >
+              <i class="fa-solid fa-xmark"></i>
+            </span>
           </div>
         </div>
 
-        <!-- mobile search - loading Items -->
-        <div
-          class="flex flex-col gap-y-2 text-sm *:animate-pulse hidden"
-          id="searchResult__loading"
-        >
-          <!-- search Item -->
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="size-5 rounded-md bg-gray-200"> </span>
-            <div class="flex items-center w-full">
-              <span class="h-2 w-full rounded bg-gray-200"></span>
-            </div>
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="size-5 rounded-md bg-gray-200"> </span>
-            <div class="flex items-center w-full">
-              <span class="h-2 w-full rounded bg-gray-200"></span>
-            </div>
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="size-5 rounded-md bg-gray-200"> </span>
-            <div class="flex items-center w-full">
-              <span class="h-2 w-full rounded bg-gray-200"></span>
-            </div>
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="size-5 rounded-md bg-gray-200"> </span>
-            <div class="flex items-center w-full">
-              <span class="h-2 w-full rounded bg-gray-200"></span>
-            </div>
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="size-5 rounded-md bg-gray-200"> </span>
-            <div class="flex items-center w-full">
-              <span class="h-2 w-full rounded bg-gray-200"></span>
-            </div>
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="size-5 rounded-md bg-gray-200"> </span>
-            <div class="flex items-center w-full">
-              <span class="h-2 w-full rounded bg-gray-200"></span>
-            </div>
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="size-5 rounded-md bg-gray-200"> </span>
-            <div class="flex items-center w-full">
-              <span class="h-2 w-full rounded bg-gray-200"></span>
-            </div>
-          </a>
-        </div>
+        <!-- devider -->
+        <div class="w-full bg-AbaSecondary/60 h-0.5 my-4"></div>
 
-        <!-- mobile search - search result -->
-        <div
-          class="flex flex-col gap-y-2 text-sm *:border-b *:border-b-AbaSecondary *:last:border-b-0 hidden"
-          id="mobileSearch-searchResults"
-        >
-          <!-- search Item -->
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-regular fa-newspaper"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >ملات اپوکسی چند منظوره</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >چسب کاشت میلگرد</span
-            ></a
-          >
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >چسب بتن اپوکسی</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-regular fa-newspaper"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-regular fa-newspaper"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >ملات اپوکسی چند منظوره</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >چسب کاشت میلگرد</span
-            ></a
-          >
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >چسب بتن اپوکسی</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-regular fa-newspaper"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-regular fa-newspaper"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >ملات اپوکسی چند منظوره</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >چسب کاشت میلگرد</span
-            ></a
-          >
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >چسب بتن اپوکسی</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-regular fa-newspaper"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-regular fa-newspaper"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >ملات اپوکسی چند منظوره</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >چسب کاشت میلگرد</span
-            ></a
-          >
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >چسب بتن اپوکسی</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-regular fa-newspaper"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-regular fa-newspaper"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >ملات اپوکسی چند منظوره</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >چسب کاشت میلگرد</span
-            ></a
-          >
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-solid fa-boxes-stacked"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >چسب بتن اپوکسی</span
-            >
-          </a>
-          <a href="" class="flex gap-x-3 min-h-8 py-3">
-            <span class="text-AbaSecondary/80 flex items-center justify-center">
-              <i class="fa-regular fa-newspaper"></i>
-            </span>
-            <span class="text-xs flex items-center font-textMedium"
-              >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
-            >
-          </a>
-        </div>
-
-        <!-- mobile search - no result -->
-        <div class="flex flex-col items-center justify-center grow hidden">
-          <div class="flex items-center justify-center">
-            <img src="images/search-empty.webp" alt="" class="w-55 lg:w-60" />
+        <!-- mobile search body -->
+        <div class="overflow-y-auto">
+          <!-- mobile search - popular Items -->
+          <div class="flex flex-col gap-y-3" id="mobileSearch-populerItems">
+            <div>
+              <span class="font-titleBold">بیشترین جستجو</span>
+            </div>
+            <div class="text-sm flex flex-wrap gap-x-1 gap-y-1">
+              <a
+                href=""
+                class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+                >چسب کاشت میلگرد RA-500</a
+              >
+              <a
+                href=""
+                class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+                >پاورژل هوشمند</a
+              >
+              <a
+                href=""
+                class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+                >ضد حریق</a
+              >
+              <a
+                href=""
+                class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+                >آقای رضایی</a
+              >
+              <a
+                href=""
+                class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+                >اصلاح طلب</a
+              >
+              <a
+                href=""
+                class="bg-AbaSecondary/10 px-3 py-1 rounded-full text-center text-AbaSecondary"
+                >حزب توده</a
+              >
+            </div>
           </div>
-          <div>
-            <span class="font-titleBold text-lg">موردی یافت نشد</span>
+
+          <!-- mobile search - loading Items -->
+          <div
+            class="flex flex-col gap-y-2 text-sm *:animate-pulse hidden"
+            id="searchResult__loading"
+          >
+            <!-- search Item -->
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span class="size-5 rounded-md bg-gray-200"> </span>
+              <div class="flex items-center w-full">
+                <span class="h-2 w-full rounded bg-gray-200"></span>
+              </div>
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span class="size-5 rounded-md bg-gray-200"> </span>
+              <div class="flex items-center w-full">
+                <span class="h-2 w-full rounded bg-gray-200"></span>
+              </div>
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span class="size-5 rounded-md bg-gray-200"> </span>
+              <div class="flex items-center w-full">
+                <span class="h-2 w-full rounded bg-gray-200"></span>
+              </div>
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span class="size-5 rounded-md bg-gray-200"> </span>
+              <div class="flex items-center w-full">
+                <span class="h-2 w-full rounded bg-gray-200"></span>
+              </div>
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span class="size-5 rounded-md bg-gray-200"> </span>
+              <div class="flex items-center w-full">
+                <span class="h-2 w-full rounded bg-gray-200"></span>
+              </div>
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span class="size-5 rounded-md bg-gray-200"> </span>
+              <div class="flex items-center w-full">
+                <span class="h-2 w-full rounded bg-gray-200"></span>
+              </div>
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span class="size-5 rounded-md bg-gray-200"> </span>
+              <div class="flex items-center w-full">
+                <span class="h-2 w-full rounded bg-gray-200"></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- mobile search - search result -->
+          <div
+            class="flex flex-col gap-y-2 text-sm *:border-b *:border-b-AbaSecondary *:last:border-b-0 hidden"
+            id="mobileSearch-searchResults"
+          >
+            <!-- search Item -->
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >ملات اپوکسی چند منظوره</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >چسب کاشت میلگرد</span
+              ></a
+            >
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >چسب بتن اپوکسی</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >ملات اپوکسی چند منظوره</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >چسب کاشت میلگرد</span
+              ></a
+            >
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >چسب بتن اپوکسی</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >ملات اپوکسی چند منظوره</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >چسب کاشت میلگرد</span
+              ></a
+            >
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >چسب بتن اپوکسی</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >ملات اپوکسی چند منظوره</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >چسب کاشت میلگرد</span
+              ></a
+            >
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >چسب بتن اپوکسی</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >ملات اپوکسی چند منظوره</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >چسب کاشت میلگرد</span
+              ></a
+            >
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >چسب بتن اپوکسی</span
+              >
+            </a>
+            <a href="" class="flex gap-x-3 min-h-8 py-3">
+              <span
+                class="text-AbaSecondary/80 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-newspaper"></i>
+              </span>
+              <span class="text-xs flex items-center font-textMedium"
+                >کفپوش های سیمانی و اپوکسی ، مقایسه ، عملکرد و کاربرد ها</span
+              >
+            </a>
+          </div>
+
+          <!-- mobile search - no result -->
+          <div class="flex flex-col items-center justify-center grow hidden">
+            <div class="flex items-center justify-center">
+              <img src="images/search-empty.webp" alt="" class="w-55 lg:w-60" />
+            </div>
+            <div>
+              <span class="font-titleBold text-lg">موردی یافت نشد</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
     <div
       class="bg-black/40 fixed size-full inset-0 transition-all z-10 hidden"
