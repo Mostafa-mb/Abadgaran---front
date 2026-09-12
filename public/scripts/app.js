@@ -26,7 +26,7 @@ const userPanel = document.querySelector("#userPanel");
 //#endregion shopcart and user Panel in layout Queries
 
 //#region mobile menu search Queries
-//#endregion
+
 
 const mobileSearchBtn = document.querySelector("#mobileSearch_btn");
 const mobileSearch = document.querySelector("#mobileSearch");
@@ -41,6 +41,13 @@ const mobileSearchSearchResults = document.querySelector(
   "#mobileSearch-searchResults",
 );
 const searchResultLoading = document.querySelector("#searchResult__loading");
+//#endregion
+
+//#region megamenu Queries
+const menuItemHasSubMenu = document.querySelectorAll(".menuItem__hasSubMenu");
+const megaMenuCategory = document.querySelectorAll(".megaMenu__Category");
+//#endregion
+
 //#endregion
 
 //#region Functions
@@ -159,6 +166,49 @@ const searchResultMobileHandler = () => {
 
 //#endregion
 
+//#region megamenu functions
+const showMegeMenu = (elem, parentElem) => {
+  showOverlay();
+  parentElem.classList.add("z-20", "text-AbaPrimary");
+  elem.classList.remove("Invisible", "opacity-0","hidden");
+  elem.classList.add("visible", "opacity-100");
+};
+
+const hideMegeMenu = (elem, parentElem) => {
+  HideOverlay();
+  parentElem.classList.remove("z-20", "text-AbaPrimary");
+  elem.classList.remove("visible", "opacity-100");
+  elem.classList.add("Invisible", "opacity-0","hidden");
+};
+
+const showCategoryDetails = (elem, event) => {
+  elem.classList.add("megamenu__Category--selected");
+  const categoryDetailElemContainer =
+    elem.parentElement.parentElement.lastElementChild;
+  const categoryId = +event.target.dataset.categoryid;
+  categoryDetailElemContainer.classList.remove("hidden");
+  const categoryDetailElems = categoryDetailElemContainer.querySelectorAll(
+    ".megaMenu__categoryDetials",
+  );
+  categoryDetailElems.forEach((item) => {
+    if (+item.dataset.categorydetailid === categoryId) {
+      item.classList.remove("hidden");
+    }
+  });
+};
+
+const resetCategoryDetail = (elem) => {
+  const categoryDetailElemContainer =
+    elem.parentElement.parentElement.lastElementChild;
+  const categoryDetailElems = categoryDetailElemContainer.querySelectorAll(
+    ".megaMenu__categoryDetials",
+  );
+  categoryDetailElems.forEach((item) => {
+    item.classList.add("hidden");
+  });
+};
+//#endregion
+
 //#endregion
 
 //#region Event listeners
@@ -206,73 +256,7 @@ mobileSearchCross.addEventListener("click", clearSearchMobileInput);
 closeMobileSearchBtn.addEventListener("click", closeMobileSearch);
 //#endregion
 
-//#endregion
-
-// const menuItemHasSubMenu = document.querySelector(".menuItem__hasSubMenu");
-
-// menuItemHasSubMenu.addEventListener("mouseenter", () => {
-//   menuItemHasSubMenu.classList.add("z-30");
-//   menuItemHasSubMenu.lastElementChild.classList.remove(
-//     "invisible",
-//     "opacity-0",
-//     "hidden",
-//   );
-//   menuItemHasSubMenu.lastElementChild.classList.add("visible", "opacity-100");
-//   showOverlay();
-// });
-
-// menuItemHasSubMenu.addEventListener("mouseleave", () => {
-//   menuItemHasSubMenu.classList.remove("z-30");
-//   menuItemHasSubMenu.lastElementChild.classList.remove(
-//     "visible",
-//     "opacity-100",
-//   );
-//   menuItemHasSubMenu.lastElementChild.classList.add(
-//     "invisible",
-//     "opacity-0",
-//     "hidden",
-//   );
-//   HideOverlay();
-// });
-
-// const megamenuCategories = document.querySelectorAll(
-//   ".megaMenu__Category",
-// );
-// const megaMenuCategoryDetials = document.querySelectorAll(
-//   ".megaMenu__categoryDetials",
-// );
-
-// const CategoryDetailContainer = document.querySelector(
-//   "#CategoryDetailContainer",
-// );
-
-// megamenuCategories.forEach((categoryItem) => {
-//   categoryItem.addEventListener("mouseover", (event) => {
-//     megamenuCategories.forEach((categoryItem) => {
-//       categoryItem.classList.remove("megamenu__productsCategory--selected");
-//     });
-//     categoryItem.classList.add("megamenu__productsCategory--selected");
-//     CategoryDetailContainer.classList.remove("hidden");
-//     const productCategoryId = event.target.dataset.categoryid;
-//     categoryDetailHandler(productCategoryId);
-//   });
-// });
-
-// const categoryDetailHandler = (selectedCategoryId) => {
-//   megaMenuCategoryDetials.forEach((categoryDetailItem) => {
-//     categoryDetailItem.classList.add("hidden");
-//   });
-
-//   megaMenuCategoryDetials.forEach((categoryDetailItem) => {
-//     if (categoryDetailItem.dataset.categorydetailid === selectedCategoryId) {
-//       categoryDetailItem.classList.remove("hidden");
-//     }
-//   });
-// };
-
-const menuItemHasSubMenu = document.querySelectorAll(".menuItem__hasSubMenu");
-const megaMenuCategory = document.querySelectorAll(".megaMenu__Category");
-
+//#region megamenu Event Listeners
 menuItemHasSubMenu.forEach((item) => {
   item.addEventListener("mouseenter", () => {
     showMegeMenu(item.lastElementChild, item);
@@ -293,43 +277,11 @@ megaMenuCategory.forEach((item) => {
   });
 });
 
-const showMegeMenu = (elem, parentElem) => {
-  showOverlay();
-  parentElem.classList.add("z-20", "text-AbaPrimary");
-  elem.classList.remove("Invisible", "opacity-0","hidden");
-  elem.classList.add("visible", "opacity-100");
-};
+//#endregion
 
-const hideMegeMenu = (elem, parentElem) => {
-  HideOverlay();
-  parentElem.classList.remove("z-20", "text-AbaPrimary");
-  elem.classList.remove("visible", "opacity-100");
-  elem.classList.add("Invisible", "opacity-0","hidden");
-};
+//#endregion
 
-const showCategoryDetails = (elem, event) => {
-  elem.classList.add("megamenu__Category--selected");
-  const categoryDetailElemContainer =
-    elem.parentElement.parentElement.lastElementChild;
-  const categoryId = +event.target.dataset.categoryid;
-  categoryDetailElemContainer.classList.remove("hidden");
-  const categoryDetailElems = categoryDetailElemContainer.querySelectorAll(
-    ".megaMenu__categoryDetials",
-  );
-  categoryDetailElems.forEach((item) => {
-    if (+item.dataset.categorydetailid === categoryId) {
-      item.classList.remove("hidden");
-    }
-  });
-};
 
-const resetCategoryDetail = (elem) => {
-  const categoryDetailElemContainer =
-    elem.parentElement.parentElement.lastElementChild;
-  const categoryDetailElems = categoryDetailElemContainer.querySelectorAll(
-    ".megaMenu__categoryDetials",
-  );
-  categoryDetailElems.forEach((item) => {
-    item.classList.add("hidden");
-  });
-};
+
+
+
