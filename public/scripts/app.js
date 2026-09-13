@@ -281,7 +281,3 @@ megaMenuCategory.forEach((item) => {
 
 //#endregion
 
-
-
-
-

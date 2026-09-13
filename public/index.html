@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abadgaran</title>
     <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="vendor/swiperJs/swiper-bundle.min.css" />
   </head>
   <body class="font-textRegular">
-
     <!-- header section -->
     <header class="w-full relative">
       <!-- yellow section on desktop header -->
@@ -435,7 +435,7 @@
                 </div>
                 <!-- categories and category Details in megamenu -->
                 <div
-                  class="h-42 absolute top-full right-0 invisible opacity-0 transition-all z-20"
+                  class="h-42 absolute top-full rtl:right-0 ltr:left-0 invisible opacity-0 hidden transition-all z-20"
                 >
                   <div class="w-full mt-4.5 z-20 transition-all">
                     <div class="overflow-hidden rounded-b-xl">
@@ -1552,7 +1552,7 @@
                 </div>
                 <!-- categories and category Details in megamenu -->
                 <div
-                  class="h-42 absolute top-full right-0 invisible opacity-0 transition-all z-20"
+                  class="h-42 absolute top-full rtl:right-0 ltr:left-0 invisible opacity-0 hidden transition-all z-20"
                 >
                   <div class="w-full mt-4.5 z-20 transition-all">
                     <div class="overflow-hidden rounded-b-xl">
@@ -2719,7 +2719,7 @@
                 </div>
                 <!-- categories in megamenu -->
                 <div
-                  class="h-42 absolute top-full right-0 invisible opacity-0 transition-all z-20"
+                  class="h-42 absolute top-full rtl:right-0 ltr:left-0 invisible opacity-0 hidden transition-all z-20"
                 >
                   <div class="w-full mt-4.5 z-20 transition-all">
                     <div class="overflow-hidden rounded-b-xl">
@@ -2774,7 +2774,7 @@
                 </div>
                 <!-- categories in megamenu -->
                 <div
-                  class="h-42 absolute top-full right-0 invisible opacity-0 transition-all z-20"
+                  class="h-42 absolute top-full rtl:right-0 ltr:left-0 invisible opacity-0 hidden transition-all z-20"
                 >
                   <div class="w-full mt-4.5 z-20 transition-all">
                     <div class="overflow-hidden rounded-b-xl">
@@ -2841,7 +2841,7 @@
                 </div>
                 <!-- categories in megamenu -->
                 <div
-                  class="h-42 absolute top-full right-0 invisible opacity-0 transition-all z-20"
+                  class="h-42 absolute top-full rtl:right-0 ltr:left-0 invisible opacity-0 hidden transition-all z-20"
                 >
                   <div class="w-full mt-4.5 z-20 transition-all">
                     <div class="overflow-hidden rounded-b-xl">
@@ -4718,13 +4718,66 @@
       </div>
     </header>
 
-    
+    <section class="h-45 md:h-111 w-full">
+      <div class="h-full">
+        <!-- Swiper -->
+        <div class="swiper sliderSwiper relative slider__container">
+          <div class="swiper-wrapper h-full *:h-full">
+            <div class="swiper-slide">
+              <img
+                src="images/sliderImages/sliderImage1.webp"
+                alt=""
+                loading="lazy"
+                class="w[90%] md:w-full"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/sliderImages/sliderImage2.webp"
+                alt=""
+                loading="lazy"
+                class="w[90%] md:w-full"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/sliderImages/sliderImage3.webp"
+                alt=""
+                loading="lazy"
+                class="w[90%] md:w-full"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/sliderImages/sliderImage4.webp"
+                alt=""
+                loading="lazy"
+                class="w[90%] md:w-full"
+              />
+            </div>
+          </div>
+          <div class="rtl:left-5 bottom-4 ltr:right-5 absolute z-20 hidden md:flex rtl:flex-row ltr:flex-row-reverse *:flex *:justify-center *:items-center *:size-11 *:bg-white *:rounded-full gap-x-2 *:cursor-pointer transition-all slider__buttons invisible opacity-0 ">
+            <div class="button-next ">
+              <i class="fa-solid fa-right-long"></i>
+            </div>
+            <div class="button-preview ">
+              <i class="fa-solid fa-left-long"></i>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div
       class="bg-black/40 fixed size-full inset-0 transition-all z-10 hidden"
       id="overlay"
     ></div>
     <script src="scripts/app.js"></script>
-    <script src="scripts/fontAwesome.js"></script>
+    <script src="vendor/fontAwesome/fontAwesome.js"></script>
+    <script src="vendor/swiperJs/swiper-bundle.min.js"></script>
+    <script src="scripts/slider.js"></script>
   </body>
 </html>
