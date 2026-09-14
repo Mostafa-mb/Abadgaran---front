@@ -28,3 +28,30 @@ sliderContainer.addEventListener("mouseleave" , () =>{
   sliderButtons.classList.remove("visible","opacity-100")
   sliderButtons.classList.add("invisible","opacity-0")
 })
+
+
+
+
+const productCategorySwiper = new Swiper('.productCategorySwiper', {
+
+    direction: 'horizontal',
+
+    slidesPerView: 2,
+    spaceBetween:20,
+
+    loop: true,
+
+    navigation: {
+        nextEl: '.category-next',
+        prevEl: '.category-prev',
+    },
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 8,
+      spaceBetween: 40
+    }}
+
+});
