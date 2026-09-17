@@ -36,8 +36,8 @@ const productCategorySwiper = new Swiper('.productCategorySwiper', {
 
     direction: 'horizontal',
 
-    slidesPerView: 2,
-    spaceBetween:20,
+    slidesPerView: 4,
+    spaceBetween:10,
 
     loop: true,
 
@@ -50,8 +50,8 @@ const productCategorySwiper = new Swiper('.productCategorySwiper', {
   breakpoints: {
     // when window width is >= 320px
     768: {
-      slidesPerView: 8,
-      spaceBetween: 40
+      slidesPerView: 9,
+      spaceBetween: 10
     }}
 
 });
