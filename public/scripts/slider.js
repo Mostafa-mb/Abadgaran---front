@@ -55,3 +55,29 @@ const productCategorySwiper = new Swiper('.productCategorySwiper', {
     }}
 
 });
+
+
+
+const onlineProductsSwiper = new Swiper('.onlineProductsSwiper', {
+
+    direction: 'horizontal',
+
+    slidesPerView: 2.5,
+    spaceBetween:5,
+
+    loop: true,
+
+    navigation: {
+        nextEl: '.onlineProducts-next',
+        prevEl: '.onlineProducts-prev',
+    },
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 5.5  ,
+      spaceBetween: 5
+    }}
+
+});
