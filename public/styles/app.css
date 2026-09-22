@@ -10,14 +10,18 @@
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
+    --color-emerald-500: oklch(69.6% 0.17 162.48);
     --color-emerald-600: oklch(59.6% 0.145 163.225);
     --color-emerald-800: oklch(43.2% 0.095 166.913);
+    --color-teal-400: oklch(77.7% 0.152 181.912);
+    --color-teal-700: oklch(51.1% 0.096 186.391);
     --color-rose-500: oklch(64.5% 0.246 16.439);
     --color-slate-500: oklch(55.4% 0.046 257.417);
     --color-slate-700: oklch(37.2% 0.044 257.287);
     --color-slate-800: oklch(27.9% 0.041 260.031);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-900: oklch(21% 0.034 264.665);
@@ -43,6 +47,7 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --radius-sm: 0.25rem;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
@@ -50,6 +55,7 @@
     --radius-2xl: 1rem;
     --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -60,6 +66,7 @@
     --font-textMedium: "Dana Medium";
     --font-textBold: "Dana DemiBold";
     --font-title: "Morabba Light";
+    --font-titleMedium: "Morabba Medium";
     --font-titleBold: "Morabba Bold";
   }
 }
@@ -286,9 +293,6 @@
   .z-20 {
     z-index: 20;
   }
-  .col-span-2 {
-    grid-column: span 2 / span 2;
-  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -343,6 +347,12 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
   .line-clamp-6 {
     overflow: hidden;
     display: -webkit-box;
@@ -363,6 +373,9 @@
   }
   .table {
     display: table;
+  }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
   }
   .size-2 {
     width: calc(var(--spacing) * 2);
@@ -412,20 +425,14 @@
   .h-32\.5 {
     height: calc(var(--spacing) * 32.5);
   }
-  .h-40 {
-    height: calc(var(--spacing) * 40);
-  }
   .h-42 {
     height: calc(var(--spacing) * 42);
   }
   .h-45 {
     height: calc(var(--spacing) * 45);
   }
-  .h-52 {
-    height: calc(var(--spacing) * 52);
-  }
-  .h-60 {
-    height: calc(var(--spacing) * 60);
+  .h-50 {
+    height: calc(var(--spacing) * 50);
   }
   .h-78 {
     height: calc(var(--spacing) * 78);
@@ -477,9 +484,6 @@
   }
   .w-80 {
     width: calc(var(--spacing) * 80);
-  }
-  .w-103 {
-    width: calc(var(--spacing) * 103);
   }
   .w-150 {
     width: calc(var(--spacing) * 150);
@@ -548,9 +552,6 @@
     --tw-scrollbar-thumb: var(--color-AbaSecondary);
     scrollbar-color: var(--tw-scrollbar-thumb) var(--tw-scrollbar-track);
   }
-  .grid-flow-row {
-    grid-auto-flow: row;
-  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -571,6 +572,9 @@
   }
   .items-end {
     align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-around {
     justify-content: space-around;
@@ -631,6 +635,9 @@
   }
   .gap-y-4 {
     row-gap: calc(var(--spacing) * 4);
+  }
+  .gap-y-4\.5 {
+    row-gap: calc(var(--spacing) * 4.5);
   }
   .gap-y-8 {
     row-gap: calc(var(--spacing) * 8);
@@ -719,6 +726,33 @@
   .border-black {
     border-color: var(--color-black);
   }
+  .border-black\/12 {
+    border-color: color-mix(in srgb, #000 12%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-black) 12%, transparent);
+    }
+  }
+  .border-black\/88 {
+    border-color: color-mix(in srgb, #000 88%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-black) 88%, transparent);
+    }
+  }
+  .border-white {
+    border-color: var(--color-white);
+  }
+  .border-white\/12 {
+    border-color: color-mix(in srgb, #fff 12%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 12%, transparent);
+    }
+  }
+  .border-white\/88 {
+    border-color: color-mix(in srgb, #fff 88%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 88%, transparent);
+    }
+  }
   .bg-AbaPrimary {
     background-color: var(--color-AbaPrimary);
   }
@@ -761,6 +795,9 @@
       background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
     }
   }
+  .bg-emerald-500 {
+    background-color: var(--color-emerald-500);
+  }
   .bg-emerald-600 {
     background-color: var(--color-emerald-600);
   }
@@ -781,9 +818,6 @@
   }
   .object-cover {
     object-fit: cover;
-  }
-  .object-fill {
-    object-fit: fill;
   }
   .p-1 {
     padding: var(--spacing);
@@ -838,6 +872,9 @@
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
+  }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -899,6 +936,10 @@
   .text-\[14px\] {
     font-size: 14px;
   }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
@@ -936,6 +977,12 @@
   .text-\[\#4A6C82\] {
     color: #4A6C82;
   }
+  .text-\[\#575757\] {
+    color: #575757;
+  }
+  .text-gray-300 {
+    color: var(--color-gray-300);
+  }
   .text-gray-400 {
     color: var(--color-gray-400);
   }
@@ -954,13 +1001,37 @@
   .text-slate-800 {
     color: var(--color-slate-800);
   }
+  .text-teal-400 {
+    color: var(--color-teal-400);
+  }
+  .text-teal-700 {
+    color: var(--color-teal-700);
+  }
   .text-white {
     color: var(--color-white);
+  }
+  .text-white\/20 {
+    color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
   }
   .text-white\/60 {
     color: color-mix(in srgb, #fff 60%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-white) 60%, transparent);
+    }
+  }
+  .text-white\/70 {
+    color: color-mix(in srgb, #fff 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 70%, transparent);
+    }
+  }
+  .text-white\/80 {
+    color: color-mix(in srgb, #fff 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 80%, transparent);
     }
   }
   .underline {
@@ -1016,9 +1087,6 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
-  }
-  .contain-content {
-    contain: content;
   }
   .select-none {
     -webkit-user-select: none;
@@ -1180,6 +1248,12 @@
     .md\:mt-15 {
       margin-top: calc(var(--spacing) * 15);
     }
+    .md\:line-clamp-4 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+    }
     .md\:block {
       display: block;
     }
@@ -1209,9 +1283,6 @@
     .md\:w-\[90\%\] {
       width: 90%;
     }
-    .md\:grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
     .md\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
@@ -1226,6 +1297,9 @@
     }
     .md\:px-4 {
       padding-inline: calc(var(--spacing) * 4);
+    }
+    .md\:px-5 {
+      padding-inline: calc(var(--spacing) * 5);
     }
     .md\:py-6 {
       padding-block: calc(var(--spacing) * 6);
@@ -1256,9 +1330,6 @@
     }
   }
   @media (width >= 64rem) {
-    .lg\:col-span-1 {
-      grid-column: span 1 / span 1;
-    }
     .lg\:size-20 {
       width: calc(var(--spacing) * 20);
       height: calc(var(--spacing) * 20);
