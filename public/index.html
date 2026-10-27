@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
   </head>
   <body class="font-textRegular">
     <!-- header section -->
-    <header class="w-full relative">
+    <header class="w-full relative" id="start">
       <!-- yellow section on desktop header -->
       <div class="bg-AbaPrimary h-14 md:h-22">
         <div class="w-[90%] mx-auto grid grid-cols-3 h-full">
@@ -5002,7 +5002,7 @@
     <!-- online products -->
     <section class="mt-1 w-full md:mt-15 onlineProducts">
       <div
-        class="w-[95%] md:w-[90%] mx-auto flex flex-col px-2 py-3 md:px-4 md:py-6 border-2 border-[#9F9F9F] rounded-xl relative"
+        class="w-[95%] md:w-[90%] mx-auto flex flex-col px-2 py-3 md:px-4 md:py-6 border-2 border-[#9F9F9F] rounded-2xl relative"
       >
         <!-- online Products Header -->
         <div class="flex justify-between items-center mb-4">
@@ -5322,6 +5322,430 @@
       </div>
     </section>
 
+    <!-- online product - v2 -->
+    <section class="mt-20 w-full md:mt-15 onlineproducts-v2">
+      <div
+        class="w-[95%] md:w-[90%] mx-auto flex flex-col px-2 py-3 md:px-4 md:py-6 border-2 border-[#9F9F9F] bg-gray-100 rounded-2xl relative"
+      >
+        <!-- onlineproducts-v2 Header -->
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-lg md:text-2xl font-titleBold">محصولات آنلاین</h2>
+          <a
+            href=""
+            class="text-xs md:text-xl text-[#4A6C82] flex items-center gap-x-1 font-textBold"
+          >
+            <span>نمایش همه</span>
+            <span><i class="fa-solid fa-chevron-left ltr:rotate-180"></i></span>
+          </a>
+        </div>
+
+        <div class="flex items-center">
+          <!-- Prev -->
+          <button
+            type="button"
+            class="onlineProductsV2-prev hidden md:flex size-10 shrink-0 items-center justify-center md:size-20 cursor-pointer absolute -right-10 z-10"
+          >
+            <span
+              class="size-10 bg-white shadow shadow-AbaSecondary rounded-full flex items-center justify-center"
+            >
+              <i
+                class="fa-solid fa-chevron-right fa-canvas-roomy"
+                style="color: rgb(0, 0, 0)"
+              ></i>
+            </span>
+          </button>
+
+          <!-- Swiper -->
+          <div class="onlineProducts-v2Swiper swiper mt-4">
+            <div class="swiper-wrapper">
+              <!-- Slide -->
+              <div
+                class="swiper-slide w-full bg-white text-AbaSecondary border border-AbaSecondary rounded-2xl cursor-pointer"
+              >
+                <div
+                  class="flex flex-col justify-between gap-y-4 min-h-70 md:min-h-80 lg:min-h-100"
+                >
+                  <div>
+                    <img
+                      src="images/onlineProducts/product1.webp"
+                      alt=""
+                      class="w-full aspect-video rounded-2xl"
+                    />
+                  </div>
+                  <div
+                    class="px-3 md:px-5 pb-3 flex flex-col justify-between gap-y-4.5 h-full grow"
+                  >
+                    <div class="flex flex-col gap-y-2 items-start text-start">
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        پودر بند کشی ویژه - کرم
+                      </h2>
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        ABA TILEGROUT
+                      </h2>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-[10px] md:text-sm lg:text-lg"
+                    >
+                      <span class="font-textBold">قیمت : </span>
+
+                      <div class="flex items-center gap-x-1">
+                        <span
+                          class="text-xs md:text-base lg:text-lg font-textBold"
+                          >3,292,500</span
+                        >
+                        <span class="text-AbaPrimary font-textBold">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide -->
+              <div
+                class="swiper-slide w-full bg-white text-AbaSecondary border border-AbaSecondary rounded-2xl cursor-pointer"
+              >
+                <div
+                  class="flex flex-col justify-between gap-y-4 min-h-70 md:min-h-80 lg:min-h-100"
+                >
+                  <div>
+                    <img
+                      src="images/onlineProducts/product2.webp"
+                      alt=""
+                      class="w-full aspect-video rounded-2xl"
+                    />
+                  </div>
+                  <div
+                    class="px-3 md:px-5 pb-3 flex flex-col justify-between gap-y-4.5 h-full grow"
+                  >
+                    <div class="flex flex-col gap-y-2 items-start text-start">
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        پودر بند کشی ویژه - طوسی
+                      </h2>
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        ABA TILEGROUT-GRAY
+                      </h2>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-[10px] md:text-sm lg:text-lg"
+                    >
+                      <span class="font-textBold">قیمت : </span>
+
+                      <div class="flex items-center gap-x-1">
+                        <span
+                          class="text-xs md:text-base lg:text-lg font-textBold"
+                          >3,292,500</span
+                        >
+                        <span class="text-AbaPrimary font-textBold">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide -->
+              <div
+                class="swiper-slide w-full bg-white text-AbaSecondary border border-AbaSecondary rounded-2xl cursor-pointer"
+              >
+                <div
+                  class="flex flex-col justify-between gap-y-4 min-h-70 md:min-h-80 lg:min-h-100"
+                >
+                  <div>
+                    <img
+                      src="images/onlineProducts/product3.webp"
+                      alt=""
+                      class="w-full aspect-video rounded-2xl"
+                    />
+                  </div>
+                  <div
+                    class="px-3 md:px-5 pb-3 flex flex-col justify-between gap-y-4.5 h-full grow"
+                  >
+                    <div class="flex flex-col gap-y-2 items-start text-start">
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        روغن قالب امولسیونی پایه آب
+                      </h2>
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        AQUAFORM-790
+                      </h2>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-[10px] md:text-sm lg:text-lg"
+                    >
+                      <span class="font-textBold">قیمت : </span>
+
+                      <div class="flex items-center gap-x-1">
+                        <span
+                          class="text-xs md:text-base lg:text-lg font-textBold"
+                          >3,292,500</span
+                        >
+                        <span class="text-AbaPrimary font-textBold">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide -->
+              <div
+                class="swiper-slide w-full bg-white text-AbaSecondary border border-AbaSecondary rounded-2xl cursor-pointer"
+              >
+                <div
+                  class="flex flex-col justify-between gap-y-4 min-h-70 md:min-h-80 lg:min-h-100"
+                >
+                  <div>
+                    <img
+                      src="images/onlineProducts/product4.webp"
+                      alt=""
+                      class="w-full aspect-video rounded-2xl"
+                    />
+                  </div>
+                  <div
+                    class="px-3 md:px-5 pb-3 flex flex-col justify-between gap-y-4.5 h-full grow"
+                  >
+                    <div class="flex flex-col gap-y-2 items-start text-start">
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        مزوکریت
+                      </h2>
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        MEZUKRET
+                      </h2>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-[10px] md:text-sm lg:text-lg"
+                    >
+                      <span class="font-textBold">قیمت : </span>
+
+                      <div class="flex items-center gap-x-1">
+                        <span
+                          class="text-xs md:text-base lg:text-lg font-textBold"
+                          >3,292,500</span
+                        >
+                        <span class="text-AbaPrimary font-textBold">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide -->
+              <div
+                class="swiper-slide w-full bg-white text-AbaSecondary border border-AbaSecondary rounded-2xl cursor-pointer"
+              >
+                <div
+                  class="flex flex-col justify-between gap-y-4 min-h-70 md:min-h-80 lg:min-h-100"
+                >
+                  <div>
+                    <img
+                      src="images/onlineProducts/product5.webp"
+                      alt=""
+                      class="w-full aspect-video rounded-2xl"
+                    />
+                  </div>
+                  <div
+                    class="px-3 md:px-5 pb-3 flex flex-col justify-between gap-y-4.5 h-full grow"
+                  >
+                    <div class="flex flex-col gap-y-2 items-start text-start">
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        پودر بند کشی ویژه - سفید
+                      </h2>
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        ABA TILEGROUT-WHITE
+                      </h2>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-[10px] md:text-sm lg:text-lg"
+                    >
+                      <span class="font-textBold">قیمت : </span>
+
+                      <div class="flex items-center gap-x-1">
+                        <span
+                          class="text-xs md:text-base lg:text-lg font-textBold"
+                          >3,292,500</span
+                        >
+                        <span class="text-AbaPrimary font-textBold">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide -->
+              <div
+                class="swiper-slide w-full bg-white text-AbaSecondary border border-AbaSecondary rounded-2xl cursor-pointer"
+              >
+                <div
+                  class="flex flex-col justify-between gap-y-4 min-h-70 md:min-h-80 lg:min-h-100"
+                >
+                  <div>
+                    <img
+                      src="images/onlineProducts/product6.webp"
+                      alt=""
+                      class="w-full aspect-video rounded-2xl"
+                    />
+                  </div>
+                  <div
+                    class="px-3 md:px-5 pb-3 flex flex-col justify-between gap-y-4.5 h-full grow"
+                  >
+                    <div class="flex flex-col gap-y-2 items-start text-start">
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        پودر بند کشی ویژه - کرم
+                      </h2>
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        ABA TILEGROUT
+                      </h2>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-[10px] md:text-sm lg:text-lg"
+                    >
+                      <span class="font-textBold">قیمت : </span>
+
+                      <div class="flex items-center gap-x-1">
+                        <span
+                          class="text-xs md:text-base lg:text-lg font-textBold"
+                          >3,292,500</span
+                        >
+                        <span class="text-AbaPrimary font-textBold">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide -->
+              <div
+                class="swiper-slide w-full bg-white text-AbaSecondary border border-AbaSecondary rounded-2xl cursor-pointer"
+              >
+                <div
+                  class="flex flex-col justify-between gap-y-4 min-h-70 md:min-h-80 lg:min-h-100"
+                >
+                  <div>
+                    <img
+                      src="images/onlineProducts/product7.webp"
+                      alt=""
+                      class="w-full aspect-video rounded-2xl"
+                    />
+                  </div>
+                  <div
+                    class="px-3 md:px-5 pb-3 flex flex-col justify-between gap-y-4.5 h-full grow"
+                  >
+                    <div class="flex flex-col gap-y-2 items-start text-start">
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        پودر بند کشی ویژه - کرم
+                      </h2>
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        ABA TILEGROUT
+                      </h2>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-[10px] md:text-sm lg:text-lg"
+                    >
+                      <span class="font-textBold">قیمت : </span>
+
+                      <div class="flex items-center gap-x-1">
+                        <span
+                          class="text-xs md:text-base lg:text-lg font-textBold"
+                          >3,292,500</span
+                        >
+                        <span class="text-AbaPrimary font-textBold">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide -->
+              <div
+                class="swiper-slide w-full bg-white text-AbaSecondary border border-AbaSecondary rounded-2xl cursor-pointer"
+              >
+                <div
+                  class="flex flex-col justify-between gap-y-4 min-h-70 md:min-h-80 lg:min-h-100"
+                >
+                  <div>
+                    <img
+                      src="images/onlineProducts/product8.webp"
+                      alt=""
+                      class="w-full aspect-video rounded-2xl"
+                    />
+                  </div>
+                  <div
+                    class="px-3 md:px-5 pb-3 flex flex-col justify-between gap-y-4.5 h-full grow"
+                  >
+                    <div class="flex flex-col gap-y-2 items-start text-start">
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        پودر بند کشی ویژه - کرم
+                      </h2>
+                      <h2
+                        class="line-clamp-2 font-titleBold text-sm lg:text-base"
+                      >
+                        ABA TILEGROUT
+                      </h2>
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-[10px] md:text-sm lg:text-lg"
+                    >
+                      <span class="font-textBold">قیمت : </span>
+
+                      <div class="flex items-center gap-x-1">
+                        <span
+                          class="text-xs md:text-base lg:text-lg font-textBold"
+                          >3,292,500</span
+                        >
+                        <span class="text-AbaPrimary font-textBold">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Next -->
+          <button
+            type="button"
+            class="onlineProductsV2-next hidden md:flex size-10 shrink-0 items-center justify-center md:size-20 cursor-pointer absolute -left-10 top-[full/2] z-10"
+          >
+            <span
+              class="size-10 bg-white shadow shadow-AbaSecondary rounded-full flex items-center justify-center"
+            >
+              <i
+                class="fa-solid fa-chevron-left fa-canvas-roomy"
+                style="color: rgb(0, 0, 0)"
+              ></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- business information Section -->
     <section class="my-10 md:my-20 w-full md:mt-10 businessInfo">
       <div
@@ -5514,7 +5938,7 @@
     <!-- Articles -->
     <section class="mt-1 w-full md:mt-15 articles">
       <div
-        class="w-[95%] md:w-[90%] mx-auto flex flex-col px-2 py-3 md:px-4 md:py-6 border-2 border-[#9F9F9F] rounded-xl relative"
+        class="w-[95%] md:w-[90%] mx-auto flex flex-col px-2 py-3 md:px-4 md:py-6 border-2 border-[#9F9F9F] rounded-2xl relative"
       >
         <!-- articles Header -->
         <div class="flex justify-between items-center mb-4">
@@ -5972,6 +6396,188 @@
         </div>
       </div>
     </section>
+
+    <!-- footer -->
+    <footer class="mt-5 w-full md:mt-15 mb-15 footer">
+      <div
+        class="w-[95%] mx-auto flex flex-col px-4 py-3 md:px-8 md:py-6 bg-AbaSecondary rounded-2xl relative"
+      >
+        <!-- logo and go to top button -->
+        <div
+          class="mx-auto flex justify-between items-center w-full border-b border-white"
+        >
+          <img
+            src="images/Logo-04.webp"
+            alt=""
+            class="h-14 md:h-22 max-w-7xl"
+          />
+          <a
+            href="#start"
+            class="px-3 py-2 md:px-6 bg-AbaPrimary rounded-md flex items-center gap-x-2 text-xs md:text-sm"
+            >بازگشت به بالا
+            <span class="flex items-center justify-center"
+              ><i class="fa-solid fa-chevron-up"></i
+            ></span>
+          </a>
+        </div>
+        <!-- footer urls and Enamad and social media -->
+        <div class="flex flex-col-reverse md:flex-row md:gap-x-4">
+          <div class="py-4 text-white w-full md:max-w-[40%] text-pretty">
+            <div class="relative h-50 overflow-hidden">
+              <div>
+                <h1 class="font-titleBold mb-2">
+                  شرکت صنایع شیمی ساختمان آبادگران
+                </h1>
+                <p class="text-sm">
+                  شرکت صنایع شیمی ساختمان آبادگران در سال 1362 شمسی با اخذ مجوز
+                  از وزارت صنایع و معادن استان تهران تاسیس شد.اکنون شرکت
+                  آبادگران، با ظرفیت تولید واقعی سالانه 65000 تن و تولید بیش از
+                  150 نوع ماده شیمیایی دانش بنیان ، گروه صنعتی پیشرو در صنعت
+                  شیمیائی ساختمان کشور محسوب می شود. اخذ گواهینامه های بین
+                  المللی مدیریت کیفیت ، تعاملات سازنده و نزدیک با سازمان ملی
+                  استاندارد ایران به عنوان آزمایشگاه آکرودیته در زمینه : " مواد
+                  افزودنی بتن ، بتن آماده، سنگدانه ، سیمان و چسب های کاشی
+                  "همچنین اخذ مجوز گروه پژوهشی از وزارت علوم که منجر به ارتباط
+                  نزدیک تری با پارک های علم و فناوری کشور و پردیس های دانشگاهی
+                  گشت نمایانگر توجه همزمان شرکت آبادگران به تولید علم و متجلی
+                  نمودن دانش در کیفیت محصولات تولیدی با بهر ه گیری از فناوری های
+                  نوین می باشد. سیر رشد شرکت آبادگران از بدو تاسیس تا کنون با
+                  اضافه شدن سالانه یک یا چند گونه مواد شیمیائی جدید که نتیجه
+                  همسو سازی فعالیت های تحقیقات با صنایع وابسته به توسعه و عمران
+                  کشور بوده همچنان ادامه دارد .محوریت قراردادن امور علمی و
+                  پژوهشی در سند چشم انداز و فرآیندهای اجرائی شرکت باعث شده
+                  همواره بخش قابل توجهی از درآمد کل گروه به توسعه فیزیکی و
+                  تجهیزاتی مرکز علمی ، امور تحقیقاتی و صنعتی سازی مواد تکنولوژیک
+                  اختصاص یافته و با تجهیز آزمایشگاه های مصالح، نانوتکنولوژی،
+                  پلیمر و شیمی به روز آمد ترین امکانات تحقیقاتی، بستر خلق دانش و
+                  تبدیل آن به فناوری تحکیم شود. آزمایشگاه های شیمی و نانو
+                  تکنولوژی شرکت آبادگران به نحوی هوشمندانه ارتباط آزمایشگاهی -
+                  صنعتی خود را با خطوط تولید انبوه، از طریق تجهیز واحد های
+                  پایلوت شیمیائی و بهره جستن از آمیخته روشهای ناب و نوین مدیریت
+                  علمی بر قرار نموده اند نتیجتا در حال حاضر امکان طراحی و تولید
+                  مواد شیمیائی اختصاصی به صورت بهنگام (J.I.T – Just In Time) با
+                  نیاز سنجی صنعتی مخاطبین و به صورت کاملاً سفارشی (Customized
+                  Production) در مدت زمان بسیار کوتاهی فراهم آمده است. این
+                  اقدامات کاملا پر سرعت علمی در مسیر صنعتی سازی با مطالعه دقیق
+                  نیازهای دریافت شده از جانب پروژه های هدف ، بهره گیری از تجارب
+                  و اسناد تحقیقاتی موجود در مرکز تحقیقات شرکت و قابلیت های صنعتی
+                  گروه ، توانمندی منحصر به فردی را برای جلب رضایت مخاطبین علمی –
+                  تجاری به وجود آورده است.همچنین، ارائه مقالات علمی ، ثبت
+                  اختراعات و سایر فعالیتهای پژوهشی باعث شده است تا محققین این
+                  شرکت به صورت مستمر در جشنواره ها و سمینارهای برجسته مورد تشویق
+                  و تقدیر قرار بگیرند. اخیرا پروژه های سنتز مواد شیمیایی با
+                  فناوری پیشرفته Hi-Tech به عنوان یکی از اهداف کلان شرکت برای
+                  ورود به بازارهای خارجی کلید خورده. بدین منظور ارتقاء سطح خطوط
+                  تولید به رباتیک در دستور کار قرار گرفته و پیگیری می شود.
+                </p>
+                <div
+                  class="bg-linear-to-t from-AbaSecondary w-full h-full absolute bottom-0 flex items-end"
+                ></div>
+              </div>
+            </div>
+            <div class="mt-2 text-sky-500 cursor-pointer">
+              <span>مشاهده بیشتر</span>
+              <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+          </div>
+
+          <!-- URLs -->
+          <div
+            class="grid grid-cols-2 gap-x-6 py-4 border-b md:border-0 border-white"
+          >
+            <div
+              class="text-sm md:text-[16px] text-white flex flex-col gap-y-3"
+            >
+              <h3 class="font-textBold">راهنمای خرید آنلاین</h3>
+              <ul
+                class="text-xs flex flex-col gap-y-2 *:hover:text-AbaPrimary *:transition-all flex-wrap *:text-pretty *:text-white/80"
+              >
+                <li><a href="">ارتباط با شرکت آبادگران</a></li>
+                <li><a href="">آموزش ویدئویی خرید آنلاین</a></li>
+                <li><a href="">پشتیبانی و خدمات پس از فروش</a></li>
+                <li><a href="">حریم خصوصی کاربران</a></li>
+                <li><a href="">روش پرداخت وجه کالا و خدمات</a></li>
+                <li><a href="">روش ارسال کالا</a></li>
+                <li><a href="">روند مرجوع نمودن کالا و استرداد وجه</a></li>
+                <li><a href="">استفاده از مهلت 7 روزه بازگشت کالا</a></li>
+                <li><a href="">ثبت شکایت مشتریان</a></li>
+              </ul>
+            </div>
+            <div class="text-sm text-white flex flex-col gap-y-3">
+              <h3 class="font-textBold text-sm md:text-[16px]">دسترسی سریع</h3>
+              <ul
+                class="text-xs flex flex-col gap-y-2 *:hover:text-AbaPrimary *:transition-all flex-wrap *:text-pretty *:text-white/80"
+              >
+                <li><a href="">محصولات آبادگران</a></li>
+                <li><a href="">خدمات آنلاین</a></li>
+                <li><a href="">درباره ما</a></li>
+                <li><a href="">تماس با ما</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- contact us and social medias and enamad -->
+          <div class="py-4 flex flex-col gap-y-5 grow">
+            <!-- contact us and social media -->
+            <div class="grid grid-cols-2 gap-x-2">
+              <div class="text-xs text-white flex flex-col gap-y-2">
+                <h4 class="font-textBold text-sm md:text-[16px]">ارتباط با ما</h4>
+                <div>
+                  <span>تلفن:</span>
+                  <span>87754 - 021</span>
+                </div>
+                <div>
+                  <span>ایمیل:</span>
+                  <span>info@abadgaran.com</span>
+                </div>
+              </div>
+              <div class="text-xs text-white flex flex-col gap-y-2">
+                <h4 class="font-textBold text-sm md:text-[16px]">شبکه های اجتماعی</h4>
+                <div class="*:text-xl flex items-center gap-x-1">
+                  <span class="text-rose-500">
+                    <i class="fa-brands fa-instagram"></i>
+                  </span>
+                  <span class="text-sky-500"
+                    ><i class="fa-brands fa-telegram"></i
+                  ></span>
+                  <span class="text-sky-500"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></span>
+                  <span class="text-yellow-600"
+                    ><i class="fa-solid fa-film"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="" class="">
+                <img
+                  src="images/Enamad.webp"
+                  alt=""
+                  class="size-18 rounded-2xl"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-3 bg-gray-800 rounded-sm text-xs text-white flex flex-col gap-y-2 md:flex-row justify-between"
+        >
+          <div class="flex items-center gap-x-2">
+            <span>©</span>
+            <span class="text-xs"
+              >تمام حقوق این وبسایت متعلق به
+              <span class="text-AbaPrimary"
+                >شرکت صنایع شیمی ساختمان آبادگران</span
+              >
+              میباشد</span
+            >
+          </div>
+          <div class="text-end">
+            <span>Built with ❤ by Mostafa</span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <div
       class="bg-black/40 fixed size-vh inset-0 transition-all z-10 hidden"

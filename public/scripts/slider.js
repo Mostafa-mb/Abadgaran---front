@@ -82,6 +82,33 @@ const onlineProductsSwiper = new Swiper(".onlineProductsSwiper", {
   },
 });
 
+const onlineProductsV2Swiper = new Swiper(".onlineProducts-v2Swiper", {
+  direction: "horizontal",
+
+  slidesPerView: 1.75,
+  spaceBetween: 15,
+
+  loop: true,
+
+  navigation: {
+    nextEl: ".onlineProductsV2-next",
+    prevEl: ".onlineProductsV2-prev",
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 4.5,
+      spaceBetween: 30,
+    },
+  },
+});
+
 
 const articlesSwiper = new Swiper(".articlesSwiper", {
   direction: "horizontal",
