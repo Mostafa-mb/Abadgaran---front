@@ -27,7 +27,6 @@ const userPanel = document.querySelector("#userPanel");
 
 //#region mobile menu search Queries
 
-
 const mobileSearchBtn = document.querySelector("#mobileSearch_btn");
 const mobileSearch = document.querySelector("#mobileSearch");
 const searchTextMobile = document.querySelector("#searchTextMobile");
@@ -44,8 +43,14 @@ const searchResultLoading = document.querySelector("#searchResult__loading");
 //#endregion
 
 //#region megamenu Queries
+
 const menuItemHasSubMenu = document.querySelectorAll(".menuItem__hasSubMenu");
 const megaMenuCategory = document.querySelectorAll(".megaMenu__Category");
+
+//#region footer Content
+const footerContent = document.querySelector("#footer_content");
+const footerMoreContentBtn = document.querySelector("#footer__moreContentBtn");
+//#endregion
 //#endregion
 
 //#endregion
@@ -170,7 +175,7 @@ const searchResultMobileHandler = () => {
 const showMegeMenu = (elem, parentElem) => {
   showOverlay();
   parentElem.classList.add("z-20", "text-AbaPrimary");
-  elem.classList.remove("Invisible", "opacity-0","hidden");
+  elem.classList.remove("Invisible", "opacity-0", "hidden");
   elem.classList.add("visible", "opacity-100");
 };
 
@@ -178,7 +183,7 @@ const hideMegeMenu = (elem, parentElem) => {
   HideOverlay();
   parentElem.classList.remove("z-20", "text-AbaPrimary");
   elem.classList.remove("visible", "opacity-100");
-  elem.classList.add("Invisible", "opacity-0","hidden");
+  elem.classList.add("Invisible", "opacity-0", "hidden");
 };
 
 const showCategoryDetails = (elem, event) => {
@@ -266,7 +271,6 @@ menuItemHasSubMenu.forEach((item) => {
   });
 });
 
-
 megaMenuCategory.forEach((item) => {
   item.addEventListener("mouseenter", (event) => {
     resetCategoryDetail(item);
@@ -279,5 +283,26 @@ megaMenuCategory.forEach((item) => {
 
 //#endregion
 
+//#region
+
 //#endregion
 
+//#endregion
+
+footerMoreContentBtn.addEventListener("click", () => {
+  footerContent.classList.toggle("overflow-hidden");
+  footerContent.classList.toggle("h-50");
+  footerContent.firstElementChild.lastElementChild.classList.toggle("hidden");
+  footerMoreContentBtn.lastElementChild.firstElementChild.classList.toggle(
+    "rotate-180",
+  );
+  footerMoreContentBtn.classList.toggle("active");
+
+  if(footerMoreContentBtn.classList.contains("active")) {
+    footerMoreContentBtn.firstElementChild.innerHTML = "مشاهده کمتر"
+  }else{
+    footerMoreContentBtn.firstElementChild.innerHTML = "مشاهده بیشتر"
+  }
+});
+
+console.log(footerMoreContentBtn.firstElementChild.innerHTML);
