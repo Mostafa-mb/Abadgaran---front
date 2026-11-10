@@ -283,12 +283,7 @@ megaMenuCategory.forEach((item) => {
 
 //#endregion
 
-//#region
-
-//#endregion
-
-//#endregion
-
+//#region footer content listeners
 footerMoreContentBtn.addEventListener("click", () => {
   footerContent.classList.toggle("overflow-hidden");
   footerContent.classList.toggle("h-50");
@@ -304,5 +299,9 @@ footerMoreContentBtn.addEventListener("click", () => {
     footerMoreContentBtn.firstElementChild.innerHTML = "مشاهده بیشتر"
   }
 });
+//#endregion
 
-console.log(footerMoreContentBtn.firstElementChild.innerHTML);
+//#endregion
+
+
+

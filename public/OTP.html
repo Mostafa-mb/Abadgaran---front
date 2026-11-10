@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body
+    class="bg-[url('/public/images/login&signup/mobile-signup.webp')] md:bg-[url('/public/images/login&signup/desktop-signup.webp')] bg-no-repeat bg-cover bg-center min-h-screen font-textMedium relative min-w-screen"
+  >
+    <!-- overlay -->
+    <div class="fixed inset-0 bg-black/10 backdrop-brightness-75 z-0"></div>
+
+    <main
+      class="relative z-10 flex min-h-screen items-center justify-center p-4"
+    >
+      <div class="w-full max-w-7xl mx-auto">
+        <div class="flex items-center justify-center">
+          <a
+            href=""
+            class="md:col-start-2 md:col-end-6 justify-self-start md:justify-self-center"
+            ><img
+              src="images/Logo-04.webp"
+              alt=""
+              class="h-20 md:h-30 max-w-7xl"
+          /></a>
+        </div>
+
+        <!-- OTP container -->
+        <div class="grid grid-cols-1 md:grid-cols-6 select-none">
+          <div
+            class="md:col-start-2 lg:col-start-3 md:col-end-6 lg:col-end-5 flex flex-col"
+          >
+            <div
+              class="col-span-full md:col-start-12 md:col-end-6 bg-white w-full rounded-2xl shadow-2xl p-4"
+            >
+              <!-- OTP header -->
+              <div class="relative flex items-center justify-center">
+                <div class="text-center col-start-2">
+                  <h1 class="text-xl md:text-2xl font-titleBold text-center">
+                    کد اعتبار سنجی
+                  </h1>
+                </div>
+                <a href="" class="text-base absolute left-0 top-[30%]">
+                  <span class="flex items-center justify-center"
+                    ><i class="fa-solid fa-arrow-left-long"></i
+                  ></span>
+                </a>
+              </div>
+              <!-- OTP header -->
+
+              <!-- OTP form -->
+              <div class="flex flex-col mt-10 gap-y-2 text-sm md:text-base" on>
+                <p class="text-sm text-gray-700">
+                  کد تایید برای شماره
+                  <span class="font-textBold font-extrabold text-teal-800 mx-0.5 md:mx-1 lg:mx-1.5">09150953789</span>
+                 پیامک شد
+                </p>
+                <div
+                  class="flex items-center justify-center min-h-14 border  py-2 border-gray-200 rounded-md"
+                >
+                  <input
+                    type="text"
+                    placeholder="------"
+                    class="outline-0 w-full text-center"
+                    maxlength="6"
+                  />
+                </div>
+
+                <div class="text-sm text-gray-700 mt-5 hidden">
+                    ارسال مجدد کد پس از
+                    <span class="rtl:mr-2 ltr:ml-2">03:00</span>
+                </div>
+
+                <div class="text-sm text-gray-700 mt-5">
+                    کد را دریافت نکرده اید؟
+                    <span class="rtl:mr-2 ltr:ml-2 text-sky-700 font-textBold cursor-pointer">ارسال مجدد کد</span>
+                </div>
+
+                <button
+                  type="submit"
+                  class="text-center mt-3 py-3 bg-AbaPrimary rounded-xl font-textBold font-bold text-base cursor-pointer"
+                >
+                  تایید و ثبت نام
+                </button>
+              </div>
+              <!-- OTP form -->
+            </div>
+          </div>
+        </div>
+        <!-- OTP container -->
+      </div>
+    </main>
+
+    <script src="vendor/fontAwesome/fontAwesome.js"></script>
+  </body>
+</html>
