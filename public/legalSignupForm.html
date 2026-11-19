@@ -17,9 +17,7 @@
     >
       <div class="w-full max-w-7xl mx-auto">
         <div class="flex items-center justify-center">
-          <a
-            href=""
-            class="justify-self-start md:justify-self-center"
+          <a href="" class="justify-self-start md:justify-self-center"
             ><img
               src="images/Logo-04.webp"
               alt=""
@@ -28,7 +26,7 @@
         </div>
 
         <!-- signUp container -->
-        <div >
+        <div>
           <div
             class="md:col-start-2 lg:col-start-3 md:col-end-6 lg:col-end-5 flex flex-col"
           >
@@ -36,14 +34,13 @@
               class="col-span-full md:col-start-12 md:col-end-6 bg-white w-full rounded-2xl shadow-2xl p-4"
             >
               <!-- signUp header -->
-              <div class="relative flex items-center justify-center">
-                <div class="flex flex-col gap-y-3 items-center col-start-2">
+              <div class="relative flex items-center justify-start">
+                <div class="flex flex-col gap-y-2 col-start-2">
                   <h1 class="text-xl md:text-2xl font-titleBold text-center">
-                    ثبت نام
+                    فرم ثبت نام حقوقی
                   </h1>
-                  <span class="text-sm md:text-base text-gray-500"
-                    >حساب کاربری دارید؟
-                    <a href="" class="text-[#997D3A] font-textBold">ورود</a>
+                  <span class="text-xs md:text-base text-start text-gray-500"
+                    >اطلاعات هویتی
                   </span>
                 </div>
                 <a href="" class="text-base absolute left-0 top-[30%]">
@@ -56,49 +53,353 @@
 
               <!-- signUp form -->
               <div class="flex flex-col mt-5 gap-y-4 text-sm md:text-base">
+                <!-- identetical information -->
                 <div
-                  class="flex items-center min-h-14 border rtl:pr-5 rtl:pl-2 ltr:pl-5 py-2 border-gray-200 rounded-md"
+                  class="flex flex-col gap-y-3 opacity-0 invisible hidden"
+                  id="identeticalInformation-form"
                 >
-                  <input
-                    type="text"
-                    placeholder="تلفن همراه را وارد کنید"
-                    class="outline-0 w-full"
-                    maxlength="11"
-                  />
-                  <span class="text-gray-600 flex items-center justify-center">
-                    <i class="fa-solid fa-phone"></i>
-                  </span>
-                </div>
-                <div class="relative min-h-14">
                   <div
-                    class="flex items-center min-h-14 border rtl:pr-5 rtl:pl-2 ltr:pl-5 py-2 border-gray-200 rounded-md userType__container"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
                   >
-                    <input
-                      readonly
-                      placeholder="نوع کاربری خود را انتخاب کنید"
-                      class="outline-0 w-full cursor-pointer caret-transparent select-none userType__selectBox"
-                    />
-                    <span
-                      class="text-gray-600 flex items-center justify-center cursor-pointer transition-all"
-                    >
-                      <i class="fa-solid fa-chevron-down"></i>
-                      <!-- <i class="fa-solid fa-eye-slash"></i> -->
-                    </span>
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        نام شرکت
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="نام شرکت را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        نام مدیرعامل
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" نام مدیرعامل را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
                   </div>
-                  <div class="absolute right-0 left-0 top-16  ">
-                    <ul
-                      class="w-full flex flex-col *:border-b *:border-gray-300 *:last:border-0 *:hover:bg-slate-400 bg-slate-200 shadow-2xl *:py-3 rounded-xl *:rtl:pr-5 *:rtl:pl-2 *:ltr:pl-5 *:rounded-xl *:hover:cursor-pointer invisible opacity-0 transition-all border border-gray-200 userType__optionsContainer"
-                    >
-                      <li class="userType__option" data-legalType="1">کاربر حقیقی</li>
-                      <li class="userType__option" data-legalType="2">کاربر حقوقی</li>
-                    </ul>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        شماره ثبت شرکت
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" شماره ثبت شرکت را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        شناسه ملی شرکت
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" شناسه ملی شرکت را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        کد اقتصادی
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" کد اقتصادی را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        سال تاسیس
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" سال تاسیس را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        تلفن همراه
+                      </label>
+                      <input
+                        type="text"
+                        readonly
+                        placeholder=" 09150953789"
+                        class="outline-0 w-full border border-gray-300 bg-gray-500 placeholder-white rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        تلفن
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" تلفن را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
                   </div>
                 </div>
+
+                <!-- identetical information -->
+                <div
+                  class="flex flex-col gap-y-3"
+                  id="identeticalInformation-form"
+                >
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <!-- سلکت‌باکس استان -->
+                    <div
+                      class="relative flex flex-col gap-y-1 custom-select"
+                      data-name="province"
+                    >
+                      <label class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        استان
+                      </label>
+                      <input
+                        type="hidden"
+                        name="province"
+                        class="select-hidden-input"
+                      />
+
+                      <div
+                        class="flex items-center border border-gray-200 rounded-md cursor-pointer select-trigger bg-white"
+                      >
+                        <input
+                          type="text"
+                          readonly
+                          placeholder="استان خود را انتخاب کنید"
+                          class="outline-0 w-full px-2 py-3 cursor-pointer caret-transparent select-none select-display"
+                        />
+                        <span
+                          class="text-gray-600 flex items-center justify-center transition-transform duration-200 p-2 select-arrow"
+                        >
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                      </div>
+
+                      <!-- دراپ‌داون همراه با سرچ‌باکس -->
+                      <div
+                        class="absolute right-0 left-0 top-full mt-1 z-30 invisible opacity-0 pointer-events-none transition-all duration-200 bg-slate-100 shadow-2xl rounded-xl border border-gray-300 overflow-hidden select-dropdown"
+                      >
+                        <!-- باکس جستجو -->
+                        <div
+                          class="p-2 bg-white border-b border-gray-200 sticky top-0 z-10"
+                        >
+                          <div class="relative flex items-center">
+                            <input
+                              type="text"
+                              placeholder="جستجو..."
+                              class="w-full text-sm border border-gray-300 rounded-lg pr-8 pl-2 py-2 outline-none focus:border-AbaPrimary select-search"
+                            />
+                            <i
+                              class="fa-solid fa-magnifying-glass text-gray-400 text-xs absolute right-2.5"
+                            ></i>
+                          </div>
+                        </div>
+
+                        <!-- لیست گزینه‌ها (توسط JS پر می‌شود) -->
+                        <ul
+                          class="w-full flex flex-col divide-y divide-gray-200 max-h-52 overflow-y-auto select-options-list"
+                        ></ul>
+
+                        <!-- پیام عدم یافتن نتیجه -->
+                        <div
+                          class="py-4 text-center text-xs text-gray-500 hidden select-empty"
+                        >
+                          موردی یافت نشد
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- سلکت‌باکس شهرستان (در ابتدا غیرفعال تا استان انتخاب شود) -->
+                    <div
+                      class="relative flex flex-col gap-y-1 custom-select opacity-60 pointer-events-none"
+                      data-name="city"
+                    >
+                      <label class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        شهرستان
+                      </label>
+                      <input
+                        type="hidden"
+                        name="city"
+                        class="select-hidden-input"
+                      />
+
+                      <div
+                        class="flex items-center border border-gray-200 rounded-md cursor-pointer select-trigger bg-white"
+                      >
+                        <input
+                          type="text"
+                          readonly
+                          placeholder="ابتدا استان را انتخاب کنید"
+                          class="outline-0 w-full px-2 py-3 cursor-pointer caret-transparent select-none select-display"
+                        />
+                        <span
+                          class="text-gray-600 flex items-center justify-center transition-transform duration-200 p-2 select-arrow"
+                        >
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                      </div>
+
+                      <div
+                        class="absolute right-0 left-0 top-full mt-1 z-30 invisible opacity-0 pointer-events-none transition-all duration-200 bg-slate-100 shadow-2xl rounded-xl border border-gray-300 overflow-hidden select-dropdown"
+                      >
+                        <div
+                          class="p-2 bg-white border-b border-gray-200 sticky top-0 z-10"
+                        >
+                          <div class="relative flex items-center">
+                            <input
+                              type="text"
+                              placeholder="جستجو..."
+                              class="w-full text-sm border border-gray-300 rounded-lg pr-8 pl-2 py-2 outline-none focus:border-AbaPrimary select-search"
+                            />
+                            <i
+                              class="fa-solid fa-magnifying-glass text-gray-400 text-xs absolute right-2.5"
+                            ></i>
+                          </div>
+                        </div>
+                        <ul
+                          class="w-full flex flex-col divide-y divide-gray-200 max-h-52 overflow-y-auto select-options-list"
+                        ></ul>
+                        <div
+                          class="py-4 text-center text-xs text-gray-500 hidden select-empty"
+                        >
+                          موردی یافت نشد
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        شماره ثبت شرکت
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" شماره ثبت شرکت را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        شناسه ملی شرکت
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" شناسه ملی شرکت را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        کد اقتصادی
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" کد اقتصادی را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        سال تاسیس
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" سال تاسیس را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        تلفن همراه
+                      </label>
+                      <input
+                        type="text"
+                        readonly
+                        placeholder=" 09150953789"
+                        class="outline-0 w-full border border-gray-300 bg-gray-500 placeholder-white rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        تلفن
+                      </label>
+                      <input
+                        type="text"
+                        placeholder=" تلفن را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                  </div>
+                </div>
+
                 <button
                   type="submit"
                   class="text-center mt-3 py-3 bg-AbaPrimary rounded-xl font-textBold font-bold text-base cursor-pointer"
                 >
-                  دریافت کد
+                  ادامه
                 </button>
               </div>
               <!-- signUp form -->
@@ -110,6 +411,6 @@
     </main>
 
     <script src="vendor/fontAwesome/fontAwesome.js"></script>
-    <script src="scripts/signUp.js"></script>
+    <script src="scripts/signUpForm.js"></script>
   </body>
 </html>
