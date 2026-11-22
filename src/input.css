@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@layer base {
+  input[type="password"]::-ms-reveal,
+  input[type="password"]::-ms-clear {
+    display: none;
+  }
+}
+
 @theme {
   /* colors */
   --color-AbaPrimary: #ffc20e;

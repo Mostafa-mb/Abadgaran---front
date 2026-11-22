@@ -39,8 +39,11 @@
                   <h1 class="text-xl md:text-2xl font-titleBold text-center">
                     فرم ثبت نام حقوقی
                   </h1>
-                  <span class="text-xs md:text-base text-start text-gray-500"
-                    >اطلاعات هویتی
+                  <span
+                    id="formSubtitle"
+                    class="text-xs md:text-base text-start text-gray-500"
+                  >
+                    اطلاعات هویتی
                   </span>
                 </div>
                 <a href="" class="text-base absolute left-0 top-[30%]">
@@ -54,10 +57,7 @@
               <!-- signUp form -->
               <div class="flex flex-col mt-5 gap-y-4 text-sm md:text-base">
                 <!-- identetical information -->
-                <div
-                  class="flex flex-col gap-y-3 opacity-0 invisible hidden"
-                  id="identeticalInformation-form"
-                >
+                <div class="flex flex-col gap-y-3 active" id="firstForm">
                   <div
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
                   >
@@ -70,7 +70,6 @@
                         type="text"
                         placeholder="نام شرکت را وارد کنید"
                         class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
                       />
                     </div>
                     <div class="flex flex-col gap-y-1">
@@ -81,7 +80,6 @@
                         type="text"
                         placeholder=" نام مدیرعامل را وارد کنید"
                         class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
                       />
                     </div>
                   </div>
@@ -92,25 +90,12 @@
                     <div class="flex flex-col gap-y-1">
                       <label for="companyName" class="text-base font-medium">
                         <span class="text-red-500">*</span>
-                        شماره ثبت شرکت
-                      </label>
-                      <input
-                        type="text"
-                        placeholder=" شماره ثبت شرکت را وارد کنید"
-                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
-                      />
-                    </div>
-                    <div class="flex flex-col gap-y-1">
-                      <label for="companyName" class="text-base font-medium">
-                        <span class="text-red-500">*</span>
                         شناسه ملی شرکت
                       </label>
                       <input
                         type="text"
                         placeholder=" شناسه ملی شرکت را وارد کنید"
                         class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
                       />
                     </div>
                     <div class="flex flex-col gap-y-1">
@@ -122,7 +107,6 @@
                         type="text"
                         placeholder=" کد اقتصادی را وارد کنید"
                         class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
                       />
                     </div>
                   </div>
@@ -139,7 +123,6 @@
                         type="text"
                         placeholder=" سال تاسیس را وارد کنید"
                         class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
                       />
                     </div>
                   </div>
@@ -162,11 +145,11 @@
                     <div class="flex flex-col gap-y-1">
                       <label for="companyName" class="text-base font-medium">
                         <span class="text-red-500">*</span>
-                        تلفن
+                        تلفن ثابت
                       </label>
                       <input
                         type="text"
-                        placeholder=" تلفن را وارد کنید"
+                        placeholder=" تلفن ثابت را وارد کنید"
                         class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
                         maxlength="11"
                       />
@@ -174,15 +157,15 @@
                   </div>
                 </div>
 
-                <!-- identetical information -->
+                <!-- location & password information -->
                 <div
-                  class="flex flex-col gap-y-3"
-                  id="identeticalInformation-form"
+                  class="flex flex-col gap-y-3 opacity-0 invisible hidden"
+                  id="secondForm"
                 >
                   <div
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
                   >
-                    <!-- سلکت‌باکس استان -->
+                    <!-- province selectBox -->
                     <div
                       class="relative flex flex-col gap-y-1 custom-select"
                       data-name="province"
@@ -247,7 +230,7 @@
                       </div>
                     </div>
 
-                    <!-- سلکت‌باکس شهرستان (در ابتدا غیرفعال تا استان انتخاب شود) -->
+                    <!-- state selectBox -->
                     <div
                       class="relative flex flex-col gap-y-1 custom-select opacity-60 pointer-events-none"
                       data-name="city"
@@ -310,41 +293,18 @@
                   <div
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
                   >
-                    <div class="flex flex-col gap-y-1">
+                    <div class="flex flex-col gap-y-1 col-span-2">
                       <label for="companyName" class="text-base font-medium">
                         <span class="text-red-500">*</span>
-                        شماره ثبت شرکت
+                        آدرس
                       </label>
-                      <input
+                      <textarea
+                        name=""
+                        id=""
                         type="text"
-                        placeholder=" شماره ثبت شرکت را وارد کنید"
+                        placeholder=" آدرس را وارد کنید"
                         class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
-                      />
-                    </div>
-                    <div class="flex flex-col gap-y-1">
-                      <label for="companyName" class="text-base font-medium">
-                        <span class="text-red-500">*</span>
-                        شناسه ملی شرکت
-                      </label>
-                      <input
-                        type="text"
-                        placeholder=" شناسه ملی شرکت را وارد کنید"
-                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
-                      />
-                    </div>
-                    <div class="flex flex-col gap-y-1">
-                      <label for="companyName" class="text-base font-medium">
-                        <span class="text-red-500">*</span>
-                        کد اقتصادی
-                      </label>
-                      <input
-                        type="text"
-                        placeholder=" کد اقتصادی را وارد کنید"
-                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
-                      />
+                      ></textarea>
                     </div>
                   </div>
 
@@ -352,45 +312,46 @@
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
                   >
                     <div class="flex flex-col gap-y-1">
-                      <label for="companyName" class="text-base font-medium">
+                      <label class="text-base font-medium">
                         <span class="text-red-500">*</span>
-                        سال تاسیس
+                        رمز عبور
                       </label>
-                      <input
-                        type="text"
-                        placeholder=" سال تاسیس را وارد کنید"
-                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
-                      />
-                    </div>
-                  </div>
 
-                  <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-                  >
-                    <div class="flex flex-col gap-y-1">
-                      <label for="companyName" class="text-base font-medium">
-                        تلفن همراه
-                      </label>
-                      <input
-                        type="text"
-                        readonly
-                        placeholder=" 09150953789"
-                        class="outline-0 w-full border border-gray-300 bg-gray-500 placeholder-white rounded-md px-2 py-3"
-                        maxlength="11"
-                      />
+                      <div class="relative flex items-center password-wrapper">
+                        <input
+                          type="password"
+                          placeholder="رمز عبور مورد نظر خود را وارد کنید"
+                          class="outline-0 w-full border border-gray-300 rounded-md pr-3 pl-10 py-3 password-input"
+                        />
+                        <button
+                          type="button"
+                          class="absolute left-3 text-gray-500 hover:text-gray-700 transition-colors cursor-pointer password-toggle-btn"
+                          aria-label="نمایش یا مخفی‌سازی رمز عبور"
+                        >
+                          <i class="fa-solid fa-eye"></i>
+                        </button>
+                      </div>
                     </div>
                     <div class="flex flex-col gap-y-1">
-                      <label for="companyName" class="text-base font-medium">
+                      <label class="text-base font-medium">
                         <span class="text-red-500">*</span>
-                        تلفن
+                        تکرار رمز عبور
                       </label>
-                      <input
-                        type="text"
-                        placeholder=" تلفن را وارد کنید"
-                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
-                        maxlength="11"
-                      />
+
+                      <div class="relative flex items-center password-wrapper">
+                        <input
+                          type="password"
+                          placeholder="رمز عبور خود را مجدد وارد کنید"
+                          class="outline-0 w-full border border-gray-300 rounded-md pr-3 pl-10 py-3 password-input"
+                        />
+                        <button
+                          type="button"
+                          class="absolute left-3 text-gray-500 hover:text-gray-700 transition-colors cursor-pointer password-toggle-btn"
+                          aria-label="نمایش یا مخفی‌سازی رمز عبور"
+                        >
+                          <i class="fa-solid fa-eye"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -411,6 +372,6 @@
     </main>
 
     <script src="vendor/fontAwesome/fontAwesome.js"></script>
-    <script src="scripts/signUpForm.js"></script>
+    <script src="scripts/pages/legalSignupForm.js" type="module"></script>
   </body>
 </html>
