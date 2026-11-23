@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body
+    class="bg-[url('/public/images/login&signup/mobile-signup.webp')] md:bg-[url('/public/images/login&signup/desktop-signup.webp')] bg-no-repeat bg-cover bg-center min-h-screen font-textMedium relative min-w-screen"
+  >
+    <div
+      id="page-loader"
+      class="fixed inset-0 z-[60] flex flex-col items-center justify-center gap-4 bg-white/95 backdrop-blur-sm transition-opacity duration-300"
+    >
+      <!-- اسپینر چرخان -->
+      <div
+        class="w-12 h-12 rounded-full border-4 border-gray-200 border-t-AbaPrimary animate-spin"
+      ></div>
+      <span class="text-sm font-medium text-gray-600 animate-pulse">
+        در حال بارگذاری...
+      </span>
+    </div>
+
+    <!-- overlay -->
+    <div class="fixed inset-0 bg-black/10 backdrop-brightness-75 z-0"></div>
+
+    <main
+      class="relative z-10 flex min-h-screen items-center justify-center p-4"
+    >
+      <div class="w-full max-w-7xl mx-auto">
+        <div class="flex items-center justify-center">
+          <a href="" class="justify-self-start md:justify-self-center"
+            ><img
+              src="images/Logo-04.webp"
+              alt=""
+              class="h-20 md:h-30 max-w-7xl"
+          /></a>
+        </div>
+
+        <!-- signUp container -->
+        <div>
+          <div
+            class="md:col-start-2 lg:col-start-3 md:col-end-6 lg:col-end-5 flex flex-col"
+          >
+            <div
+              class="col-span-full md:col-start-12 md:col-end-6 bg-white w-full rounded-2xl shadow-2xl p-4"
+            >
+              <!-- signUp header -->
+              <div class="relative flex items-center justify-start">
+                <div class="flex flex-col gap-y-2 col-start-2">
+                  <h1 class="text-xl md:text-2xl font-titleBold text-center">
+                    فرم ثبت نام حقیقی
+                  </h1>
+                  <span
+                    id="formSubtitle"
+                    class="text-xs md:text-base text-start text-gray-500"
+                  >
+                    اطلاعات هویتی
+                  </span>
+                </div>
+                <a
+                  href="signUp.html"
+                  id="backStepBtn"
+                  class="text-base absolute left-0 top-[30%] cursor-pointer"
+                >
+                  <span class="flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                  </span>
+                </a>
+              </div>
+              <!-- signUp header -->
+
+              <!-- signUp form -->
+              <div class="flex flex-col mt-5 gap-y-4 text-sm md:text-base">
+                <!-- identetical information -->
+                <div
+                  class="flex flex-col gap-y-3 transition-all duration-300 opacity-100 translate-y-0"
+                  id="firstForm"
+                  data-subtitle="اطلاعات هویتی"
+                >
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label for="Name" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        نام
+                      </label>
+                      <input
+                        type="text"
+                        name="Name"
+                        placeholder="نام خود را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <label for="lastName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        نام خانوادگی
+                      </label>
+                      <input
+                        type="text"
+                        name="lastName"
+                        placeholder=" نام خانوادگی خود را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label for="nationalId" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        کد ملی
+                      </label>
+                      <input
+                        type="text"
+                        name="nationalId"
+                        placeholder=" کد ملی خود را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label for="phoneNumber" class="text-base font-medium">
+                        تلفن همراه
+                      </label>
+                      <input
+                        type="text"
+                        readonly
+                        placeholder=" 09150953789"
+                        class="outline-0 w-full border border-gray-300 bg-gray-500 placeholder-white rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <label for="phone" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        تلفن ثابت
+                      </label>
+                      <input
+                        type="text"
+                        name="phone"
+                        placeholder=" تلفن ثابت خود را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                        maxlength="11"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- location & password information -->
+                <div
+                  class="hidden flex-col gap-y-3 transition-all duration-300 opacity-0 translate-y-2"
+                  id="secondForm"
+                  data-subtitle="اطلاعات موقعیتی"
+                >
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <!-- province selectBox -->
+                    <div
+                      class="relative flex flex-col gap-y-1 custom-select"
+                      data-name="province"
+                    >
+                      <label class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        استان
+                      </label>
+                      <input
+                        type="hidden"
+                        name="province"
+                        class="select-hidden-input"
+                      />
+
+                      <div
+                        class="flex items-center border border-gray-200 rounded-md cursor-pointer select-trigger bg-white"
+                      >
+                        <input
+                          type="text"
+                          readonly
+                          placeholder="استان خود را انتخاب کنید"
+                          class="outline-0 w-full px-2 py-3 cursor-pointer caret-transparent select-none select-display"
+                        />
+                        <span
+                          class="text-gray-600 flex items-center justify-center transition-transform duration-200 p-2 select-arrow"
+                        >
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                      </div>
+
+                      <!-- دراپ‌داون همراه با سرچ‌باکس -->
+                      <div
+                        class="absolute right-0 left-0 top-full mt-1 z-30 invisible opacity-0 pointer-events-none transition-all duration-200 bg-slate-100 shadow-2xl rounded-xl border border-gray-300 overflow-hidden select-dropdown"
+                      >
+                        <!-- باکس جستجو -->
+                        <div
+                          class="p-2 bg-white border-b border-gray-200 sticky top-0 z-10"
+                        >
+                          <div class="relative flex items-center">
+                            <input
+                              type="text"
+                              placeholder="جستجو..."
+                              class="w-full text-sm border border-gray-300 rounded-lg pr-8 pl-2 py-2 outline-none focus:border-AbaPrimary select-search"
+                            />
+                            <i
+                              class="fa-solid fa-magnifying-glass text-gray-400 text-xs absolute right-2.5"
+                            ></i>
+                          </div>
+                        </div>
+
+                        <!-- filled by js -->
+                        <ul
+                          class="w-full flex flex-col divide-y divide-gray-200 max-h-52 overflow-y-auto select-options-list"
+                        ></ul>
+
+                        <!-- if it doesnt have any result -->
+                        <div
+                          class="py-4 text-center text-xs text-gray-500 hidden select-empty"
+                        >
+                          موردی یافت نشد
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- state selectBox -->
+                    <div
+                      class="relative flex flex-col gap-y-1 custom-select opacity-60 pointer-events-none"
+                      data-name="city"
+                    >
+                      <label class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        شهرستان
+                      </label>
+                      <input
+                        type="hidden"
+                        name="city"
+                        class="select-hidden-input"
+                      />
+
+                      <div
+                        class="flex items-center border border-gray-200 rounded-md cursor-pointer select-trigger bg-white"
+                      >
+                        <input
+                          type="text"
+                          readonly
+                          placeholder="ابتدا استان را انتخاب کنید"
+                          class="outline-0 w-full px-2 py-3 cursor-pointer caret-transparent select-none select-display"
+                        />
+                        <span
+                          class="text-gray-600 flex items-center justify-center transition-transform duration-200 p-2 select-arrow"
+                        >
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                      </div>
+
+                      <div
+                        class="absolute right-0 left-0 top-full mt-1 z-30 invisible opacity-0 pointer-events-none transition-all duration-200 bg-slate-100 shadow-2xl rounded-xl border border-gray-300 overflow-hidden select-dropdown"
+                      >
+                        <div
+                          class="p-2 bg-white border-b border-gray-200 sticky top-0 z-10"
+                        >
+                          <div class="relative flex items-center">
+                            <input
+                              type="text"
+                              placeholder="جستجو..."
+                              class="w-full text-sm border border-gray-300 rounded-lg pr-8 pl-2 py-2 outline-none focus:border-AbaPrimary select-search"
+                            />
+                            <i
+                              class="fa-solid fa-magnifying-glass text-gray-400 text-xs absolute right-2.5"
+                            ></i>
+                          </div>
+                        </div>
+                        <ul
+                          class="w-full flex flex-col divide-y divide-gray-200 max-h-52 overflow-y-auto select-options-list"
+                        ></ul>
+                        <div
+                          class="py-4 text-center text-xs text-gray-500 hidden select-empty"
+                        >
+                          موردی یافت نشد
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1 col-span-2">
+                      <label for="companyName" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        آدرس
+                      </label>
+                      <textarea
+                        name="address"
+                        id=""
+                        type="text"
+                        placeholder=" آدرس را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label for="PostalId" class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        کد پستی
+                      </label>
+                      <input
+                        type="text"
+                        name="PostalId"
+                        placeholder=" کد پستی خود را وارد کنید"
+                        class="outline-0 w-full border border-gray-300 rounded-md px-2 py-3"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <div class="flex flex-col gap-y-1">
+                      <label class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        رمز عبور
+                      </label>
+
+                      <div class="relative flex items-center password-wrapper">
+                        <input
+                          type="password"
+                          name="password"
+                          placeholder="رمز عبور مورد نظر خود را وارد کنید"
+                          class="outline-0 w-full border border-gray-300 rounded-md pr-3 pl-10 py-3 password-input"
+                        />
+                        <button
+                          type="button"
+                          class="absolute left-3 text-gray-500 hover:text-gray-700 transition-colors cursor-pointer password-toggle-btn"
+                          aria-label="نمایش یا مخفی‌سازی رمز عبور"
+                        >
+                          <i class="fa-solid fa-eye"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <label class="text-base font-medium">
+                        <span class="text-red-500">*</span>
+                        تکرار رمز عبور
+                      </label>
+
+                      <div class="relative flex items-center password-wrapper">
+                        <input
+                          type="password"
+                          name="confirmPassword"
+                          placeholder="رمز عبور خود را مجدد وارد کنید"
+                          class="outline-0 w-full border border-gray-300 rounded-md pr-3 pl-10 py-3 password-input"
+                        />
+                        <button
+                          type="button"
+                          class="absolute left-3 text-gray-500 hover:text-gray-700 transition-colors cursor-pointer password-toggle-btn"
+                          aria-label="نمایش یا مخفی‌سازی رمز عبور"
+                        >
+                          <i class="fa-solid fa-eye"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="text-center mt-3 py-3 bg-AbaPrimary rounded-xl font-textBold font-bold text-base cursor-pointer"
+                >
+                  ادامه
+                </button>
+              </div>
+              <!-- signUp form -->
+            </div>
+          </div>
+        </div>
+        <!-- signUp container -->
+      </div>
+    </main>
+
+    <script src="vendor/fontAwesome/fontAwesome.js"></script>
+    <script src="scripts/pages/realPersonSignupForm.js" type="module"></script>
+  </body>
+</html>
