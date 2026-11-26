@@ -2999,12 +2999,12 @@
     </div>
   </header>
 
-  <!-- main content -->
-  <main>
+  <!-- main content v1 -->
+  <main class="hidden">
     <!-- category Banner -->
     <section class="main-header">
       <div
-        class="bg-[url('/public/images/category/categoryBanner.webp')] ltr:bg-[url('/public/images/category/categoryBannerLtr.webp')] bg-no-repeat bg-cover bg-center min-h-50 md:min-h-80 lg:min-h-100 font-textMedium relative min-w-screen flex items-center">
+        class="bg-[url('/public/images/category/categoryBanner.webp')] ltr:bg-[url('/public/images/category/categoryBannerLtr.webp')] bg-no-repeat bg-cover bg-center min-h-50 md:min-h-80 lg:min-h-100 font-textMedium relative flex items-center">
         <div class="pr-2 md:rtl:pr-20 md:ltr:pl-20">
           <div class="text-white flex flex-col gap-y-3 w-[70%] md:w-full">
             <h2 class="text-xs lg:text-3xl font-textBold">
@@ -3034,10 +3034,10 @@
 
       <!-- categories container Title and subtitle -->
       <div class="flex flex-col gap-y-3 w-[70%] md:w-full">
-        <h2
+        <h1
           class="rtl:border-r-4 md:rtl:border-r-6 rtl:pr-1 md:rtl:pr-2 rtl:rounded-r-sm ltr:border-l-4 md:ltr:border-l-6 ltr:pl-1 md:ltr:pl-2 ltr:rounded-l-sm  border-AbaPrimary text-xl md:text-4xl font-titleBold">
           گروه‌های محصولات آبادگران
-        </h2>
+        </h1>
         <p class="rtl:pr-1 md:rtl:pr-2 ltr:pl-1 md:ltr:pl-2 text-gray-400 text-xs md:text-base">
           مجموعه‌ای کامل از محصولات تخصصی برای ساخت، ترمیم و محافظت از سازه
         </p>
@@ -3045,7 +3045,6 @@
 
       <!-- categories list container -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 gap-4">
-
         <!-- category Item -->
         <div class="rounded-xl shadow-2xl flex flex-col">
           <div class="relative">
@@ -3478,6 +3477,614 @@
     </section>
   </main>
 
+
+  <!-- main content v2 -->
+  <!-- main content -->
+  <main>
+    <!-- category Banner -->
+    <section aria-labelledby="banner-heading">
+      <div
+        class="bg-[url('/public/images/category/categoryBanner.webp')] ltr:bg-[url('/public/images/category/categoryBannerLtr.webp')] bg-no-repeat bg-cover bg-center min-h-52 md:min-h-80 lg:min-h-100 font-textMedium relative w-full flex items-center">
+        <div class="pr-3 md:rtl:pr-20 md:ltr:pl-20">
+          <div class="text-white flex flex-col gap-y-3 w-[75%] md:w-full max-w-2xl">
+            <h2 id="banner-heading" class="text-sm md:text-2xl lg:text-3xl font-textBold leading-snug">
+              راهکارهای پیشرفته شیمی ساختمان
+            </h2>
+            <p class="text-xs lg:text-lg font-textRegular leading-relaxed">
+              محصولات تخصصی
+              <strong class="text-AbaPrimary">آبادگران</strong> برای افزایش
+              دوام و کیفیت در ساخت و ساز
+            </p>
+          </div>
+          <div
+            class="mt-4 lg:mt-6 flex items-center gap-x-2 text-xs lg:text-base *:px-3 *:py-2 md:*:px-4 md:*:py-2.5 *:font-textBold *:cursor-pointer *:rounded-md *:transition-all">
+            <a href="#categories-section" class="bg-AbaPrimary text-AbaSecondary hover:brightness-95">
+              مشاهده گروه محصولات
+            </a>
+            <a href="#footer_content" class="border border-AbaPrimary text-AbaPrimary hover:bg-AbaPrimary/10">
+              دریافت مشاوره فنی
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- categories list -->
+    <section id="categories-section" aria-labelledby="categories-heading"
+      class="mt-6 md:mt-12 mx-auto w-[95%] lg:w-[90%]">
+      <!-- categories container Title and subtitle -->
+      <div class="flex flex-col gap-y-2 md:gap-y-3">
+        <h1 id="categories-heading"
+          class="rtl:border-r-4 md:rtl:border-r-6 rtl:pr-2 md:rtl:pr-3 rtl:rounded-r-sm ltr:border-l-4 md:ltr:border-l-6 ltr:pl-2 md:ltr:pl-3 ltr:rounded-l-sm border-AbaPrimary text-xl md:text-4xl font-titleBold">
+          گروه‌های محصولات آبادگران
+        </h1>
+        <p class="rtl:pr-2 md:rtl:pr-3 ltr:pl-2 md:ltr:pl-3 text-gray-500 text-xs md:text-base">
+          مجموعه‌ای کامل از محصولات تخصصی برای ساخت، ترمیم و محافظت از سازه
+        </p>
+      </div>
+
+      <!-- categories list container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 md:mt-10 gap-4 md:gap-5">
+
+        <!-- 1. افزودنی‌های بتن -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori1.webp" alt="گروه محصولات افزودنی‌های بتن آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-vial fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-vial"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  افزودنی‌های بتن
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                فوق روان کننده REONET، ضد یخ ABA ANTIFREEZE، سوپرژل MS و پاورژل POWER GEL-iSC
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">فوق کاهنده آب و
+                    فوق روان کننده بتن REONET</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">ضد یخ بتن ABA
+                    ANTIFREEZE</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">سوپرژل هوشمند
+                    MS</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">پاورژل هوشمند
+                    POWER GEL-iSC</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+        <!-- 2. آب‌بندسازی -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori2.webp" alt="گروه محصولات آب‌بندسازی آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-droplet fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-droplet"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  آب‌بندسازی
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                واتراستاپ پی‌وی‌سی ABA، نفوذگر بلورساز ABACRYSTALSEAL، آب‌بند پلیمری ABAFLEX و آنی‌گیر ABAPLUG
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">واتراستاپ
+                    پی‌وی‌سی ABA WATERSTOP</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">نفوذگر بلورساز
+                    پودری ABACRYSTALSEAL</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">آب‌بند پلیمری
+                    ABAFLEX-FCW</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">آنی‌گیر سیمانی
+                    ABAPLUG</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+        <!-- 3. ثابت‌سازی -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori3.webp" alt="گروه محصولات ثابت‌سازی و گروت آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-pump-soap fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-pump-soap"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  ثابت‌سازی
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                گروت اپوکسی ABADUR-G3، گروت اپوکسی کم‌حرارت‌زا G3 LE و گروت سیمانی منبسط‌شونده E.M.GROUT-CE
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">گروت اپوکسی
+                    ABADUR-G3</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">گروت اپوکسی
+                    کم‌حرارت‌زا ABADUR-G3 LE</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">گروت سیمانی
+                    منبسط‌شونده E.M.GROUT-CE</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">گروت سیمانی
+                    ریزدانه E.M.GROUT-CM</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. ترمیم بتن و مقاوم‌سازی -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori4.webp" alt="گروه محصولات ترمیم بتن و مقاوم‌سازی آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-shield fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-shield"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  ترمیم بتن و مقاوم‌سازی
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                چسب بتن لاتکس E.M.BOND-PRO، الیاف کربن ضدحریق ABA WRAP و بسته‌های مقاوم‌سازی FRP
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">چسب بتن لاتکس
+                    E.M.BOND-PRO</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">الیاف کربن ضد
+                    حریق ABA WRAP-C305 FP</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">بسته مقاوم‌سازی
+                    مناطق سرد ABABOND FRP C5</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">بسته مقاوم‌سازی
+                    مناطق گرم ABABOND FRP H25</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+        <!-- 5. نگهداری بتن -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori5.webp" alt="گروه محصولات نگهداری بتن آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-brush fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-brush"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  نگهداری بتن
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                روغن قالب امولسیونی AQUAFORM، روغن قالب MOULD OIL و مواد عمل‌آوری کیورینگ ABA CURE
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">روغن قالب
+                    امولسیونی پایه آب AQUAFORM-790</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">روغن قالب
+                    امولسیونی پایه آب AQUAFORM-230</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">روغن قالب صنعتی
+                    MOULD OIL-O400</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">ماده عمل‌آوری و
+                    کیورینگ ABA CURE</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+        <!-- 6. کف‌سازی -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori6.webp" alt="گروه محصولات کف‌سازی صنعتی آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-table-cells fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-table-cells"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  کف‌سازی
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                کفپوش پلی‌یورتان ABAFLOOR PUR، کفپوش اپوکسی آنتی‌باکتریال و کفپوش آنتی‌الکترواستاتیک ESD
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">کفپوش
+                    پلی‌یورتان میانی ABAFLOOR PUR-30</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">کفپوش اپوکسی
+                    رویه ABAFLOOR-31 OP</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">کفپوش اپوکسی
+                    آنتی‌باکتریال ABAFLOOR-31 SL</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">کفپوش
+                    آنتی‌الکترواستاتیک ABAFLOOR ESD-31</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+        <!-- 7. رنگ‌ها و پوشش‌ها -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori7.webp" alt="گروه محصولات رنگ‌ها و پوشش‌ها آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-fill-drip fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-fill-drip"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  رنگ‌ها و پوشش‌ها
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                پوشش پلی‌یورتان ABACOAT PUR-40، پرایمر اپوکسی ABAPRIME و پوشش ضدحریق ABATAIKA
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">پوشش پلی‌یورتان
+                    ABACOAT PUR-40</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">پرایمر اپوکسی
+                    سد رطوبت ABAPRIME-MB</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">پوشش عایق حرارت
+                    سیمانی ABATAIKA-TI</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">پوشش ضد حریق
+                    هیدروکربنی ABATAIKA-H1</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+        <!-- 8. کاشی‌کاری -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori8.webp" alt="گروه محصولات کاشی‌کاری و بندکشی آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-border-all fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-border-all"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  کاشی‌کاری
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                چسب کاشی ویژه ABA SUPERSET، چسب کاشی تغییرشکل‌پذیر ULTRASET و پودر بندکشی TILEGROUT
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">چسب کاشی ویژه
+                    سفید ABA SUPERSET-W</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">چسب کاشی
+                    تغییرشکل‌پذیر ABA ULTRASET-G</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">پودر بندکشی
+                    ویژه سفید ABA TILEGROUT</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">پودر بندکشی
+                    ویژه طوسی ABA TILEGROUT-GRAY</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+        <!-- 9. درزگیری -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori9.webp" alt="گروه محصولات درزگیری آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-clone fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-clone"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  درزگیری
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                درزگیر پلی‌یورتان یک‌جزئی ABAFLEX-LM و پرایمر درزگیر پلی‌یورتان ABAFLEX-LM PRIMER
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">درزگیر
+                    پلی‌یورتان یک‌جزئی ABAFLEX-LM</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">پرایمر درزگیر
+                    پلی‌یورتان ABAFLEX-LM PRIMER</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+        <!-- 10. پوشش‌های مقاوم شیمیایی -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori10.webp" alt="گروه محصولات سیستم‌های حفاظتی مقاوم شیمیایی آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-shield-halved fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  پوشش‌های مقاوم شیمیایی
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                ملات درزبند مقاوم شیمیایی ABAGARD CL-7، ملات‌های چندمنظوره CR-20 و ملات اپوکسی ABADUR-P2
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">ملات درزبند
+                    مقاوم شیمیایی ABAGARD CL-7</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">ملات چندمنظوره
+                    مقاوم شیمیایی ABAGARD CR-20</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">ملات چندمنظوره
+                    مقاوم شیمیایی ABAGARD CR-40</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">ملات مقاوم
+                    شیمیایی اپوکسی ABADUR-P2</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+        <!-- 11. محصولات شیمیایی جدید -->
+        <article
+          class="h-full rounded-xl shadow-md md:shadow-xl bg-white p-3 md:p-0 flex flex-col md:justify-between overflow-hidden border border-gray-100 md:border-0">
+          <div class="flex flex-row md:flex-col items-center md:items-stretch gap-3 md:gap-0">
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 md:w-full md:h-auto shrink-0">
+              <img src="images/category/categori11.webp" alt="گروه محصولات شیمیایی جدید آبادگران"
+                class="w-full h-full md:aspect-video object-cover rounded-lg md:rounded-none md:rounded-t-2xl"
+                loading="lazy" />
+              <span
+                class="hidden md:flex size-14 lg:size-16 items-center justify-center bg-AbaPrimary rounded-xl text-AbaSecondary shadow-md z-10 absolute -bottom-7 rtl:right-4 ltr:left-4">
+                <i class="fa-solid fa-flask fa-xl lg:fa-2xl"></i>
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 md:pt-10 md:px-4">
+              <div class="flex items-center gap-2">
+                <span
+                  class="flex md:hidden size-6 shrink-0 items-center justify-center bg-AbaPrimary/25 text-AbaSecondary rounded text-xs">
+                  <i class="fa-solid fa-flask"></i>
+                </span>
+                <h2
+                  class="font-titleBold text-sm sm:text-base md:text-lg text-gray-900 truncate md:overflow-visible md:whitespace-normal">
+                  محصولات شیمیایی جدید
+                </h2>
+              </div>
+              <p class="mt-1 text-[11px] sm:text-xs text-gray-500 line-clamp-2 md:hidden">
+                هاردنر فنالکامین ABAHARD 2100L، شتاب‌دهنده DASYNEP FC-20 و بازدارنده‌های خوردگی ACL-301
+              </p>
+              <ul class="hidden md:flex mt-4 text-gray-600 font-textRegular flex-col gap-y-2.5 text-sm">
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">هاردنر
+                    فنالکامین ویسکوزیته پایین ABAHARD 2100L</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">هاردنر
+                    فنالکامین گیرش سریع ABAHARD 2100FC</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">شتاب‌دهنده
+                    سیستم پلیمری DASYNEP FC-20</span></li>
+                <li class="flex items-center gap-x-2"><span
+                    class="size-2 bg-AbaPrimary rounded-full shrink-0"></span><span class="line-clamp-1">بازدارنده
+                    خوردگی SOLVITOR ACL-301</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-3 md:mt-auto md:px-4 md:pb-5 md:pt-4">
+            <a href="#"
+              class="block w-full rounded-lg md:rounded-xl bg-AbaSecondary hover:bg-AbaSecondary/90 transition-all py-2 md:py-3 text-center text-white text-xs md:text-sm font-textBold">
+              مشاهده همه محصولات
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
   <!-- footer -->
   <footer class="mt-5 w-full md:mt-15 mb-15 footer">
     <div class="w-[95%] mx-auto flex flex-col px-4 py-3 md:px-8 md:py-6 bg-AbaSecondary rounded-2xl relative">
@@ -3495,9 +4102,9 @@
         <div class="py-4 text-white w-full md:max-w-[40%] text-pretty">
           <div class="relative h-50 overflow-hidden" id="footer_content">
             <div>
-              <h1 class="font-titleBold mb-2">
+              <h2 class="font-titleBold mb-2">
                 شرکت صنایع شیمی ساختمان آبادگران
-              </h1>
+              </h2>
               <p class="text-sm">
                 شرکت صنایع شیمی ساختمان آبادگران در سال 1362 شمسی با اخذ مجوز
                 از وزارت صنایع و معادن استان تهران تاسیس شد.اکنون شرکت
